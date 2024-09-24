@@ -1,19 +1,9 @@
+import ComingSoon from "./components/comingsoon"
 import './App.css'
-import { Button } from "@/components/ui/button"
- 
-function MyButton() {
-  return (
-    <div>
-      <Button>Click me</Button>
-    </div>
-  )
-}
 
 function App() {
-  
-
   return (
-    <MyButton />
+    <ComingSoon />
   )
 }
 
