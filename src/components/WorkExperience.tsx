@@ -52,7 +52,7 @@ const experiences = [
     company: "Aalto University School of Science and Technology",
     logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.studyinfinland.fi%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fog_image%2Fpublic%2F2018-10%2FAalto%2520logo_0.png%3Fitok%3DBTbxbaXQ&f=1&nofb=1&ipt=03995a6c82b83b78a02c3bff036ae2161b5c9cd69e779ea2e0fb3332e85758eb&ipo=images",
     period: "Jun 2019 - Dec 2019",
-    description: "Simulating and calculating the annihilating electron-positron pair momentum density in a solid in the atomic scale using quantum Monte Carlo methods (Master’s thesis).",
+    description: "Simulating and calculating the annihilating electron-positron pair momentum density in a solid in the atomic scale using quantum Monte Carlo methods (Master's thesis).",
     tools: [
       { name: "Fortran", logo: "https://cdn.simpleicons.org/fortran" },
       { name: "Quantum ESPRESSO", logo: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.openscience.org%2Fblog%2Fwp-content%2Fuploads%2F2009%2F01%2Fquantum_espresso6_trasparentbg.png&f=1&nofb=1&ipt=b303839d6fc58b58a54f26025a3d2da3fec77c81e00caab2cba0cc06f75f650e&ipo=images" },
@@ -132,37 +132,41 @@ export default function WorkExperience() {
               <p className="font-semibold">{exp.company}</p>
               <p className="text-sm text-gray-600 mb-4">{exp.period}</p>
               <p className="mb-6">{exp.description}</p>
-              <div className="flex justify-center items-center space-x-4">
-                {exp.tools.map((tool, toolIndex) => (
-                  <div 
-                    key={toolIndex} 
-                    className="flex flex-col items-center"
-                    onMouseEnter={(e) => handleMouseEnter(e, tool.name)}
-                    onMouseLeave={handleMouseLeave}
-                  >
-                    <img src={`${tool.logo}`} alt={`${tool.name} logo`} className="w-6 h-6 object-contain mb-1" />
-                  </div>
-                ))}
+              <div className="flex justify-center">
+                <div className="flex flex-wrap justify-center gap-4 max-w-2xl">
+                  {exp.tools.map((tool, toolIndex) => (
+                    <div 
+                      key={toolIndex} 
+                      className="flex flex-col items-center"
+                      onMouseEnter={(e) => handleMouseEnter(e, tool.name)}
+                      onMouseLeave={handleMouseLeave}
+                    >
+                      <img src={`${tool.logo}`} alt={`${tool.name} logo`} className="w-6 h-6 object-contain" />
+                    </div>
+                  ))}
+                </div>
               </div>
             </CardContent>
-            {exp.pdfUrl === '' ? <></> :
-            <div 
-              className="absolute top-4 right-4 cursor-pointer"
-              onMouseEnter={(e) => handleMouseEnter(e, `${exp.pdfCaption}`)}
-              onMouseLeave={handleMouseLeave}
-              onClick={() => handlePdfDownload(exp.pdfUrl)}
-            >
-              <BookOpenText className="w-6 h-6 text-gray-600 hover: text-gray-800" />
-            </div>}
-            {exp.pdfUrl2 === '' ? <></> :
-            <div 
-              className="absolute top-4 right-12 cursor-pointer"
-              onMouseEnter={(e) => handleMouseEnter(e, `${exp.pdfCaption2}`)}
-              onMouseLeave={handleMouseLeave}
-              onClick={() => handlePdfDownload(exp.pdfUrl2)}
-            >
-              <BookOpenText className="w-6 h-6 text-gray-600 hover: text-gray-800" />
-            </div>}
+            {exp.pdfUrl && (
+              <div 
+                className="absolute top-4 right-4 cursor-pointer"
+                onMouseEnter={(e) => handleMouseEnter(e, `${exp.pdfCaption}`)}
+                onMouseLeave={handleMouseLeave}
+                onClick={() => handlePdfDownload(exp.pdfUrl)}
+              >
+                <BookOpenText className="w-6 h-6 text-gray-600 hover:text-gray-800" />
+              </div>
+            )}
+            {exp.pdfUrl2 && (
+              <div 
+                className="absolute top-4 right-12 cursor-pointer"
+                onMouseEnter={(e) => handleMouseEnter(e, `${exp.pdfCaption2}`)}
+                onMouseLeave={handleMouseLeave}
+                onClick={() => handlePdfDownload(exp.pdfUrl2)}
+              >
+                <BookOpenText className="w-6 h-6 text-gray-600 hover:text-gray-800" />
+              </div>
+            )}
           </Card>
         ))}
       </div>
