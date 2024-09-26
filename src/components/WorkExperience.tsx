@@ -1,7 +1,9 @@
 'use client'
 
 import { useState } from 'react'
+import React from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import CASINOLogo from "../assets/CASINO.png"
 
 const experiences = [
   {
@@ -43,6 +45,7 @@ const experiences = [
     tools: [
       { name: "Fortran", logo: "https://cdn.simpleicons.org/fortran" },
       { name: "Quantum ESPRESSO", logo: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.openscience.org%2Fblog%2Fwp-content%2Fuploads%2F2009%2F01%2Fquantum_espresso6_trasparentbg.png&f=1&nofb=1&ipt=b303839d6fc58b58a54f26025a3d2da3fec77c81e00caab2cba0cc06f75f650e&ipo=images" },
+      { name: "CASINO", logo: CASINOLogo },
       { name: "Matlab", logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdic.academic.ru%2Fpictures%2Fwiki%2Ffiles%2F77%2FMatlab_Logo.png&f=1&nofb=1&ipt=de8b9be6d426a4eeb2cfcff0b906bd53996e2b5a9945f3b004ab19acaabb3a9c&ipo=images" },
       { name: "Github", logo: "https://cdn.simpleicons.org/github" },
       { name: "Git", logo: "https://cdn.simpleicons.org/git" },
@@ -60,6 +63,7 @@ const experiences = [
     tools: [
       { name: "Fortran", logo: "https://cdn.simpleicons.org/fortran" },
       { name: "Quantum ESPRESSO", logo: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.openscience.org%2Fblog%2Fwp-content%2Fuploads%2F2009%2F01%2Fquantum_espresso6_trasparentbg.png&f=1&nofb=1&ipt=b303839d6fc58b58a54f26025a3d2da3fec77c81e00caab2cba0cc06f75f650e&ipo=images" },
+      { name: "CASINO", logo: CASINOLogo },
       { name: "Matlab", logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdic.academic.ru%2Fpictures%2Fwiki%2Ffiles%2F77%2FMatlab_Logo.png&f=1&nofb=1&ipt=de8b9be6d426a4eeb2cfcff0b906bd53996e2b5a9945f3b004ab19acaabb3a9c&ipo=images" },
       { name: "Github", logo: "https://cdn.simpleicons.org/github" },
       { name: "Git", logo: "https://cdn.simpleicons.org/git" },
