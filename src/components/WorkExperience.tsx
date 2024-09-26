@@ -122,10 +122,10 @@ export default function WorkExperience() {
       <div className="space-y-6">
         {experiences.map((exp, index) => (
           <Card key={index} className="relative">
-            <div className="absolute top-4 left-4">
-              <img src={exp.logo} alt={`${exp.company} logo`} className="w-24 h-24 object-contain" />
+            <div className="absolute top-4 left-4 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24">
+              <img src={exp.logo} alt={`${exp.company} logo`} className="w-full h-full object-contain" />
             </div>
-            <CardHeader className="pt-16 pb-4">
+            <CardHeader className="pt-24 sm:pt-8 pb-4">
               <CardTitle>{exp.title}</CardTitle>
             </CardHeader>
             <CardContent>

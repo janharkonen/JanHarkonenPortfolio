@@ -1,6 +1,6 @@
 import { MapPin } from "lucide-react"
 import WorkExperience from "./WorkExperience"
-import Projects from "./Projects"
+// import Projects from "./Projects"
 
 export default function Portfolio() {
     return (
@@ -15,7 +15,7 @@ export default function Portfolio() {
           <h2 className="text-2xl font-semibold text-gray-700">Full Stack Developer</h2>
         </header>
       <WorkExperience />
-      <Projects />
+      {/*<Projects />*/}
     </div>
   )
 }
