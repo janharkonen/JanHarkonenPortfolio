@@ -3,7 +3,10 @@
 import { useState } from 'react'
 import React from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { BookOpenText } from 'lucide-react'
 import CASINOLogo from "../assets/CASINO.png"
+import ErkkaPDF from "../../public/Jan_Harkonen_Special_Assignment.pdf"
+import DippaPDF from "../../public/Jan_Harkonen_Masters_thesis.pdf"
 
 const experiences = [
   {
@@ -20,7 +23,11 @@ const experiences = [
       { name: "Git", logo: "https://cdn.simpleicons.org/git" },
       { name: "Embarcadero", logo: "https://cdn.simpleicons.org/embarcadero" },
       { name: "VS Code", logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbrandlogos.net%2Fwp-content%2Fuploads%2F2021%2F11%2Fvisual-studio-code-logo.png&f=1&nofb=1&ipt=395f23f2ff4dbdf7b48f1417203c0b69231ed58a5d60b03e8567a221d2536901&ipo=images" },
-    ]
+    ],
+    pdfUrl: "",
+    pdfCaption: "",
+    pdfUrl2: "",
+    pdfCaption2: ""
   },
   {
     title: "Software Developer",
@@ -34,7 +41,11 @@ const experiences = [
       { name: "InfluxDB", logo: "https://cdn.simpleicons.org/influxdb" },
       { name: "Docker", logo: "https://cdn.simpleicons.org/docker" },
       { name: "Git", logo: "https://cdn.simpleicons.org/git" },
-    ]
+    ],
+    pdfUrl: "",
+    pdfCaption: "",
+    pdfUrl2: "",
+    pdfCaption2: ""
   },
   {
     title: "Research Assistant",
@@ -53,7 +64,11 @@ const experiences = [
       { name: "Emacs", logo: "https://cdn.simpleicons.org/gnuemacs" },
       { name: "Overleaf", logo: "https://cdn.simpleicons.org/overleaf" },
       { name: "LaTeX", logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.clipartmax.com%2Fpng%2Fmiddle%2F271-2710063_latex-latex-logo.png&f=1&nofb=1&ipt=9204a46bdc1dc961121943d7c194207dac92eff7addf95a23c6d41aade5cba0a&ipo=images" },
-    ]
+    ],
+    pdfUrl: DippaPDF,
+    pdfCaption: "Master's thesis",
+    pdfUrl2: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.108.045201",
+    pdfCaption2: "Research paper as co-author",
   },
   {
     title: "Research Assistant",
@@ -72,7 +87,11 @@ const experiences = [
       { name: "Emacs", logo: "https://cdn.simpleicons.org/gnuemacs" },
       { name: "Overleaf", logo: "https://cdn.simpleicons.org/overleaf" },
       { name: "LaTeX", logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.clipartmax.com%2Fpng%2Fmiddle%2F271-2710063_latex-latex-logo.png&f=1&nofb=1&ipt=9204a46bdc1dc961121943d7c194207dac92eff7addf95a23c6d41aade5cba0a&ipo=images" },
-    ]
+    ],
+    pdfUrl: ErkkaPDF,
+    pdfCaption: "Special assignment",
+    pdfUrl2: "",
+    pdfCaption2: ""
   }
 ]
 
@@ -91,6 +110,10 @@ export default function WorkExperience() {
     if (tooltip.show) {
       setTooltip(prev => ({ ...prev, x: e.clientX, y: e.clientY }))
     }
+  }
+
+  const handlePdfDownload = (pdfUrl: string) => {
+    window.open(pdfUrl, '_blank')
   }
 
   return (
@@ -122,6 +145,24 @@ export default function WorkExperience() {
                 ))}
               </div>
             </CardContent>
+            {exp.pdfUrl === '' ? <></> :
+            <div 
+              className="absolute top-4 right-4 cursor-pointer"
+              onMouseEnter={(e) => handleMouseEnter(e, `${exp.pdfCaption}`)}
+              onMouseLeave={handleMouseLeave}
+              onClick={() => handlePdfDownload(exp.pdfUrl)}
+            >
+              <BookOpenText className="w-6 h-6 text-gray-600 hover: text-gray-800" />
+            </div>}
+            {exp.pdfUrl2 === '' ? <></> :
+            <div 
+              className="absolute top-4 right-12 cursor-pointer"
+              onMouseEnter={(e) => handleMouseEnter(e, `${exp.pdfCaption2}`)}
+              onMouseLeave={handleMouseLeave}
+              onClick={() => handlePdfDownload(exp.pdfUrl2)}
+            >
+              <BookOpenText className="w-6 h-6 text-gray-600 hover: text-gray-800" />
+            </div>}
           </Card>
         ))}
       </div>
