@@ -5,8 +5,8 @@ import React from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { BookOpenText } from 'lucide-react'
 import CASINOLogo from "../assets/CASINO.png"
-import ErkkaPDF from "../../public/Jan_Harkonen_Special_Assignment.pdf"
-import DippaPDF from "../../public/Jan_Harkonen_Masters_thesis.pdf"
+import ErkkaPDF from "../../src/Jan_Harkonen_Special_Assignment.pdf"
+import DippaPDF from "../../src/Jan_Harkonen_Masters_thesis.pdf"
 
 const experiences = [
   {
@@ -32,7 +32,7 @@ const experiences = [
   {
     title: "Software Developer",
     company: "Semantum Oy",
-    logo: "https://media.licdn.com/dms/image/v2/C4D0BAQFAENbYsHiSYw/company-logo_100_100/company-logo_100_100/0/1631308807980?e=1735171200&v=beta&t=IKs180dCzhvSZs0VhMKd6XhWv9TWOBM08QMu1x5cB3I",
+    logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.licdn.com%2Fdms%2Fimage%2FC4D0BAQFAENbYsHiSYw%2Fcompany-logo_200_200%2F0%2F1519861441759%3Fe%3D2147483647%26v%3Dbeta%26t%3D-NRp0a94ITtT3Ao_29IuWCKZA7gJRuCS2-mVtqpm7ZY&f=1&nofb=1&ipt=77d42a74743b9d75795b2ba80326a16db7c7a045450ca4874e082ce8f78f2f8c&ipo=images",
     period: "Feb 2020 - Sep 2020",
     description: "Developing LCA dashboard for assessing environmental impact of factory processes.",
     tools: [
