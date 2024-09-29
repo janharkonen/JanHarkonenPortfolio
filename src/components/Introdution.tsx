@@ -36,12 +36,10 @@ export default function Introduction() {
           </div>
           <h2 className="text-2xl font-semibold text-gray-700">Full Stack Developer</h2>
           <p className="max-w-2xl mx-auto text-lg text-gray-600">
-            Passionate and versatile full stack developer with a strong background in both front-end and back-end technologies. 
-            Experienced in creating efficient, scalable, and user-friendly web applications. 
-            Committed to continuous learning and staying up-to-date with the latest industry trends and best practices.
+            I'm a 30-year-old full stack developer writing code that's nice to look at.
           </p>
           <div className="mt-8">
-            <h3 className="text-xl font-semibold mb-4">Most proficient with</h3>
+            <h3 className="text-xl font-semibold mb-4">I'm most proficient with</h3>
             <div className="flex flex-wrap justify-center gap-8 max-w-2xl mx-auto">
               {proficientTools.map((tool, index) => (
                 <div 
