@@ -29,7 +29,7 @@ export default function Portfolio() {
   }, [])
 
   return (
-    <div className="max-w-4xl mx-auto p-6 space-y-12">
+    <div className="max-w-4xl mx-auto space-y-12">
       <div className="min-h-screen flex items-center justify-center">
         <Introduction />
       </div>

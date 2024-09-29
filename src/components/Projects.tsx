@@ -16,7 +16,7 @@ const projects = [
   },
   {
     title: "Professional CV/Portfolio",
-    description: "A custom Content Management System built with Laravel and MySQL.",
+    description: "This very website. A personal full stack developer portfolio + CV.",
     image: PortfolioPic,
     period: "Summer 2018",
     tools: [
