@@ -2,10 +2,10 @@ import { MapPin } from "lucide-react"
 import { useState } from 'react'
 
 const proficientTools = [
-    { name: "Python", logo: "https://cdn.simpleicons.org/python" },
+    { name: "Python", logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbrandslogos.com%2Fwp-content%2Fuploads%2Fimages%2Flarge%2Fpython-logo.png&f=1&nofb=1&ipt=95475181fb9a4f55667f208bbfd828765bc3a421b010de17cfbd8d9288552b18&ipo=images" },
     { name: "Delphi", logo: "https://cdn.simpleicons.org/delphi" },
     { name: "React", logo: "https://cdn.simpleicons.org/react" },
-    { name: "SQL", logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fclipart-library.com%2F2023%2FRcdgAAE9i.png&f=1&nofb=1&ipt=7b02fc23d34b57b0e8bbae7891ae996de53002c3b9068a16d0a867768600f10e&ipo=images" },
+    { name: "SQL", logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsubstackcdn.com%2Fimage%2Ffetch%2Ff_auto%2Cq_auto%3Agood%2Cfl_progressive%3Asteep%2Fhttps%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F85be1fac-45e8-4f67-88d0-cc3d042fbd01_935x935.png&f=1&nofb=1&ipt=4843986c2d499092d931f4ff467356dd3c2bfdcd9e8425aa171d0a71ac7959d7&ipo=images" },
     { name: "Git", logo: "https://cdn.simpleicons.org/git" },
 ]
 
