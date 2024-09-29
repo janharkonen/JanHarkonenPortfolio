@@ -1,21 +1,42 @@
-import { MapPin } from "lucide-react"
+import { useRef, useEffect, useState } from 'react'
 import WorkExperience from "./WorkExperience"
-// import Projects from "./Projects"
+import Introduction from "./Introdution"
+import Projects from './Projects'
 
 export default function Portfolio() {
-    return (
-      <div className="max-w-4xl mx-auto p-6 space-y-12">
-        <header className="text-center space-y-4">
-          <h1 className="text-5xl font-bold">Jan Härkönen</h1>
-          <div className="flex items-center justify-center text-gray-600">
-            <MapPin className="w-4 h-4 mr-2" />
-            <span>Helsinki, Finland</span>
-            <span className="ml-2">&#127467;&#127470;</span>
-          </div>
-          <h2 className="text-2xl font-semibold text-gray-700">Full Stack Developer</h2>
-        </header>
-      <WorkExperience />
-      {/*<Projects />*/}
+  const workExperienceRef = useRef(null)
+  const [showWorkExperience, setShowWorkExperience] = useState(false)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setShowWorkExperience(true)
+        }
+      },
+      { threshold: 0.1 }
+    )
+
+    if (workExperienceRef.current) {
+      observer.observe(workExperienceRef.current)
+    }
+
+    return () => {
+      if (workExperienceRef.current) {
+        observer.unobserve(workExperienceRef.current)
+      }
+    }
+  }, [])
+
+  return (
+    <div className="max-w-4xl mx-auto space-y-12">
+      <div className="min-h-screen flex items-center justify-center">
+        <Introduction />
+      </div>
+      <div ref={workExperienceRef}>
+        {showWorkExperience && <WorkExperience />}
+      </div>
+      <Projects />
     </div>
   )
 }
