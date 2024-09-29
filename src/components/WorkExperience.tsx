@@ -21,7 +21,7 @@ const experiences = [
       { name: "Sourcetree", logo: "https://cdn.simpleicons.org/sourcetree" },
       { name: "Gitlab", logo: "https://cdn.simpleicons.org/gitlab" },
       { name: "Git", logo: "https://cdn.simpleicons.org/git" },
-      { name: "Embarcadero", logo: "https://cdn.simpleicons.org/embarcadero" },
+      { name: "RAD Studio", logo: "https://cdn.simpleicons.org/radstudio" },
       { name: "VS Code", logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbrandlogos.net%2Fwp-content%2Fuploads%2F2021%2F11%2Fvisual-studio-code-logo.png&f=1&nofb=1&ipt=395f23f2ff4dbdf7b48f1417203c0b69231ed58a5d60b03e8567a221d2536901&ipo=images" },
     ],
     pdfUrl: "",
