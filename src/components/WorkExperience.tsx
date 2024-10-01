@@ -119,7 +119,7 @@ export default function WorkExperience() {
 
   return (
     <section onMouseMove={handleMouseMove}>
-      <h2 className="text-3xl font-semibold mb-6">Work Experience</h2>
+      <h2 className="text-3xl font-semibold mb-12">Work Experience</h2>
       <div className="space-y-6">
         {experiences.map((exp, index) => (
           <Card key={index} className="relative">
