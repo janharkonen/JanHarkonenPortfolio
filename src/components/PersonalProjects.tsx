@@ -33,7 +33,7 @@ const projects = [
   }
 ]
 
-export default function Projects() {
+export default function PersonalProjects() {
   const [tooltip, setTooltip] = useState({ show: false, text: '', x: 0, y: 0 })
 
   const handleMouseEnter = (e: React.MouseEvent, text: string) => {

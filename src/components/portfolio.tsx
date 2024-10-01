@@ -1,7 +1,7 @@
 import { useRef, useEffect, useState } from 'react'
 import WorkExperience from "./WorkExperience"
 import Introduction from "./Introdution"
-import Projects from './Projects'
+import PersonalProjects from './PersonalProjects'
 
 export default function Portfolio() {
   const workExperienceRef = useRef(null)
@@ -36,7 +36,7 @@ export default function Portfolio() {
       <div ref={workExperienceRef}>
         {showWorkExperience && <WorkExperience />}
       </div>
-      <Projects />
+      <PersonalProjects />
     </div>
   )
 }
