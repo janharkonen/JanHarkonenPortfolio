@@ -7,6 +7,7 @@ import { BookOpenText } from 'lucide-react'
 import CASINOLogo from "../assets/CASINO.png"
 import ErkkaPDF from "../../src/Jan_Harkonen_Special_Assignment.pdf"
 import DippaPDF from "../../src/Jan_Harkonen_Masters_thesis.pdf"
+import brandedItems from "../data/BrandedItems.tsx"
 
 const experiences = [
   {
@@ -16,7 +17,7 @@ const experiences = [
     period: "2021 - Present",
     description: "Developing and maintaining software and databases for handling mobility aid items for Finnish hospital districts.",
     tools: [
-      { name: "Delphi", logo: "https://cdn.simpleicons.org/delphi" },
+      brandedItems.delphi,
       { name: "Microsoft SQL Server", logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.7TIOHIVieZJ564CaI1B8LQAAAA%26pid%3DApi&f=1&ipt=aed1fbd637221218c13f8b4fc98bf59ba08fb142938dfdc707d75acdffba2f78&ipo=images" },
       { name: "Sourcetree", logo: "https://cdn.simpleicons.org/sourcetree" },
       { name: "Gitlab", logo: "https://cdn.simpleicons.org/gitlab" },
