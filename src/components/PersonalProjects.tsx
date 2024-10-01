@@ -17,8 +17,8 @@ const projects = [
     ]
   },
   {
-    title: "Professional CV/Portfolio",
-    description: "This very website. A personal full stack developer portfolio + CV.",
+    title: "Professional CV/Portfolio site",
+    description: "This very website. A personal full stack developer porfolio React web app.",
     image: PortfolioPic,
     period: "2024",
     tools: [
