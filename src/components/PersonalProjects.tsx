@@ -12,7 +12,7 @@ const projects = [
     image: TarjousGeneraattoriPic ,
     period: "2024",
     tools: [
-      { name: "Python", logoUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbrandslogos.com%2Fwp-content%2Fuploads%2Fimages%2Flarge%2Fpython-logo.png&f=1&nofb=1&ipt=95475181fb9a4f55667f208bbfd828765bc3a421b010de17cfbd8d9288552b18&ipo=images" },
+      brandedItems.python,
       brandedItems.MSSQLServer,
     ]
   },
