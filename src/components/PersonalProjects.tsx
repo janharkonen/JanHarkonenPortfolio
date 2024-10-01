@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import TarjousGeneraattoriPic from "../assets/tarjousgeneraattori.png"
 import PortfolioPic from "../assets/portfolio.png"
+import GCHProgressTrackerPic from "../assets/GCHProgressTracker.png" 
 import brandedItems from "../data/BrandedItems.tsx"
 
 const projects = [
@@ -29,6 +30,16 @@ const projects = [
       { name: "Tailwind CSS", logoUrl: "https://cdn.simpleicons.org/tailwindcss" },
       { name: "Javascript", logoUrl: "https://cdn.simpleicons.org/javascript" },
       { name: "Typescript", logoUrl: "https://cdn.simpleicons.org/typescript" },
+    ]
+  },
+  {
+    title: "Progress tracker",
+    description: "Simple mobile application to track the progress level of each item in a list.",
+    image: GCHProgressTrackerPic,
+    period: "2021",
+    tools: [
+      brandedItems.java,
+      brandedItems.androidstudio,
     ]
   }
 ]

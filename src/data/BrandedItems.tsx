@@ -16,6 +16,8 @@ const brandedItems: BrandedItemList = {
                     logoUrl: "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/181_Java_logo_logos-512.png" },
     vscode:       { name: "Visual Studio Code",
                     logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/768px-Visual_Studio_Code_1.35_icon.svg.png" },
+    androidstudio:{ name: "Android Studio",
+                    logoUrl: "https://cdn.simpleicons.org/androidstudio" },
 };
 
 export default brandedItems
