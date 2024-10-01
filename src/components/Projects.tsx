@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import TarjousGeneraattoriPic from "../assets/tarjousgeneraattori.png"
 import PortfolioPic from "../assets/portfolio.png"
+import brandedItems from "../data/BrandedItems.tsx"
 
 const projects = [
   {
@@ -10,8 +11,8 @@ const projects = [
     image: TarjousGeneraattoriPic ,
     period: "2024",
     tools: [
-      { name: "Python", logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbrandslogos.com%2Fwp-content%2Fuploads%2Fimages%2Flarge%2Fpython-logo.png&f=1&nofb=1&ipt=95475181fb9a4f55667f208bbfd828765bc3a421b010de17cfbd8d9288552b18&ipo=images" },
-      { name: "Microsoft SQL Server", logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.7TIOHIVieZJ564CaI1B8LQAAAA%26pid%3DApi&f=1&ipt=aed1fbd637221218c13f8b4fc98bf59ba08fb142938dfdc707d75acdffba2f78&ipo=images" },
+      { name: "Python", logoUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbrandslogos.com%2Fwp-content%2Fuploads%2Fimages%2Flarge%2Fpython-logo.png&f=1&nofb=1&ipt=95475181fb9a4f55667f208bbfd828765bc3a421b010de17cfbd8d9288552b18&ipo=images" },
+      brandedItems.MSSQLServer,
     ]
   },
   {
@@ -20,14 +21,14 @@ const projects = [
     image: PortfolioPic,
     period: "Summer 2018",
     tools: [
-      { name: "React", logo: "https://cdn.simpleicons.org/react" },
-      { name: "Vite", logo: "https://seeklogo.com/images/V/vite-logo-BFD4283991-seeklogo.com.png" },
-      { name: "Node.js", logo: "https://cdn.simpleicons.org/nodedotjs" },
-      { name: "HTML5", logo: "https://cdn.simpleicons.org/html5" },
-      { name: "CSS3", logo: "https://cdn.simpleicons.org/css3" },
-      { name: "Tailwind CSS", logo: "https://cdn.simpleicons.org/tailwindcss" },
-      { name: "Javascript", logo: "https://cdn.simpleicons.org/javascript" },
-      { name: "Typescript", logo: "https://cdn.simpleicons.org/typescript" },
+      { name: "React", logoUrl: "https://cdn.simpleicons.org/react" },
+      { name: "Vite", logoUrl: "https://seeklogo.com/images/V/vite-logo-BFD4283991-seeklogo.com.png" },
+      { name: "Node.js", logoUrl: "https://cdn.simpleicons.org/nodedotjs" },
+      { name: "HTML5", logoUrl: "https://cdn.simpleicons.org/html5" },
+      { name: "CSS3", logoUrl: "https://cdn.simpleicons.org/css3" },
+      { name: "Tailwind CSS", logoUrl: "https://cdn.simpleicons.org/tailwindcss" },
+      { name: "Javascript", logoUrl: "https://cdn.simpleicons.org/javascript" },
+      { name: "Typescript", logoUrl: "https://cdn.simpleicons.org/typescript" },
     ]
   }
 ]
@@ -70,7 +71,7 @@ export default function Projects() {
                     onMouseEnter={(e) => handleMouseEnter(e, tool.name)}
                     onMouseLeave={handleMouseLeave}
                   >
-                    <img src={tool.logo} alt={`${tool.name} logo`} className="w-6 h-6 object-contain" />
+                    <img src={tool.logoUrl} alt={`${tool.name} logo`} className="w-6 h-6 object-contain" />
                   </div>
                 ))}
               </div>
