@@ -37,7 +37,7 @@ const experiences = [
     period: "Feb 2020 - Sep 2020",
     description: "Developing LCA dashboard for assessing environmental impact of factory processes.",
     tools: [
-      { name: "Java", logoUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbrandlogos.net%2Fwp-content%2Fuploads%2F2021%2F11%2Fjava-logo.png&f=1&nofb=1&ipt=645ad72fbf1f1b9cfa1c592b1f3d877a0fc2466894bcee25e7101de1a2981551&ipo=imageshttps://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdownload.logo.wine%2Flogo%2FJava_(programming_language)%2FJava_(programming_language)-Logo.wine.png&f=1&nofb=1&ipt=7695076c9b55e3092a1005e85c0c58d4eaa6d83e854a4a86254efba8e8c8e906&ipo=images?height=48&width=48" },
+      brandedItems.java,
       { name: "Haskell", logoUrl: "https://cdn.simpleicons.org/haskell" },
       { name: "InfluxDB", logoUrl: "https://cdn.simpleicons.org/influxdb" },
       { name: "Docker", logoUrl: "https://cdn.simpleicons.org/docker" },
