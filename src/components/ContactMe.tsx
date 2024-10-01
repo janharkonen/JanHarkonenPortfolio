@@ -5,7 +5,7 @@ import CVPDF from "../../src/CV_en_Jan_Härkönen.pdf"
 
 function ContactMe() {
   return (
-    <div className="mt-12">
+    <div>
           <div className="flex justify-center space-x-4">   
             <Button variant="outline" asChild>
               <div onClick={() => window.open(CVPDF, '_blank')}>

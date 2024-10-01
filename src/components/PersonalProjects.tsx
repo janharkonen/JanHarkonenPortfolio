@@ -24,7 +24,7 @@ const projects = [
     tools: [
       brandedItems.react,
       brandedItems.vite,
-      { name: "Node.js", logoUrl: "https://cdn.simpleicons.org/nodedotjs" },
+      brandedItems.nodejs,
       { name: "HTML5", logoUrl: "https://cdn.simpleicons.org/html5" },
       { name: "CSS3", logoUrl: "https://cdn.simpleicons.org/css3" },
       { name: "Tailwind CSS", logoUrl: "https://cdn.simpleicons.org/tailwindcss" },
