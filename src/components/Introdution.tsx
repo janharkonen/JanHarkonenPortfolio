@@ -37,7 +37,7 @@ export default function Introduction() {
           </div>
           <h2 className="text-2xl font-semibold text-gray-700">Full Stack Developer</h2>
           <p className="max-w-2xl mx-auto text-lg text-gray-600">
-            I'm a 30-year-old full stack developer. I write code that's nice to look at.
+            Writing code that's nice to look at.
           </p>
           <div className="mt-8">
             <h3 className="text-xl font-semibold mb-4">I'm most proficient with</h3>
