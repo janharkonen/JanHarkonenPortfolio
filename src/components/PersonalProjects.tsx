@@ -22,7 +22,7 @@ const projects = [
     image: PortfolioPic,
     period: "2024",
     tools: [
-      { name: "React", logoUrl: "https://cdn.simpleicons.org/react" },
+      brandedItems.react,
       { name: "Vite", logoUrl: "https://seeklogo.com/images/V/vite-logo-BFD4283991-seeklogo.com.png" },
       { name: "Node.js", logoUrl: "https://cdn.simpleicons.org/nodedotjs" },
       { name: "HTML5", logoUrl: "https://cdn.simpleicons.org/html5" },

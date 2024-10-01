@@ -19,10 +19,10 @@ const experiences = [
     tools: [
       brandedItems.delphi,
       brandedItems.MSSQLServer,
-      { name: "Sourcetree", logoUrl: "https://cdn.simpleicons.org/sourcetree" },
-      { name: "Gitlab", logoUrl: "https://cdn.simpleicons.org/gitlab" },
-      { name: "Git", logoUrl: "https://cdn.simpleicons.org/git" },
-      { name: "RAD Studio", logoUrl: "https://cdn.simpleicons.org/radstudio" },
+      brandedItems.sourcetree,
+      brandedItems.gitlab,
+      brandedItems.git,
+      brandedItems.radstudio,
       brandedItems.vscode,
     ],
     pdfUrl: "",
@@ -41,7 +41,7 @@ const experiences = [
       { name: "Haskell", logoUrl: "https://cdn.simpleicons.org/haskell" },
       { name: "InfluxDB", logoUrl: "https://cdn.simpleicons.org/influxdb" },
       { name: "Docker", logoUrl: "https://cdn.simpleicons.org/docker" },
-      { name: "Git", logoUrl: "https://cdn.simpleicons.org/git" },
+      brandedItems.git,
     ],
     pdfUrl: "",
     pdfCaption: "",
@@ -61,7 +61,7 @@ const experiences = [
       { name: "CSC Mahti", logoUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fregmedia.co.uk%2F2012%2F07%2F09%2Ffinland_csc_logo.jpg&f=1&nofb=1&ipt=5c1b8ca6fe262d409540e8e4ada27d4521b8e3c1269b1f146e48e0e93356dcb5&ipo=images" },
       { name: "Matlab", logoUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdic.academic.ru%2Fpictures%2Fwiki%2Ffiles%2F77%2FMatlab_Logo.png&f=1&nofb=1&ipt=de8b9be6d426a4eeb2cfcff0b906bd53996e2b5a9945f3b004ab19acaabb3a9c&ipo=images" },
       { name: "Github", logoUrl: "https://cdn.simpleicons.org/github" },
-      { name: "Git", logoUrl: "https://cdn.simpleicons.org/git" },
+      brandedItems.git,
       { name: "Emacs", logoUrl: "https://cdn.simpleicons.org/gnuemacs" },
       { name: "Overleaf", logoUrl: "https://cdn.simpleicons.org/overleaf" },
       { name: "LaTeX", logoUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.clipartmax.com%2Fpng%2Fmiddle%2F271-2710063_latex-latex-logo.png&f=1&nofb=1&ipt=9204a46bdc1dc961121943d7c194207dac92eff7addf95a23c6d41aade5cba0a&ipo=images" },
@@ -84,7 +84,7 @@ const experiences = [
       { name: "CSC Mahti", logoUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fregmedia.co.uk%2F2012%2F07%2F09%2Ffinland_csc_logo.jpg&f=1&nofb=1&ipt=5c1b8ca6fe262d409540e8e4ada27d4521b8e3c1269b1f146e48e0e93356dcb5&ipo=images" },
       { name: "Matlab", logoUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdic.academic.ru%2Fpictures%2Fwiki%2Ffiles%2F77%2FMatlab_Logo.png&f=1&nofb=1&ipt=de8b9be6d426a4eeb2cfcff0b906bd53996e2b5a9945f3b004ab19acaabb3a9c&ipo=images" },
       { name: "Github", logoUrl: "https://cdn.simpleicons.org/github" },
-      { name: "Git", logoUrl: "https://cdn.simpleicons.org/git" },
+      brandedItems.git,
       { name: "Emacs", logoUrl: "https://cdn.simpleicons.org/gnuemacs" },
       { name: "Overleaf", logoUrl: "https://cdn.simpleicons.org/overleaf" },
       { name: "LaTeX", logoUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.clipartmax.com%2Fpng%2Fmiddle%2F271-2710063_latex-latex-logo.png&f=1&nofb=1&ipt=9204a46bdc1dc961121943d7c194207dac92eff7addf95a23c6d41aade5cba0a&ipo=images" },
@@ -119,7 +119,7 @@ export default function WorkExperience() {
 
   return (
     <section onMouseMove={handleMouseMove}>
-      <h2 className="text-3xl font-semibold mb-6">Work Experience</h2>
+      <h2 className="text-3xl font-semibold mb-12">Work Experience</h2>
       <div className="space-y-6">
         {experiences.map((exp, index) => (
           <Card key={index} className="relative">
