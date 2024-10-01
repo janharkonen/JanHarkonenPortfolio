@@ -20,7 +20,7 @@ const projects = [
     title: "Professional CV/Portfolio",
     description: "This very website. A personal full stack developer portfolio + CV.",
     image: PortfolioPic,
-    period: "Summer 2018",
+    period: "2024",
     tools: [
       { name: "React", logoUrl: "https://cdn.simpleicons.org/react" },
       { name: "Vite", logoUrl: "https://seeklogo.com/images/V/vite-logo-BFD4283991-seeklogo.com.png" },
