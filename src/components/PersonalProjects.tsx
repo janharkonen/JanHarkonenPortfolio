@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import TarjousGeneraattoriPic from "../assets/tarjousgeneraattori.png"
 import PortfolioPic from "../assets/portfolio.png"
+import GCHProgressTrackerPic from "../assets/GCHProgressTracker.png" 
 import brandedItems from "../data/BrandedItems.tsx"
 
 const projects = [
@@ -11,7 +12,7 @@ const projects = [
     image: TarjousGeneraattoriPic ,
     period: "2024",
     tools: [
-      { name: "Python", logoUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbrandslogos.com%2Fwp-content%2Fuploads%2Fimages%2Flarge%2Fpython-logo.png&f=1&nofb=1&ipt=95475181fb9a4f55667f208bbfd828765bc3a421b010de17cfbd8d9288552b18&ipo=images" },
+      brandedItems.python,
       brandedItems.MSSQLServer,
     ]
   },
@@ -19,7 +20,7 @@ const projects = [
     title: "Professional CV/Portfolio",
     description: "This very website. A personal full stack developer portfolio + CV.",
     image: PortfolioPic,
-    period: "Summer 2018",
+    period: "2024",
     tools: [
       { name: "React", logoUrl: "https://cdn.simpleicons.org/react" },
       { name: "Vite", logoUrl: "https://seeklogo.com/images/V/vite-logo-BFD4283991-seeklogo.com.png" },
@@ -30,10 +31,20 @@ const projects = [
       { name: "Javascript", logoUrl: "https://cdn.simpleicons.org/javascript" },
       { name: "Typescript", logoUrl: "https://cdn.simpleicons.org/typescript" },
     ]
+  },
+  {
+    title: "Progress tracker",
+    description: "Simple mobile application to track the progress level of each item in a list.",
+    image: GCHProgressTrackerPic,
+    period: "2021",
+    tools: [
+      brandedItems.java,
+      brandedItems.androidstudio,
+    ]
   }
 ]
 
-export default function Projects() {
+export default function PersonalProjects() {
   const [tooltip, setTooltip] = useState({ show: false, text: '', x: 0, y: 0 })
 
   const handleMouseEnter = (e: React.MouseEvent, text: string) => {

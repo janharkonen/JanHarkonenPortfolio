@@ -3,7 +3,7 @@ import { useState } from 'react'
 import brandedItems from "../data/BrandedItems.tsx"
 
 const proficientTools = [
-    { name: "Python", logoUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbrandslogos.com%2Fwp-content%2Fuploads%2Fimages%2Flarge%2Fpython-logo.png&f=1&nofb=1&ipt=95475181fb9a4f55667f208bbfd828765bc3a421b010de17cfbd8d9288552b18&ipo=images" },
+    brandedItems.python,
     brandedItems.delphi,
     { name: "React", logoUrl: "https://cdn.simpleicons.org/react" },
     { name: "SQL", logoUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsubstackcdn.com%2Fimage%2Ffetch%2Ff_auto%2Cq_auto%3Agood%2Cfl_progressive%3Asteep%2Fhttps%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F85be1fac-45e8-4f67-88d0-cc3d042fbd01_935x935.png&f=1&nofb=1&ipt=4843986c2d499092d931f4ff467356dd3c2bfdcd9e8425aa171d0a71ac7959d7&ipo=images" },
@@ -37,7 +37,7 @@ export default function Introduction() {
           </div>
           <h2 className="text-2xl font-semibold text-gray-700">Full Stack Developer</h2>
           <p className="max-w-2xl mx-auto text-lg text-gray-600">
-            I'm a 30-year-old full stack developer writing code that's nice to look at.
+            I'm a 30-year-old full stack developer. I write code that's nice to look at.
           </p>
           <div className="mt-8">
             <h3 className="text-xl font-semibold mb-4">I'm most proficient with</h3>
