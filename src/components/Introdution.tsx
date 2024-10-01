@@ -7,7 +7,7 @@ const proficientTools = [
     brandedItems.delphi,
     brandedItems.react,
     { name: "SQL", logoUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsubstackcdn.com%2Fimage%2Ffetch%2Ff_auto%2Cq_auto%3Agood%2Cfl_progressive%3Asteep%2Fhttps%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F85be1fac-45e8-4f67-88d0-cc3d042fbd01_935x935.png&f=1&nofb=1&ipt=4843986c2d499092d931f4ff467356dd3c2bfdcd9e8425aa171d0a71ac7959d7&ipo=images" },
-    { name: "Git", logoUrl: "https://cdn.simpleicons.org/git" },
+    brandedItems.git,
 ]
 
 export default function Introduction() {
