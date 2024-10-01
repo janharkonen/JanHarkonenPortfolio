@@ -1,17 +1,18 @@
 
 import { Button } from "@/components/ui/button"
 import { FileText, Linkedin, Github, Mail } from "lucide-react"
+import CVPDF from "../../src/CV_en_Jan_Härkönen.pdf"
 
 function ContactMe() {
   return (
     <div className="mt-12">
-          <div className="flex justify-center space-x-4">
+          <div className="flex justify-center space-x-4">   
             <Button variant="outline" asChild>
-              <a href="../../src/CV_en_Jan_Härkönen.pdf" target="_blank" rel="noopener noreferrer">
+              <div onClick={() => window.open(CVPDF, '_blank')}>
                 <FileText className="h-4 w-4 mr-2" />
                 <span className="sm:hidden">CV</span>
                 <span className="hidden sm:inline">Resume</span>
-              </a>
+              </div>
             </Button>
             <Button variant="outline" asChild>
               <a href="https://www.linkedin.com/in/janharkonen" target="_blank" rel="noopener noreferrer">
