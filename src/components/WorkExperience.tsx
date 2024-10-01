@@ -18,7 +18,7 @@ const experiences = [
     description: "Developing and maintaining software and databases for handling mobility aid items for Finnish hospital districts.",
     tools: [
       brandedItems.delphi,
-      { name: "Microsoft SQL Server", logoUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.7TIOHIVieZJ564CaI1B8LQAAAA%26pid%3DApi&f=1&ipt=aed1fbd637221218c13f8b4fc98bf59ba08fb142938dfdc707d75acdffba2f78&ipo=images" },
+      brandedItems.MSSQLServer,
       { name: "Sourcetree", logoUrl: "https://cdn.simpleicons.org/sourcetree" },
       { name: "Gitlab", logoUrl: "https://cdn.simpleicons.org/gitlab" },
       { name: "Git", logoUrl: "https://cdn.simpleicons.org/git" },
