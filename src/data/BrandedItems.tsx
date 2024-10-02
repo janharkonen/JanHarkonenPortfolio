@@ -36,6 +36,10 @@ const brandedItems: BrandedItemList = {
                     logoUrl: "https://seeklogo.com/images/V/vite-logo-BFD4283991-seeklogo.com.png" },
     nodejs        :{ name: "Node.js",
                     logoUrl: "https://cdn.simpleicons.org/nodedotjs" },
+    html5         :{ name: "HTML5",
+                    logoUrl: "https://cdn.simpleicons.org/html5" },
+    css3          :{ name: "CSS3",
+                    logoUrl: "https://cdn.simpleicons.org/css3" },
 };
 
 export default brandedItems

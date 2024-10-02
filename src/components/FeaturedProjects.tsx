@@ -25,8 +25,8 @@ const projects = [
       brandedItems.react,
       brandedItems.vite,
       brandedItems.nodejs,
-      { name: "HTML5", logoUrl: "https://cdn.simpleicons.org/html5" },
-      { name: "CSS3", logoUrl: "https://cdn.simpleicons.org/css3" },
+      brandedItems.html5,
+      brandedItems.css3,
       { name: "Tailwind CSS", logoUrl: "https://cdn.simpleicons.org/tailwindcss" },
       { name: "Javascript", logoUrl: "https://cdn.simpleicons.org/javascript" },
       { name: "Typescript", logoUrl: "https://cdn.simpleicons.org/typescript" },
@@ -44,7 +44,7 @@ const projects = [
   }
 ]
 
-export default function PersonalProjects() {
+export default function FeaturedProjects() {
   const [tooltip, setTooltip] = useState({ show: false, text: '', x: 0, y: 0 })
 
   const handleMouseEnter = (e: React.MouseEvent, text: string) => {
@@ -63,7 +63,7 @@ export default function PersonalProjects() {
 
   return (
     <section onMouseMove={handleMouseMove}>
-      <h2 className="text-3xl font-semibold mb-6">Personal Projects</h2>
+      <h2 className="text-3xl font-semibold mb-6">Featured Projects</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
         {projects.map((project, index) => (
           <Card key={index} className="overflow-hidden">
