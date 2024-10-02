@@ -5,6 +5,7 @@ import React from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { BookOpenText } from 'lucide-react'
 import DippaPDF from "../../src/Jan_Harkonen_Masters_thesis.pdf"
+import KandiPDF from "../../src/Jan_Harkonen_Bachelors_thesis.pdf"
 import brandedItems from "../data/BrandedItems.tsx"
 
 const educations = [
@@ -33,8 +34,8 @@ const educations = [
     company: brandedItems.aaltosci,
     period: "2014 - 2018",
     description: "Major: engineering physics and mathematics, minor: electrical engineering",
-    pdfUrl: "",
-    pdfCaption: "",
+    pdfUrl: KandiPDF,
+    pdfCaption: "Bachelor's thesis",
     pdfUrl2: "",
     pdfCaption2: "",
   },
