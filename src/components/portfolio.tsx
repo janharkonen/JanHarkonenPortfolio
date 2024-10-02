@@ -1,6 +1,6 @@
 import WorkExperience from "./WorkExperience"
 import Introduction from "./Introdution"
-import PersonalProjects from './PersonalProjects'
+import FeaturedProjects from './FeaturedProjects'
 import ContactMe from "./ContactMe"
 
 export default function Portfolio() {
@@ -17,7 +17,7 @@ export default function Portfolio() {
           <WorkExperience />
         </div>
         <div className="mt-36">
-          <PersonalProjects />
+          <FeaturedProjects />
         </div>
       </div>
     </>
