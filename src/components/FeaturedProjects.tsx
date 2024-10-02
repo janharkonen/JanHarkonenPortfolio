@@ -3,16 +3,19 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import TarjousGeneraattoriPic from "../assets/tarjousgeneraattori.png"
 import PortfolioPic from "../assets/portfolio.png"
 import GCHProgressTrackerPic from "../assets/GCHProgressTracker.png" 
+import LensMirrorSimPic from "../assets/lens_mirror_generator.png" 
 import brandedItems from "../data/BrandedItems.tsx"
 
 const projects = [
   {
     title: "Invoice generator",
-    description: "A full-stack automatic invoice generating solution with self-hosted database.",
+    description: "Automatic invoice generating solution as desktop application with self-hosted database.",
     image: TarjousGeneraattoriPic ,
     period: "2024",
     tools: [
       brandedItems.python,
+      brandedItems.tkinter,
+      brandedItems.pandas,
       brandedItems.MSSQLServer,
     ]
   },
@@ -27,19 +30,31 @@ const projects = [
       brandedItems.nodejs,
       brandedItems.html5,
       brandedItems.css3,
-      { name: "Tailwind CSS", logoUrl: "https://cdn.simpleicons.org/tailwindcss" },
-      { name: "Javascript", logoUrl: "https://cdn.simpleicons.org/javascript" },
-      { name: "Typescript", logoUrl: "https://cdn.simpleicons.org/typescript" },
+      brandedItems.tailwind,
+      brandedItems.shadcn,
+      brandedItems.javascript,
+      brandedItems.typescript,
+      brandedItems.vercel,
     ]
   },
   {
     title: "Progress tracker",
-    description: "Simple mobile application to track the progress level of each item in a list.",
+    description: "Mobile application to track the progress level of each item in a list.",
     image: GCHProgressTrackerPic,
     period: "2021",
     tools: [
       brandedItems.java,
       brandedItems.androidstudio,
+    ]
+  },
+  {
+    title: "Lens and mirror simulator",
+    description: "Desktop GUI for simulating the trajectory of a laser beam through curved lenses and mirrors.",
+    image: LensMirrorSimPic,
+    period: "2015",
+    tools: [
+      brandedItems.python,
+      brandedItems.pyqt4,
     ]
   }
 ]
