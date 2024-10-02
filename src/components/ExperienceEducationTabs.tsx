@@ -13,10 +13,10 @@ export default function ExperienceEducationTabs() {
           Education
         </TabsTrigger>
       </TabsList>
-      <TabsContent value="experience" className="mt-6 p-6 border rounded-lg">
+      <TabsContent value="experience">
         <WorkExperience />
       </TabsContent>
-      <TabsContent value="education" className="mt-6 p-6 border rounded-lg">
+      <TabsContent value="education">
         <Education />
       </TabsContent>
     </Tabs>
