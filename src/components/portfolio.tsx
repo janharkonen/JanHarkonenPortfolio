@@ -1,7 +1,7 @@
-import WorkExperience from "./WorkExperience"
 import Introduction from "./Introdution"
 import FeaturedProjects from './FeaturedProjects'
 import ContactMe from "./ContactMe"
+import ExperienceEducationTabs from "./ExperienceEducationTabs"
 
 export default function Portfolio() {
   return (
@@ -14,7 +14,7 @@ export default function Portfolio() {
           <Introduction />
         </div>
         <div className="mt-36">
-          <WorkExperience />
+          <ExperienceEducationTabs />
         </div>
         <div className="mt-36">
           <FeaturedProjects />
