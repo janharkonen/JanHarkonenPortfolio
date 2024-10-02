@@ -12,8 +12,7 @@ import brandedItems from "../data/BrandedItems.tsx"
 const experiences = [
   {
     title: "Software Developer",
-    company: "Polycon Oy",
-    logo: "https://www.polycon.fi/wp-content/uploads/2020/03/polycon_turkoosi_500x49-300x29.png",
+    company: brandedItems.polycon,
     period: "2021 - Present",
     description: "Developing and maintaining software and databases for handling mobility aid items for Finnish hospital districts.",
     tools: [
@@ -32,8 +31,7 @@ const experiences = [
   },
   {
     title: "Software Developer / Data Analyst",
-    company: "Semantum Oy",
-    logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.licdn.com%2Fdms%2Fimage%2FC4D0BAQFAENbYsHiSYw%2Fcompany-logo_200_200%2F0%2F1519861441759%3Fe%3D2147483647%26v%3Dbeta%26t%3D-NRp0a94ITtT3Ao_29IuWCKZA7gJRuCS2-mVtqpm7ZY&f=1&nofb=1&ipt=77d42a74743b9d75795b2ba80326a16db7c7a045450ca4874e082ce8f78f2f8c&ipo=images",
+    company: brandedItems.semantum,
     period: "Feb 2020 - Sep 2020",
     description: "Developing LCA dashboard for assessing environmental impact of factory processes.",
     tools: [
@@ -50,8 +48,7 @@ const experiences = [
   },
   {
     title: "Research Assistant",
-    company: "Aalto University School of Science and Technology",
-    logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.studyinfinland.fi%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fog_image%2Fpublic%2F2018-10%2FAalto%2520logo_0.png%3Fitok%3DBTbxbaXQ&f=1&nofb=1&ipt=03995a6c82b83b78a02c3bff036ae2161b5c9cd69e779ea2e0fb3332e85758eb&ipo=images",
+    company: brandedItems.aaltosci,
     period: "Jun 2019 - Dec 2019",
     description: "Simulating and calculating the annihilating electron-positron pair momentum density in a solid in the atomic scale using quantum Monte Carlo methods (Master's thesis).",
     tools: [
@@ -73,8 +70,7 @@ const experiences = [
   },
   {
     title: "Research Assistant",
-    company: "Aalto University School of Science and Technology",
-    logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.studyinfinland.fi%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fog_image%2Fpublic%2F2018-10%2FAalto%2520logo_0.png%3Fitok%3DBTbxbaXQ&f=1&nofb=1&ipt=03995a6c82b83b78a02c3bff036ae2161b5c9cd69e779ea2e0fb3332e85758eb&ipo=images",
+    company: brandedItems.aaltosci,
     period: "Summer 2018",
     description: "Simulating and calculating the enhancement factor in a semiconductor in the atomic scale using quantum Monte Carlo methods (Special assignment).",
     tools: [
@@ -124,13 +120,13 @@ export default function WorkExperience() {
         {experiences.map((exp, index) => (
           <Card key={index} className="relative">
             <div className="absolute top-4 left-4 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24">
-              <img src={exp.logo} alt={`${exp.company} logo`} className="w-full h-full object-contain" />
+              <img src={exp.company.logoUrl} alt={`${exp.company.name} logo`} className="w-full h-full object-contain" />
             </div>
             <CardHeader className="pt-24 sm:pt-8 pb-4">
               <CardTitle>{exp.title}</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="font-semibold">{exp.company}</p>
+              <p className="font-semibold">{exp.company.name}</p>
               <p className="text-sm text-gray-600 mb-4">{exp.period}</p>
               <p className="mb-6">{exp.description}</p>
               <div className="flex justify-center">
