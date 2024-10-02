@@ -52,7 +52,7 @@ const experiences = [
     period: "Jun 2019 - Dec 2019",
     description: "Simulating and calculating the annihilating electron-positron pair momentum density in a solid in the atomic scale using quantum Monte Carlo methods (Master's thesis).",
     tools: [
-      { name: "Fortran", logoUrl: "https://cdn.simpleicons.org/fortran" },
+      brandedItems.fortran,
       { name: "Quantum ESPRESSO", logoUrl: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.openscience.org%2Fblog%2Fwp-content%2Fuploads%2F2009%2F01%2Fquantum_espresso6_trasparentbg.png&f=1&nofb=1&ipt=b303839d6fc58b58a54f26025a3d2da3fec77c81e00caab2cba0cc06f75f650e&ipo=images" },
       { name: "CASINO", logoUrl: CASINOLogo },
       { name: "CSC Mahti", logoUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fregmedia.co.uk%2F2012%2F07%2F09%2Ffinland_csc_logo.jpg&f=1&nofb=1&ipt=5c1b8ca6fe262d409540e8e4ada27d4521b8e3c1269b1f146e48e0e93356dcb5&ipo=images" },
@@ -74,7 +74,7 @@ const experiences = [
     period: "Summer 2018",
     description: "Simulating and calculating the enhancement factor in a semiconductor in the atomic scale using quantum Monte Carlo methods (Special assignment).",
     tools: [
-      { name: "Fortran", logoUrl: "https://cdn.simpleicons.org/fortran" },
+      brandedItems.fortran,
       { name: "Quantum ESPRESSO", logoUrl: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.openscience.org%2Fblog%2Fwp-content%2Fuploads%2F2009%2F01%2Fquantum_espresso6_trasparentbg.png&f=1&nofb=1&ipt=b303839d6fc58b58a54f26025a3d2da3fec77c81e00caab2cba0cc06f75f650e&ipo=images" },
       { name: "CASINO", logoUrl: CASINOLogo },
       { name: "CSC Mahti", logoUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fregmedia.co.uk%2F2012%2F07%2F09%2Ffinland_csc_logo.jpg&f=1&nofb=1&ipt=5c1b8ca6fe262d409540e8e4ada27d4521b8e3c1269b1f146e48e0e93356dcb5&ipo=images" },
