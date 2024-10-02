@@ -9,7 +9,7 @@ import brandedItems from "../data/BrandedItems.tsx"
 const projects = [
   {
     title: "Invoice generator",
-    description: "A full-stack automatic invoice generating solution with self-hosted database.",
+    description: "Automatic invoice generating solution as desktop application with self-hosted database.",
     image: TarjousGeneraattoriPic ,
     period: "2024",
     tools: [
@@ -39,7 +39,7 @@ const projects = [
   },
   {
     title: "Progress tracker",
-    description: "Simple mobile application to track the progress level of each item in a list.",
+    description: "Mobile application to track the progress level of each item in a list.",
     image: GCHProgressTrackerPic,
     period: "2021",
     tools: [
@@ -49,7 +49,7 @@ const projects = [
   },
   {
     title: "Lens and mirror simulator",
-    description: "GUI for simulating the trajectory of a laser beam through curved lenses and mirrors.",
+    description: "Desktop GUI for simulating the trajectory of a laser beam through curved lenses and mirrors.",
     image: LensMirrorSimPic,
     period: "2015",
     tools: [
