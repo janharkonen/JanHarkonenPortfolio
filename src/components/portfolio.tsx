@@ -1,4 +1,4 @@
-import Introduction from "./Introdution"
+import Introduction from "./Introduction"
 import FeaturedProjects from './FeaturedProjects'
 import ContactMe from "./ContactMe"
 import ExperienceEducationTabs from "./ExperienceEducationTabs"
