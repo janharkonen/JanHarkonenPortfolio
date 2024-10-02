@@ -56,6 +56,14 @@ const brandedItems: BrandedItemList = {
                     logoUrl: "https://cdn.simpleicons.org/typescript" },
     pyqt4         :{ name: "PyQT 4",
                     logoUrl: "https://w7.pngwing.com/pngs/736/205/png-transparent-the-qt-company-qt-creator-visual-designer-miscellaneous-text-rectangle.png" },
+    tkinter       :{ name: "Tkinter",
+                    logoUrl: "https://wingware.com/images/large-feather.png" },
+    pandas        :{ name: "Pandas",
+                    logoUrl: "https://pandas.pydata.org/static/img/pandas_mark.svg" },
+    vercel        :{ name: "Vercel",
+                    logoUrl: "https://cdn.simpleicons.org/vercel" },
+    shadcn        :{ name: "shadcn/ui",
+                    logoUrl: "https://cdn.simpleicons.org/shadcnui" },
 };
 
 export default brandedItems

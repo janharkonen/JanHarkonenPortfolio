@@ -14,6 +14,8 @@ const projects = [
     period: "2024",
     tools: [
       brandedItems.python,
+      brandedItems.tkinter,
+      brandedItems.pandas,
       brandedItems.MSSQLServer,
     ]
   },
@@ -29,8 +31,10 @@ const projects = [
       brandedItems.html5,
       brandedItems.css3,
       brandedItems.tailwind,
+      brandedItems.shadcn,
       brandedItems.javascript,
       brandedItems.typescript,
+      brandedItems.vercel,
     ]
   },
   {
