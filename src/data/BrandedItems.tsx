@@ -64,6 +64,8 @@ const brandedItems: BrandedItemList = {
                     logoUrl: "https://cdn.simpleicons.org/vercel" },
     shadcn        :{ name: "shadcn/ui",
                     logoUrl: "https://cdn.simpleicons.org/shadcnui" },
+    latex         :{ name: "LaTeX",
+                    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg" },
 };
 
 export default brandedItems
