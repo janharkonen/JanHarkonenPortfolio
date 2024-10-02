@@ -31,7 +31,7 @@ const experiences = [
     pdfCaption2: ""
   },
   {
-    title: "Software Developer",
+    title: "Software Developer / Data Analyst",
     company: "Semantum Oy",
     logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.licdn.com%2Fdms%2Fimage%2FC4D0BAQFAENbYsHiSYw%2Fcompany-logo_200_200%2F0%2F1519861441759%3Fe%3D2147483647%26v%3Dbeta%26t%3D-NRp0a94ITtT3Ao_29IuWCKZA7gJRuCS2-mVtqpm7ZY&f=1&nofb=1&ipt=77d42a74743b9d75795b2ba80326a16db7c7a045450ca4874e082ce8f78f2f8c&ipo=images",
     period: "Feb 2020 - Sep 2020",
