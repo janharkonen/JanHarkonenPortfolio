@@ -5,14 +5,18 @@ import Education from "./Education"
 export default function ExperienceEducationTabs() {
   return (
     <Tabs defaultValue="experience" className="w-full">
-      <TabsList className="grid w-full grid-cols-2">
-        <TabsTrigger value="experience">Work Experience</TabsTrigger>
-        <TabsTrigger value="education">Education</TabsTrigger>
+      <TabsList className="grid w-full grid-cols-2 h-16 text-lg">
+        <TabsTrigger value="experience" className="py-4 px-6">
+          Work Experience
+        </TabsTrigger>
+        <TabsTrigger value="education" className="py-4 px-6">
+          Education
+        </TabsTrigger>
       </TabsList>
-      <TabsContent value="experience">
+      <TabsContent value="experience" className="mt-6 p-6 border rounded-lg">
         <WorkExperience />
       </TabsContent>
-      <TabsContent value="education">
+      <TabsContent value="education" className="mt-6 p-6 border rounded-lg">
         <Education />
       </TabsContent>
     </Tabs>

@@ -64,7 +64,6 @@ export default function Education() {
 
   return (
     <section onMouseMove={handleMouseMove}>
-      <h2 className="text-3xl font-semibold mb-12">Education</h2>
       <div className="space-y-6">
         {educations.map((exp, index) => (
           <Card key={index} className="relative">
