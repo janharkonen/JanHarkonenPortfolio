@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import TarjousGeneraattoriPic from "../assets/tarjousgeneraattori.png"
 import PortfolioPic from "../assets/portfolio.png"
 import GCHProgressTrackerPic from "../assets/GCHProgressTracker.png" 
+import LensMirrorSimPic from "../assets/lens_mirror_generator.png" 
 import brandedItems from "../data/BrandedItems.tsx"
 
 const projects = [
@@ -40,6 +41,16 @@ const projects = [
     tools: [
       brandedItems.java,
       brandedItems.androidstudio,
+    ]
+  },
+  {
+    title: "Lens and mirror simulator",
+    description: "GUI for simulating the trajectory of a laser beam through curved lenses and mirrors.",
+    image: LensMirrorSimPic,
+    period: "2015",
+    tools: [
+      brandedItems.python,
+      brandedItems.pyqt4,
     ]
   }
 ]

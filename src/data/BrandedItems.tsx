@@ -48,6 +48,8 @@ const brandedItems: BrandedItemList = {
                     logoUrl: "https://cdn.simpleicons.org/html5" },
     css3          :{ name: "CSS3",
                     logoUrl: "https://cdn.simpleicons.org/css3" },
+    pyqt4         :{ name: "PyQT 4",
+                    logoUrl: "https://w7.pngwing.com/pngs/736/205/png-transparent-the-qt-company-qt-creator-visual-designer-miscellaneous-text-rectangle.png" },
 };
 
 export default brandedItems
