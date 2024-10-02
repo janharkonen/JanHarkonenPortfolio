@@ -68,6 +68,8 @@ const brandedItems: BrandedItemList = {
                     logoUrl: "https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg" },
     fortran       :{ name: "Fortran",
                     logoUrl: "https://cdn.simpleicons.org/fortran" },
+    flask         :{ name: "Flask",
+                    logoUrl: "https://cdn.simpleicons.org/flask" },
 };
 
 export default brandedItems
