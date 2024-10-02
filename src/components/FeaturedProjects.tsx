@@ -28,9 +28,9 @@ const projects = [
       brandedItems.nodejs,
       brandedItems.html5,
       brandedItems.css3,
-      { name: "Tailwind CSS", logoUrl: "https://cdn.simpleicons.org/tailwindcss" },
-      { name: "Javascript", logoUrl: "https://cdn.simpleicons.org/javascript" },
-      { name: "Typescript", logoUrl: "https://cdn.simpleicons.org/typescript" },
+      brandedItems.tailwind,
+      brandedItems.javascript,
+      brandedItems.typescript,
     ]
   },
   {

@@ -48,6 +48,12 @@ const brandedItems: BrandedItemList = {
                     logoUrl: "https://cdn.simpleicons.org/html5" },
     css3          :{ name: "CSS3",
                     logoUrl: "https://cdn.simpleicons.org/css3" },
+    tailwind      :{ name: "Tailwind CSS",
+                    logoUrl: "https://cdn.simpleicons.org/tailwindcss" },
+    javascript    :{ name: "Javascript",
+                    logoUrl: "https://cdn.simpleicons.org/javascript" },
+    typescript    :{ name: "Typescript",
+                    logoUrl: "https://cdn.simpleicons.org/typescript" },
     pyqt4         :{ name: "PyQT 4",
                     logoUrl: "https://w7.pngwing.com/pngs/736/205/png-transparent-the-qt-company-qt-creator-visual-designer-miscellaneous-text-rectangle.png" },
 };
