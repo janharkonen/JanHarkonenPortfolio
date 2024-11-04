@@ -70,6 +70,8 @@ const brandedItems: BrandedItemList = {
                     logoUrl: "https://cdn.simpleicons.org/fortran" },
     flask         :{ name: "Flask",
                     logoUrl: "https://cdn.simpleicons.org/flask" },
+    haskell       :{ name: "Haskell",
+                    logoUrl: "https://cdn.simpleicons.org/haskell" },
 };
 
 export default brandedItems
