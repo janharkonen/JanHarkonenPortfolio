@@ -16,8 +16,8 @@ const educations = [
     description: "Major: mathematics, minor: engineering physics",
     pdfUrl: DippaPDF,
     pdfCaption: "Master's thesis",
-    pdfUrl2: "",
-    pdfCaption2: "",
+    pdfUrl2: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.108.045201",
+    pdfCaption2: "Research paper as co-author",
   },
   {
     title: "Exchange studies",
