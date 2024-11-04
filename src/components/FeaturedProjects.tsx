@@ -1,12 +1,36 @@
 import { useState } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import TarjousGeneraattoriPic from "../assets/tarjousgeneraattori.png"
+import TarjousGeneraattoriPic2 from "../assets/tarjousgeneraattori2.png"
 import PortfolioPic from "../assets/portfolio.png"
 import GCHProgressTrackerPic from "../assets/GCHProgressTracker.png" 
 import LensMirrorSimPic from "../assets/lens_mirror_generator.png" 
 import brandedItems from "../data/BrandedItems.tsx"
 
 const projects = [
+  {
+    title: "Invoice generator v2",
+    description: "Automatic invoice generating solution as a full stack web app with an API and database connection on the cloud.",
+    image: TarjousGeneraattoriPic2 ,
+    period: "2024",
+    tools: [
+      brandedItems.react,
+      brandedItems.vite,
+      brandedItems.redux,
+      brandedItems.auth0,
+      brandedItems.shadcn,
+      brandedItems.cloudflare,
+      brandedItems.vercel,
+      brandedItems.hetzner,
+      brandedItems.python,
+      brandedItems.flask,
+      brandedItems.pandas,
+      brandedItems.MSSQLServer,
+      brandedItems.ChatGPT,
+      brandedItems.Claude,
+      brandedItems.V0,
+    ]
+  },
   {
     title: "Invoice generator",
     description: "Automatic invoice generating solution as desktop application with self-hosted database.",

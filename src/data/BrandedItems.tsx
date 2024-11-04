@@ -80,6 +80,12 @@ const brandedItems: BrandedItemList = {
                     logoUrl: "https://cdn.simpleicons.org/auth0" },
     cloudflare    :{ name: "Cloudflare",
                     logoUrl: "https://cdn.simpleicons.org/cloudflare" },
+    ChatGPT       :{ name: "ChatGPT",
+                    logoUrl: "https://cdn.simpleicons.org/openai" },
+    Claude        :{ name: "Claude",
+                    logoUrl: "https://preview.redd.it/original-inspiration-for-the-claude-logo-v0-4vjpaxksksyd1.jpg?width=960&format=pjpg&auto=webp&s=46d73368b0c314d62116172a954a9e38c3638163" },
+    V0            :{ name: "V0",
+                    logoUrl: "https://img.stackshare.io/service/145352/default_18b7775bbad27a164cbe774b72f2dbafd8676289.png" },
 };
 
 export default brandedItems
