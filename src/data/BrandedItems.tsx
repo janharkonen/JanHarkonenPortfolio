@@ -30,6 +30,8 @@ const brandedItems: BrandedItemList = {
                     logoUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbrandslogos.com%2Fwp-content%2Fuploads%2Fimages%2Flarge%2Fpython-logo.png&f=1&nofb=1&ipt=95475181fb9a4f55667f208bbfd828765bc3a421b010de17cfbd8d9288552b18&ipo=images" },
     react         :{ name: "React",
                     logoUrl: "https://cdn.simpleicons.org/react" }, 
+    redux         :{ name: "Redux",
+                    logoUrl: "https://cdn.simpleicons.org/redux" }, 
     sourcetree    :{ name: "Sourcetree",
                     logoUrl: "https://cdn.simpleicons.org/sourcetree" },
     gitlab        :{ name: "Gitlab",
@@ -72,6 +74,12 @@ const brandedItems: BrandedItemList = {
                     logoUrl: "https://cdn.simpleicons.org/flask" },
     haskell       :{ name: "Haskell",
                     logoUrl: "https://cdn.simpleicons.org/haskell" },
+    hetzner       :{ name: "Hetzner",
+                    logoUrl: "https://cdn.simpleicons.org/hetzner" },
+    auth0         :{ name: "Auth0",
+                    logoUrl: "https://cdn.simpleicons.org/auth0" },
+    cloudflare    :{ name: "Cloudflare",
+                    logoUrl: "https://cdn.simpleicons.org/cloudflare" },
 };
 
 export default brandedItems
