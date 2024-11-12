@@ -36,7 +36,7 @@ const experiences = [
     description: "Developing LCA dashboard for assessing environmental impact of factory processes.",
     tools: [
       brandedItems.java,
-      { name: "Haskell", logoUrl: "https://cdn.simpleicons.org/haskell" },
+      brandedItems.haskell,
       { name: "InfluxDB", logoUrl: "https://cdn.simpleicons.org/influxdb" },
       { name: "Docker", logoUrl: "https://cdn.simpleicons.org/docker" },
       brandedItems.git,
