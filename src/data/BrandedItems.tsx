@@ -20,6 +20,8 @@ const brandedItems: BrandedItemList = {
                     logoUrl: "https://cdn.simpleicons.org/delphi" },
     MSSQLServer   :{ name: "Microsoft SQL Server",
                     logoUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.7TIOHIVieZJ564CaI1B8LQAAAA%26pid%3DApi&f=1&ipt=aed1fbd637221218c13f8b4fc98bf59ba08fb142938dfdc707d75acdffba2f78&ipo=images" },
+    postgresql    :{ name: "PostgreSQL",
+                    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg" },
     java          :{ name: "Java",
                     logoUrl: "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/181_Java_logo_logos-512.png" },
     vscode        :{ name: "Visual Studio Code",
@@ -83,9 +85,13 @@ const brandedItems: BrandedItemList = {
     ChatGPT       :{ name: "ChatGPT",
                     logoUrl: "https://cdn.simpleicons.org/openai" },
     Claude        :{ name: "Claude",
-                    logoUrl: "https://preview.redd.it/original-inspiration-for-the-claude-logo-v0-4vjpaxksksyd1.jpg?width=960&format=pjpg&auto=webp&s=46d73368b0c314d62116172a954a9e38c3638163" },
+                    logoUrl: "https://www.mescomputing.com/news/ai/media_13b863a9243381ff7394de5430fa38774577c1a90.png?width=2000&format=webply&optimize=medium" },
     V0            :{ name: "V0",
                     logoUrl: "https://img.stackshare.io/service/145352/default_18b7775bbad27a164cbe774b72f2dbafd8676289.png" },
+    zustand       :{ name: "Zustand",
+                    logoUrl: "https://user-images.githubusercontent.com/958486/218346783-72be5ae3-b953-4dd7-b239-788a882fdad6.svg" },
+    docker        :{ name: "Docker",
+                    logoUrl: "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png" },
 };
 
 export default brandedItems
