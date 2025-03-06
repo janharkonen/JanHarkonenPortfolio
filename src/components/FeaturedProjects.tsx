@@ -1,15 +1,12 @@
 import { useState } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
   DialogDescription,
-  DialogClose,
 } from "@/components/ui/dialog"
-import { X } from "lucide-react"
 import TarjousGeneraattoriPic from "../assets/tarjousgeneraattori.png"
 import TarjousGeneraattoriPic2 from "../assets/tarjousgeneraattori2.png"
 import TarjousGeneraattoriPic3 from "../assets/tarjousgeneraattori3.png"
@@ -17,6 +14,7 @@ import PortfolioPic from "../assets/portfolio.png"
 import GCHProgressTrackerPic from "../assets/GCHProgressTracker.png"
 import LensMirrorSimPic from "../assets/lens_mirror_generator.png"
 import brandedItems from "../data/BrandedItems.tsx"
+import { LensMirrorSimulator } from "./FeaturedProjectDetails/LensMirrorSimulator.tsx"
 
 const projects = [
   {
@@ -171,15 +169,16 @@ const projects = [
     ],
     challenges:
       "Accurately modeling the physics of light refraction and reflection while maintaining an interactive frame rate for the simulation.",
+    component: LensMirrorSimulator,
   },
 ]
 
 export default function FeaturedProjects() {
   const [tooltip, setTooltip] = useState({ show: false, text: "", x: 0, y: 0 })
-  const [selectedProject, setSelectedProject] = useState(null)
+  const [selectedProject, setSelectedProject] = useState<typeof projects[number] | null>(null) // Update: Added type annotation
   const [modalOpen, setModalOpen] = useState(false)
 
-  const handleMouseEnter = (e, text) => {
+  const handleMouseEnter = (e: React.MouseEvent, text: string) => { // Update: Added type annotations
     setTooltip({ show: true, text, x: e.clientX, y: e.clientY })
   }
 
@@ -187,13 +186,13 @@ export default function FeaturedProjects() {
     setTooltip({ show: false, text: "", x: 0, y: 0 })
   }
 
-  const handleMouseMove = (e) => {
+  const handleMouseMove = (e: React.MouseEvent) => { // Update: Added type annotation
     if (tooltip.show) {
-      setTooltip((prev) => ({ ...prev, x: e.clientX, y: e.clientY }))
+      setTooltip(prev => ({ ...prev, x: e.clientX, y: e.clientY }))
     }
   }
 
-  const handleCardClick = (project) => {
+  const handleCardClick = (project: typeof projects[number]) => { // Update: Added type annotation
     setSelectedProject(project)
     setModalOpen(true)
   }
@@ -238,7 +237,7 @@ export default function FeaturedProjects() {
 
       <Dialog open={modalOpen} onOpenChange={setModalOpen}>
         {selectedProject && (
-          <DialogContent className="sm:max-w-3xl">
+            <DialogContent className="sm:max-w-3xl h-[95%] overflow-y-auto">
             <DialogHeader>
               <DialogTitle className="text-2xl">{selectedProject.title}</DialogTitle>
               <DialogDescription className="text-base font-medium text-primary">
@@ -250,12 +249,8 @@ export default function FeaturedProjects() {
                 src={selectedProject.image || "/placeholder.svg"}
                 alt={selectedProject.title}
                 className="w-full h-64 object-cover rounded-md"
-              />
-
-              <div>
-                <h3 className="text-lg font-semibold mb-2">Overview</h3>
-                <p className="text-base">{selectedProject.detailedDescription}</p>
-              </div>
+                />
+              {selectedProject.component && <selectedProject.component />}
 
               <div>
                 <h3 className="text-lg font-semibold mb-2">Key Features</h3>
@@ -287,12 +282,6 @@ export default function FeaturedProjects() {
                 </div>
               </div>
             </div>
-            <DialogClose asChild>
-              <Button variant="ghost" size="icon" className="absolute right-4 top-4">
-                <X className="h-4 w-4" />
-                <span className="sr-only">Close</span>
-              </Button>
-            </DialogClose>
           </DialogContent>
         )}
       </Dialog>
@@ -308,3 +297,4 @@ export default function FeaturedProjects() {
     </section>
   )
 }
+
