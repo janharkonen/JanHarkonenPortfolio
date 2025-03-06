@@ -158,17 +158,6 @@ const projects = [
     image: LensMirrorSimPic,
     period: "2015",
     tools: [brandedItems.python, brandedItems.pyqt4],
-    detailedDescription:
-      "The Lens and Mirror Simulator is a desktop application built with Python and PyQt4 that visualizes the behavior of light as it passes through various optical elements. It allows users to place lenses and mirrors of different shapes and properties on a canvas and observe how light rays interact with them.",
-    features: [
-      "Interactive canvas for placing optical elements",
-      "Real-time simulation of light ray trajectories",
-      "Customizable lens and mirror properties",
-      "Measurement tools for angles and distances",
-      "Export of simulation results",
-    ],
-    challenges:
-      "Accurately modeling the physics of light refraction and reflection while maintaining an interactive frame rate for the simulation.",
     component: LensMirrorSimulator,
   },
 ]
@@ -237,7 +226,7 @@ export default function FeaturedProjects() {
 
       <Dialog open={modalOpen} onOpenChange={setModalOpen}>
         {selectedProject && (
-            <DialogContent className="sm:max-w-3xl h-[95%] overflow-y-auto">
+            <DialogContent className="sm:max-w-3xl max-h-[calc(100vh-4rem)] overflow-y-auto">
             <DialogHeader>
               <DialogTitle className="text-2xl">{selectedProject.title}</DialogTitle>
               <DialogDescription className="text-base font-medium text-primary">
@@ -252,35 +241,6 @@ export default function FeaturedProjects() {
                 />
               {selectedProject.component && <selectedProject.component />}
 
-              <div>
-                <h3 className="text-lg font-semibold mb-2">Key Features</h3>
-                <ul className="list-disc pl-5 space-y-1">
-                  {selectedProject.features.map((feature, index) => (
-                    <li key={index}>{feature}</li>
-                  ))}
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="text-lg font-semibold mb-2">Challenges</h3>
-                <p className="text-base">{selectedProject.challenges}</p>
-              </div>
-
-              <div>
-                <h3 className="text-lg font-semibold mb-2">Technologies Used</h3>
-                <div className="flex flex-wrap gap-4">
-                  {selectedProject.tools.map((tool, index) => (
-                    <div key={index} className="flex items-center gap-2 bg-muted p-2 rounded-md">
-                      <img
-                        src={tool.logoUrl || "/placeholder.svg"}
-                        alt={`${tool.name} logo`}
-                        className="w-5 h-5 object-contain"
-                      />
-                      <span className="text-sm">{tool.name}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
             </div>
           </DialogContent>
         )}
