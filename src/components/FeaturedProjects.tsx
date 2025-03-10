@@ -15,6 +15,7 @@ import GCHProgressTrackerPic from "../assets/GCHProgressTracker.png"
 import LensMirrorSimPic from "../assets/lens_mirror_generator.png"
 import brandedItems from "../data/BrandedItems.tsx"
 import { LensMirrorSimulator } from "./FeaturedProjectDetails/LensMirrorSimulator.tsx"
+import { ProgressTrackerOld } from "./FeaturedProjectDetails/ProgressTrackerOld.tsx"
 
 const projects = [
   {
@@ -23,7 +24,7 @@ const projects = [
       "Automatic invoice generating solution as a full stack web app with an API and database connection on the cloud.",
     image: TarjousGeneraattoriPic3,
     period: "2025",
-    tools: [
+    mainTechnologies: [
       brandedItems.react,
       brandedItems.vite,
       brandedItems.zustand,
@@ -58,7 +59,7 @@ const projects = [
       "Automatic invoice generating solution as a full stack web app with an API and database connection on the cloud.",
     image: TarjousGeneraattoriPic2,
     period: "2024",
-    tools: [
+    mainTechnologies: [
       brandedItems.react,
       brandedItems.vite,
       brandedItems.redux,
@@ -76,7 +77,7 @@ const projects = [
       brandedItems.V0,
     ],
     detailedDescription:
-      "The second iteration of the invoice generator transformed the desktop application into a full-stack web application. It features a React frontend with Redux for state management, deployed on Vercel, with a Python Flask backend hosted on Hetzner Cloud. The application uses MS SQL Server for data storage and incorporates AI tools for enhanced functionality.",
+      "The second iteration of the invoice generator transformed the desktop application into a full-stack web application. It features a React frontend with Redux for state management, deployed on Vercel, with a Python Flask backend hosted on Hetzner Cloud. The application uses MS SQL Server for data storage and incorporates AI mainTechnologies for enhanced functionality.",
     features: [
       "Web-based interface accessible from anywhere",
       "User authentication with Auth0",
@@ -92,7 +93,12 @@ const projects = [
     description: "Automatic invoice generating solution as desktop application with self-hosted database.",
     image: TarjousGeneraattoriPic,
     period: "2024",
-    tools: [brandedItems.python, brandedItems.tkinter, brandedItems.pandas, brandedItems.MSSQLServer],
+    mainTechnologies: [
+      brandedItems.python,
+      brandedItems.tkinter,
+      brandedItems.pandas,
+      brandedItems.MSSQLServer,
+    ],
     detailedDescription:
       "The original invoice generator was developed as a desktop application using Python with Tkinter for the GUI. It connects to a self-hosted MS SQL Server database for storing client information, product details, and invoice history. The application uses Pandas for data manipulation and report generation.",
     features: [
@@ -110,7 +116,7 @@ const projects = [
     description: "This very website. A personal full stack developer porfolio React web app.",
     image: PortfolioPic,
     period: "2024",
-    tools: [
+    mainTechnologies: [
       brandedItems.react,
       brandedItems.vite,
       brandedItems.nodejs,
@@ -139,7 +145,9 @@ const projects = [
     description: "Mobile application to track the progress level of each item in a list.",
     image: GCHProgressTrackerPic,
     period: "2021",
-    tools: [brandedItems.java, brandedItems.androidstudio],
+    mainTechnologies: [
+      brandedItems.java,
+    ],
     detailedDescription:
       "The Progress Tracker is an Android mobile application developed in Java using Android Studio. It allows users to create lists of tasks or goals and track their progress over time. The app features a simple, intuitive interface with visual progress indicators and notification reminders.",
     features: [
@@ -150,14 +158,17 @@ const projects = [
       "Data export functionality",
     ],
     challenges:
-      "Implementing an efficient data storage solution while ensuring a smooth user experience on various Android devices.",
+    "Implementing an efficient data storage solution while ensuring a smooth user experience on various Android devices.",
+    component: ProgressTrackerOld,
   },
   {
     title: "Lens and mirror simulator",
     description: "Desktop GUI for simulating the trajectory of a laser beam through curved lenses and mirrors.",
     image: LensMirrorSimPic,
     period: "2015",
-    tools: [brandedItems.python, brandedItems.pyqt4],
+    mainTechnologies: [
+      brandedItems.python,
+    ],
     component: LensMirrorSimulator,
   },
 ]
@@ -204,7 +215,7 @@ export default function FeaturedProjects() {
               <p className="text-sm text-gray-600 mb-4">{project.period}</p>
               <p className="mb-4">{project.description}</p>
               <div className="flex flex-wrap gap-4 justify-center" onClick={(e) => e.stopPropagation()}>
-                {project.tools.map((tool, toolIndex) => (
+                {project.mainTechnologies.map((tool, toolIndex) => (
                   <div
                     key={toolIndex}
                     className="flex flex-col items-center"
@@ -234,13 +245,7 @@ export default function FeaturedProjects() {
               </DialogDescription>
             </DialogHeader>
             <div className="grid gap-6">
-              <img
-                src={selectedProject.image || "/placeholder.svg"}
-                alt={selectedProject.title}
-                className="w-full h-64 object-cover rounded-md"
-                />
               {selectedProject.component && <selectedProject.component />}
-
             </div>
           </DialogContent>
         )}
