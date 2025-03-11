@@ -92,6 +92,20 @@ const brandedItems: BrandedItemList = {
                     logoUrl: "https://user-images.githubusercontent.com/958486/218346783-72be5ae3-b953-4dd7-b239-788a882fdad6.svg" },
     docker        :{ name: "Docker",
                     logoUrl: "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png" },
+    sublime        :{ name: "Sublime text",
+                    logoUrl: "https://upload.wikimedia.org/wikipedia/en/d/d2/Sublime_Text_3_logo.png" },
+    sqlalchemy     :{ name: "SQLAlchemy",
+                    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/SQLAlchemy.svg/1920px-SQLAlchemy.svg.png" },
+    nginx          :{ name: "Nginx",
+                    logoUrl: "https://ahmadalli.gallerycdn.vsassets.io/extensions/ahmadalli/vscode-nginx-conf/0.3.5/1711059993560/Microsoft.VisualStudio.Services.Icons.Default" },
+    gunicorn       :{ name: "Gunicorn",
+                    logoUrl: "https://e7.pngegg.com/pngimages/633/5/png-clipart-green-unicorn-illustration-gunicorn-logo-icons-logos-emojis-tech-companies.png" },
+    lechat         :{ name: "Le Chat",
+                    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Mistral_AI_logo_%282025%E2%80%93%29.svg/1200px-Mistral_AI_logo_%282025%E2%80%93%29.svg.png" },
+    deepseek       :{ name: "Deepseek",
+                    logoUrl: "https://freepnglogo.com/images/all_img/deep-seek-logo-whale-1ced.png" },
+    jwt            :{ name: "JSON Web Token",
+                    logoUrl: "https://cdn.worldvectorlogo.com/logos/jwt-3.svg" },
 };
 
 export default brandedItems
