@@ -40,6 +40,11 @@ export const LensMirrorSimulator = () => {
           <span>UI library:</span> {brandedItemBadge("pyqt4")}
           </div>
         </li>
+        <li>
+          <div className="flex items-center gap-2">
+          <span>Editor:</span> {brandedItemBadge("sublime")}
+          </div>
+        </li>
         </ul>
       </div>
       </div>

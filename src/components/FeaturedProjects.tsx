@@ -10,12 +10,14 @@ import {
 import TarjousGeneraattoriPic from "../assets/tarjousgeneraattori.png"
 import TarjousGeneraattoriPic2 from "../assets/tarjousgeneraattori2.png"
 import TarjousGeneraattoriPic3 from "../assets/tarjousgeneraattori3.png"
-import PortfolioPic from "../assets/portfolio.png"
 import GCHProgressTrackerPic from "../assets/GCHProgressTracker.png"
 import LensMirrorSimPic from "../assets/lens_mirror_generator.png"
 import brandedItems from "../data/BrandedItems.tsx"
+import PortfolioPic from "../assets/portfolio.png"
 import { LensMirrorSimulator } from "./FeaturedProjectDetails/LensMirrorSimulator.tsx"
 import { ProgressTrackerOld } from "./FeaturedProjectDetails/ProgressTrackerOld.tsx"
+import { PortfolioSite } from "./FeaturedProjectDetails/PortfolioSite.tsx"
+import { InvoiceGenerator } from "./FeaturedProjectDetails/InvoiceGenerator.tsx"
 
 const projects = [
   {
@@ -91,8 +93,8 @@ const projects = [
   {
     title: "Invoice generator",
     description: "Automatic invoice generating solution as desktop application with self-hosted database.",
-    image: TarjousGeneraattoriPic,
-    period: "2024",
+    image: TarjousGeneraattoriPic3,
+    period: "2024-2025",
     mainTechnologies: [
       brandedItems.python,
       brandedItems.tkinter,
@@ -110,60 +112,32 @@ const projects = [
     ],
     challenges:
       "Creating an intuitive user interface while ensuring reliable database operations and accurate invoice calculations.",
+    component: InvoiceGenerator,
   },
   {
-    title: "Professional CV/Portfolio site",
-    description: "This very website. A personal full stack developer porfolio React web app.",
+    title: "Portfolio site",
+    description: "This very website. A personal full stack developer porfolio made with React",
     image: PortfolioPic,
-    period: "2024",
+    period: "2024-2025",
     mainTechnologies: [
       brandedItems.react,
-      brandedItems.vite,
-      brandedItems.nodejs,
-      brandedItems.html5,
-      brandedItems.css3,
-      brandedItems.tailwind,
-      brandedItems.shadcn,
-      brandedItems.javascript,
-      brandedItems.typescript,
       brandedItems.vercel,
     ],
-    detailedDescription:
-      "This portfolio website showcases my professional experience and projects as a full-stack developer. Built with React and Vite, it features a responsive design implemented with Tailwind CSS and shadcn/ui components. The site is deployed on Vercel for optimal performance and reliability.",
-    features: [
-      "Responsive design for all device sizes",
-      "Interactive project showcases",
-      "Dark/light mode toggle",
-      "Contact form with validation",
-      "Performance optimized with modern web technologies",
-    ],
-    challenges:
-      "Designing a clean, professional interface that effectively communicates my skills and experience while ensuring fast load times and accessibility.",
+    component: PortfolioSite,
   },
   {
     title: "Progress tracker",
-    description: "Mobile application to track the progress level of each item in a list.",
+    description: "Mobile application to track the progress level of each item in a list",
     image: GCHProgressTrackerPic,
     period: "2021",
     mainTechnologies: [
       brandedItems.java,
     ],
-    detailedDescription:
-      "The Progress Tracker is an Android mobile application developed in Java using Android Studio. It allows users to create lists of tasks or goals and track their progress over time. The app features a simple, intuitive interface with visual progress indicators and notification reminders.",
-    features: [
-      "Custom progress visualization",
-      "Categorized task lists",
-      "Progress history tracking",
-      "Reminder notifications",
-      "Data export functionality",
-    ],
-    challenges:
-    "Implementing an efficient data storage solution while ensuring a smooth user experience on various Android devices.",
     component: ProgressTrackerOld,
   },
   {
     title: "Lens and mirror simulator",
-    description: "Desktop GUI for simulating the trajectory of a laser beam through curved lenses and mirrors.",
+    description: "Desktop GUI for simulating the trajectory of a laser beam through curved lenses and mirrors",
     image: LensMirrorSimPic,
     period: "2015",
     mainTechnologies: [
