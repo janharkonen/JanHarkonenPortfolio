@@ -106,6 +106,7 @@ export const InvoiceGenerator = () => {
               <div className="flex items-center gap-2">
                 <span>Deployment:</span> 
                 {brandedItemBadge("hetzner")}
+                {brandedItemBadge("ubuntu")}
               </div>
             </li>
             <li>

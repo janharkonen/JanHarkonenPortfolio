@@ -116,6 +116,8 @@ const brandedItems: BrandedItemList = {
                     logoUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI9vVTDosC-AsWLprepTOyXhkzAKji4DcJCA&s" },
     linux          :{ name: "Linux",
                     logoUrl: "https://brandlogos.net/wp-content/uploads/2020/03/Linux-logo-512x512.png" },
+    ubuntu         :{ name: "Ubuntu",
+                    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/UbuntuCoF.svg/1024px-UbuntuCoF.svg.png" },
 };
 
 export default brandedItems
