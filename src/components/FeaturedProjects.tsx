@@ -93,7 +93,7 @@ const projects = [
   {
     title: "Invoice generator",
     description: "Automatic invoice generating solution as desktop application with self-hosted database.",
-    image: TarjousGeneraattoriPic3,
+    image: TarjousGeneraattoriPic,
     period: "2024-2025",
     mainTechnologies: [
       brandedItems.python,
