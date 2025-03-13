@@ -114,6 +114,8 @@ const brandedItems: BrandedItemList = {
                     logoUrl: "https://cdn.freebiesupply.com/logos/large/2x/aws-logo-logo-png-transparent.png" },
     ec2            :{ name: "EC2",
                     logoUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI9vVTDosC-AsWLprepTOyXhkzAKji4DcJCA&s" },
+    linux          :{ name: "Linux",
+                    logoUrl: "https://brandlogos.net/wp-content/uploads/2020/03/Linux-logo-512x512.png" },
 };
 
 export default brandedItems
