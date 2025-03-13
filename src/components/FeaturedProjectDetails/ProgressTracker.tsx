@@ -67,6 +67,7 @@ export const ProgressTracker = () => {
                 <span>Deployment:</span> 
                 {brandedItemBadge("aws")}
                 {brandedItemBadge("ec2")}
+                {brandedItemBadge("ubuntu")}
               </div>
             </li>
             <li>
