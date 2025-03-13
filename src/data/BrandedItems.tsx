@@ -106,6 +106,14 @@ const brandedItems: BrandedItemList = {
                     logoUrl: "https://freepnglogo.com/images/all_img/deep-seek-logo-whale-1ced.png" },
     jwt            :{ name: "JSON Web Token",
                     logoUrl: "https://cdn.worldvectorlogo.com/logos/jwt-3.svg" },
+    svelte         :{ name: "Svelte",
+                    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/800px-Svelte_Logo.svg.png" },
+    redis          :{ name: "Redis",
+                    logoUrl: "https://cdn.worldvectorlogo.com/logos/redis.svg" },
+    aws            :{ name: "AWS",
+                    logoUrl: "https://cdn.freebiesupply.com/logos/large/2x/aws-logo-logo-png-transparent.png" },
+    ec2            :{ name: "EC2",
+                    logoUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI9vVTDosC-AsWLprepTOyXhkzAKji4DcJCA&s" },
 };
 
 export default brandedItems
