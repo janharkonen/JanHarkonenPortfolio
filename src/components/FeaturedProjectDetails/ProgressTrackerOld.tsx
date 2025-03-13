@@ -1,11 +1,10 @@
 import { brandedItemBadge } from "@/data/BrandedItemsComponents.tsx"
-import GCHProgressTrackerPic from "../../assets/GCHProgressTracker.png"
 
 export const ProgressTrackerOld = () => {
   return (
     <div className="max-w-4xl">
       <img
-      src={GCHProgressTrackerPic || "/placeholder.svg"}
+      src={"https://i4ndcxhbcg.ufs.sh/f/Qdvn5pODvKPkAChHK1BHjs78wOL1SkFumPK6AanBb9YiqWI0"}
       alt="Progress tracker"
       className="w-full h-auto max-h-[500px] object-contain rounded-md"
       />

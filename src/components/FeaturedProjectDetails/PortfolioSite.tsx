@@ -1,11 +1,10 @@
 import { brandedItemBadge } from "@/data/BrandedItemsComponents.tsx"
-import PortfolioPic from "../../assets/portfolio.png"
 
 export const PortfolioSite = () => {
   return (
     <div className="max-w-4xl">
       <img
-      src={PortfolioPic || "/placeholder.svg"}
+      src={"https://i4ndcxhbcg.ufs.sh/f/Qdvn5pODvKPkjGPA6wr1sfHKch8JrDNk9IYtMnRBeEzQvW0F"}
       alt="Portfolio site"
       className="w-full h-auto max-h-[500px] object-contain rounded-md"
       />

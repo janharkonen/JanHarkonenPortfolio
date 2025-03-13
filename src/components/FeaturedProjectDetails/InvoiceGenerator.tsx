@@ -1,13 +1,10 @@
 import { brandedItemBadge } from "@/data/BrandedItemsComponents.tsx"
-import TarjousGeneraattoriPic from "../../assets/tarjousgeneraattori.png"
-import TarjousGeneraattoriPic2 from "../../assets/tarjousgeneraattori2.png"
-import TarjousGeneraattoriPic3 from "../../assets/tarjousgeneraattori3.png"
 
 export const InvoiceGenerator = () => {
   return (
     <div className="max-w-4xl">
       <img
-      src={TarjousGeneraattoriPic3 || "/placeholder.svg"}
+      src={"https://i4ndcxhbcg.ufs.sh/f/Qdvn5pODvKPktof3qLIQx7Uzq0RnSYy3cApovfTXwsGjLeON"}
       alt="Portfolio site"
       className="w-full h-auto max-h-[500px] object-contain rounded-md"
       />
@@ -156,7 +153,7 @@ export const InvoiceGenerator = () => {
       <div className="mt-4">
         <h3 className="text-lg font-semibold mb-2">Previous version (V2)</h3>
         <img
-        src={TarjousGeneraattoriPic2 || "/placeholder.svg"}
+        src={"https://i4ndcxhbcg.ufs.sh/f/Qdvn5pODvKPkMw3r8kWvGnxFZoQ0yXh5u7Ow8mJea6lVbpY2"}
         alt="Portfolio site"
         className="w-full h-auto max-h-[500px] object-contain rounded-md"
         />
@@ -261,7 +258,7 @@ export const InvoiceGenerator = () => {
       <div className="mt-4">
         <h3 className="text-lg font-semibold mb-2">Previous version (V1)</h3>
         <img
-        src={TarjousGeneraattoriPic || "/placeholder.svg"}
+        src={"https://i4ndcxhbcg.ufs.sh/f/Qdvn5pODvKPkp8xlCWLmK7jIaWX2v9gyeotRC4SMzb1D6QYx"}
         alt="Portfolio site"
         className="w-full h-auto max-h-[500px] object-contain rounded-md"
         />

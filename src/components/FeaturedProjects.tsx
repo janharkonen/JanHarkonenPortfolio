@@ -7,11 +7,7 @@ import {
   DialogTitle,
   DialogDescription,
 } from "@/components/ui/dialog"
-import TarjousGeneraattoriPic3 from "../assets/tarjousgeneraattori3.png"
-import GCHProgressTrackerPic from "../assets/GCHProgressTracker.png"
-import LensMirrorSimPic from "../assets/lens_mirror_generator.png"
 import brandedItems from "../data/BrandedItems.tsx"
-import PortfolioPic from "../assets/portfolio.png"
 //import { ProgressTracker } from "./FeaturedProjectDetails/ProgressTracker.tsx"
 import { InvoiceGenerator } from "./FeaturedProjectDetails/InvoiceGenerator.tsx"
 import { PortfolioSite } from "./FeaturedProjectDetails/PortfolioSite.tsx"
@@ -36,7 +32,7 @@ const projects = [
   {
     title: "Invoice generator",
     description: "Automatic invoice generating solution as desktop application with self-hosted database.",
-    image: TarjousGeneraattoriPic3,
+    image: 'https://i4ndcxhbcg.ufs.sh/f/Qdvn5pODvKPktof3qLIQx7Uzq0RnSYy3cApovfTXwsGjLeON',
     period: "2024-2025",
     mainTechnologies: [
       brandedItems.react,
@@ -50,7 +46,7 @@ const projects = [
   {
     title: "Portfolio site",
     description: "This very website. A personal full stack developer porfolio made with React",
-    image: PortfolioPic,
+    image: "https://i4ndcxhbcg.ufs.sh/f/Qdvn5pODvKPkjGPA6wr1sfHKch8JrDNk9IYtMnRBeEzQvW0F",
     period: "2024-2025",
     mainTechnologies: [
       brandedItems.react,
@@ -61,7 +57,7 @@ const projects = [
   {
     title: "Progress tracker",
     description: "Mobile application to track the progress level of each item in a list",
-    image: GCHProgressTrackerPic,
+    image: "https://i4ndcxhbcg.ufs.sh/f/Qdvn5pODvKPkAChHK1BHjs78wOL1SkFumPK6AanBb9YiqWI0",
     period: "2021",
     mainTechnologies: [
       brandedItems.java,
@@ -71,7 +67,7 @@ const projects = [
   {
     title: "Lens and mirror simulator",
     description: "Desktop GUI for simulating the trajectory of a laser beam through curved lenses and mirrors",
-    image: LensMirrorSimPic,
+    image: 'https://i4ndcxhbcg.ufs.sh/f/Qdvn5pODvKPkdKzb1U8lQmz1vNV5LD4rko93Gt87hBHbiXI6',
     period: "2015",
     mainTechnologies: [
       brandedItems.python,
