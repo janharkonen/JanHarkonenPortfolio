@@ -3,11 +3,11 @@ import { useState } from 'react'
 import brandedItems from "../data/BrandedItems.tsx"
 
 const proficientTools = [
-    brandedItems.python,
-    brandedItems.delphi,
     brandedItems.react,
-    brandedItems.sql,
+    brandedItems.python,
+    brandedItems.postgresql,
     brandedItems.git,
+    brandedItems.linux,
 ]
 
 export default function Introduction() {

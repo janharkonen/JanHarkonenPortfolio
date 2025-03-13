@@ -15,7 +15,7 @@ export const ProgressTrackerOld = () => {
         The Progress Tracker is an Android mobile app designed for personal use. 
         As a dedicated musician, I created it to help me track my progress in 
         learning 40 songs by heart for our music ensemble. The app allows me 
-        to easily monitor my progress by color-coding each song in a simple list.
+        to easily monitor my progress by color-coding each item in a scrollable list.
         </p>
       </div>
       <div className="mt-4">
