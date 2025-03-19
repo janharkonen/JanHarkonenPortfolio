@@ -6,8 +6,8 @@ const proficientTools = [
     brandedItems.react,
     brandedItems.python,
     brandedItems.postgresql,
-    brandedItems.git,
     brandedItems.ubuntu,
+    brandedItems.git,
 ]
 
 export default function Introduction() {
