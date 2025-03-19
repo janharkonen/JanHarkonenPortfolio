@@ -18,12 +18,14 @@ const projects = [
   //{
   //  title: "Progress tracker",
   //  description: "Mobile application to track the progress level of each item in a list",
-  //  image: GCHProgressTrackerPic,
+  //  image: "https://i4ndcxhbcg.ufs.sh/f/Qdvn5pODvKPkAChHK1BHjs78wOL1SkFumPK6AanBb9YiqWI0",
   //  period: "2025",
   //  mainTechnologies: [
   //    brandedItems.svelte,
   //    brandedItems.nodejs,
   //    brandedItems.redis,
+  //  ],
+  //  secondaryTechnologies: [
   //    brandedItems.docker,
   //    brandedItems.aws,
   //  ],
@@ -38,6 +40,8 @@ const projects = [
       brandedItems.react,
       brandedItems.python,
       brandedItems.postgresql,
+    ],
+    secondaryTechnologies: [
       brandedItems.docker,
       brandedItems.hetzner,
     ],
@@ -50,6 +54,8 @@ const projects = [
     period: "2024-2025",
     mainTechnologies: [
       brandedItems.react,
+    ],
+    secondaryTechnologies: [
       brandedItems.vercel,
     ],
     component: PortfolioSite,
@@ -62,6 +68,8 @@ const projects = [
     mainTechnologies: [
       brandedItems.java,
     ],
+    secondaryTechnologies: [
+    ],
     component: ProgressTrackerOld,
   },
   {
@@ -71,6 +79,8 @@ const projects = [
     period: "2015",
     mainTechnologies: [
       brandedItems.python,
+    ],
+    secondaryTechnologies: [
     ],
     component: LensMirrorSimulator,
   },
@@ -119,6 +129,22 @@ export default function FeaturedProjects() {
               <p className="mb-4">{project.description}</p>
               <div className="flex flex-wrap gap-4 justify-center" onClick={(e) => e.stopPropagation()}>
                 {project.mainTechnologies.map((tool, toolIndex) => (
+                  <div
+                    key={toolIndex}
+                    className="flex flex-col items-center"
+                    onMouseEnter={(e) => handleMouseEnter(e, tool.name)}
+                    onMouseLeave={handleMouseLeave}
+                  >
+                    <img
+                      src={tool.logoUrl || "/placeholder.svg"}
+                      alt={`${tool.name} logo`}
+                      className="w-6 h-6 object-contain"
+                    />
+                  </div>
+                ))}
+              </div>
+              <div className="mt-4 flex flex-wrap gap-5 justify-center" onClick={(e) => e.stopPropagation()}>
+                {project.secondaryTechnologies.map((tool, toolIndex) => (
                   <div
                     key={toolIndex}
                     className="flex flex-col items-center"
