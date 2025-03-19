@@ -76,6 +76,13 @@ export const PortfolioSite = () => {
                 <span>IDE:</span> {brandedItemBadge("vscode")}
               </div>
             </li>
+            <li>
+              <div className="flex items-center gap-2">
+                <span>Version control</span>
+                {brandedItemBadge("git")}
+                {brandedItemBadge("gitkraken")}
+              </div>
+            </li>
           </ul>
         </div>
       </div>

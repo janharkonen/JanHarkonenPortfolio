@@ -41,7 +41,7 @@ export const LensMirrorSimulator = () => {
         </li>
         <li>
           <div className="flex items-center gap-2">
-          <span>Editor:</span> {brandedItemBadge("sublime")}
+          <span>Editor of choice:</span> {brandedItemBadge("sublime")}
           </div>
         </li>
         </ul>

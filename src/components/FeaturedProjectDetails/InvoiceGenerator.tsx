@@ -13,12 +13,16 @@ export const InvoiceGenerator = () => {
         <p className="text-base mb-4">
           Offer generator is a web app we build in our startup that 
           me and a few friends have founded. It is aimed for small businesses to 
-          speed up their product offer process. The app offers an intuitive
-          UI gathering product info and saves it into a database. The app then 
-          generates a PDF file with the product info to be sent to their customers.
+          speed up their product offer process for their customers. The app 
+          offers an intuitive UI gathering product info and saves it into a database.
+          The app then generates a PDF file with the product info to be sent to 
+          their customers.
+        </p>
+        <p className="text-base mb-4">
           The main time-saving feature for our client is our over 100 000 product
           catalogue from different suppliers has been integrated within the software 
-          in an easily digestible format.
+          in an easily digestible format and fully accessible even if a supplier's 
+          website crashes (which happens quite frequently).
         </p>
         <p className="text-base">
           This was built by our startup Pion Blanc Oy. We are a small team of 3 
@@ -28,11 +32,9 @@ export const InvoiceGenerator = () => {
               rel="noopener noreferrer" 
               className="text-blue-500 hover:underline ml-1">
                 www.pionblanc.fi
-          </a>}. This has been my biggest personal project yet that I have built format
+          </a>}. This has been my biggest personal project yet that I have built from
           scratch, and what a journey it has been! This project has seen lots of iterations, 
-          and I've learned so much about software development. In terms of tech stack I will 
-          divide the major iterations into 3 parts, the latest of which is obviously the 
-          best one yet.  
+          and I've learned so much about software development throughout.
         </p>
       </div>
       <div className="mt-4">
@@ -61,7 +63,7 @@ export const InvoiceGenerator = () => {
             </li>
             <li>
               <div className="flex items-center gap-2">
-                <span>State managment:</span> 
+                <span>State management:</span> 
                 {brandedItemBadge("zustand")}
               </div>
             </li>
@@ -133,6 +135,13 @@ export const InvoiceGenerator = () => {
                 <span>IDE:</span> {brandedItemBadge("vscode")}
               </div>
             </li>
+            <li>
+              <div className="flex items-center gap-2">
+                <span>Version control</span>
+                {brandedItemBadge("git")}
+                {brandedItemBadge("gitkraken")}
+              </div>
+            </li>
           </ul>
         </div>
       </div>
@@ -142,10 +151,11 @@ export const InvoiceGenerator = () => {
         <div className="flex flex-wrap gap-4">
           <ul className="list-disc pl-5 space-y-1">
             <li>Cloud VPS deployment</li>
-            <li>Containerization</li>
-            <li>Authentication</li>
+            <li>Containerization and Docker</li>
+            <li>Authentication and JWT</li>
             <li>Deploying relational databases</li>
             <li>CRON jobs</li>
+            <li>Bash scripts</li>
             <li>Multi-tenancy</li>
           </ul>
         </div>
@@ -159,19 +169,22 @@ export const InvoiceGenerator = () => {
         />
         <h3 className="text-lg font-semibold mb-2">Overview</h3>
         <p className="text-base mb-4">
-          Let's go back in time and see what our application looked like before.
-          At this stage it was still a work in progress but and some mainTechnologies 
-          didn't make it to the next major version, for good reason. Before using Zustand 
-          I used Redux for state management, but it turned out to be a pain to use 
-          for our use case. Also MSSQL server was ditched for PostgreSQL eventually. 
-          I've only heard shade being thrown towards MSSQL, and my experience with 
-          it kind of confirmed it. The biggest issues were installing ODBC drivers, not 
-          being open-source software and being more designed for Windows OS environments. 
-          Also our whole tech stack was a mess before using Docker. The front-end React 
-          app was deployed on Vercel, the Flask API was deployed on a Hetzner cloud VPS 
-          with a different domain name, and our MSSQL database was self hosted on my 
-          laptop at home. Now we of course deploy it all on one VPS in 3 different 
-          Docker containers.
+          At this stage the app was still work-in-progress, but we made huge improvements
+          compared to the previous version. For example we actually started using React 
+          and for good reason.
+          I tried using Redux for state management, but I felt it was way too 
+          complicated for <b>A)</b>. an inexperienced front-end dev and <b>B)</b> for our use case.
+        </p>
+        <p className="text-base mb-4">
+          MSSQL server was something that I've only heard shade being thrown towards, 
+          and my experience with it kind of confirmed it. The biggest issues were 
+          1) installing ODBC drivers, 2) not being open-source software and 
+          3) being more designed for Windows environments. 
+        </p>
+        <p className="text-base mb-4">
+          The whole tech stack was just kinda of weird. We used Flask for the API, 
+          which was deployed on a Hetzner VPS, our React app was deployed on 
+          Vercel and the MSSQL database ran on my home laptop.
         </p>
       </div>
       <div>
@@ -219,6 +232,7 @@ export const InvoiceGenerator = () => {
               <div className="flex items-center gap-2">
                 <span>Deployment:</span> 
                 {brandedItemBadge("hetzner")}
+                {brandedItemBadge("ubuntu")}
                 {brandedItemBadge("vercel")}
               </div>
             </li>
@@ -239,6 +253,13 @@ export const InvoiceGenerator = () => {
             <li>
               <div className="flex items-center gap-2">
                 <span>IDE:</span> {brandedItemBadge("vscode")}
+              </div>
+            </li>
+            <li>
+              <div className="flex items-center gap-2">
+                <span>Version control</span>
+                {brandedItemBadge("git")}
+                {brandedItemBadge("gitkraken")}
               </div>
             </li>
           </ul>
@@ -264,19 +285,27 @@ export const InvoiceGenerator = () => {
         />
         <h3 className="text-lg font-semibold mb-2">Overview</h3>
         <p className="text-base mb-4">
-          Looking back even further back in time I can clearly see how can I've 
-          gone and how much I've learned in such a short time. This version was 
-          done as a desktop application mainly for user validation. In the 
-          beginning we made a timelessly classic mistake: we developed the app 
-          without consideration in deployment. Surprise, surprise, when it was 
-          time for deployment, it was a pain. Especially since our first user 
-          used MacOS. I wish there was a tool where an app and its dependencies 
-          work on any machine! In the very beginning we usedd pure .csv files as 
-          our database, but we quickly pivoted to MSSQL server, since I had it 
-          already installed in my laptop, and we actually deployed it from my 
-          home laptop. Also making the UI for a Python desktop app is a huge 
-          pain, and I knew that this is not the modern way of creating let 
-          alone deploying front-end applications. 
+          Looking back I can clearly see how much I've learned in such a 
+          short time. This version was done as a desktop application as our first MVP.
+        </p>
+        <p className="text-base mb-4">
+          Deployment was something we never considered. I think this is one of 
+          the inexperienced dev's classic blunder even though it is inevitable
+          eventually. Surprise, surprise, when it was time for deployment, 
+          it was a huge pain, since our first user used MacOS and installing 
+          Python and the appropriate dependencies was next to impossible. 
+          I wish there was a tool where an app and its dependencies would 
+          work on any machine!
+        </p>
+        <p className="text-base mb-4">
+          As our database we used simple .csv files as in the beginning,
+          but we quickly pivoted to an SQL database. I already had MSSQL Server 
+          on my laptop, and we actually deployed it from my home laptop.
+        </p>
+        <p className="text-base mb-4">
+          Building a UI for a Python desktop app sucks. It was a lesson I had too
+          learn the hard way. I quickly realized that this cannot be the 
+          modern way of creating front-end applications. 
         </p>
       </div>
       <div>
@@ -315,6 +344,13 @@ export const InvoiceGenerator = () => {
                 <span>IDE:</span> {brandedItemBadge("vscode")}
               </div>
             </li>
+            <li>
+              <div className="flex items-center gap-2">
+                <span>Version control</span>
+                {brandedItemBadge("git")}
+                {brandedItemBadge("gitkraken")}
+              </div>
+            </li>
           </ul>
         </div>
       </div>
@@ -323,9 +359,9 @@ export const InvoiceGenerator = () => {
         <div className="flex flex-wrap gap-4">
           <ul className="list-disc pl-5 space-y-1">
             <li>Leading a small team of devs</li>
-            <li>Database deployment</li>
-            <li>MSSQL sucks</li>
-            <li>Front-end with Python sucks</li>
+            <li>Database deployment (kinda)</li>
+            <li>The fact that MSSQL Server sucks</li>
+            <li>The fact that UI development in Python sucks</li>
           </ul>
         </div>
       </div>

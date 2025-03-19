@@ -40,6 +40,11 @@ export const ProgressTrackerOld = () => {
                 <span>IDE:</span> {brandedItemBadge("androidstudio")}
               </div>
             </li>
+            <li>
+              <div className="flex items-center gap-2">
+                <span>Version control</span> {brandedItemBadge("git")}
+              </div>
+            </li>
           </ul>
         </div>
       </div>

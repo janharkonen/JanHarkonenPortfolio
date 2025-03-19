@@ -118,6 +118,8 @@ const brandedItems: BrandedItemList = {
                     logoUrl: "https://brandlogos.net/wp-content/uploads/2020/03/Linux-logo-512x512.png" },
     ubuntu         :{ name: "Ubuntu",
                     logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/UbuntuCoF.svg/1024px-UbuntuCoF.svg.png" },
+    gitkraken      :{ name: "GitKraken",
+                    logoUrl: "https://cdn.worldvectorlogo.com/logos/gitkraken.svg" },
 };
 
 export default brandedItems
