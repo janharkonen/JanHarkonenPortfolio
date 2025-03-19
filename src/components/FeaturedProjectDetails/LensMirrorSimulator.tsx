@@ -1,11 +1,10 @@
 import { brandedItemBadge } from "@/data/BrandedItemsComponents.tsx"
-import LensMirrorSimPic from "../../assets/lens_mirror_generator.png"
 
 export const LensMirrorSimulator = () => {
   return (
     <div className="max-w-4xl">
       <img
-      src={LensMirrorSimPic || "/placeholder.svg"}
+      src={"https://i4ndcxhbcg.ufs.sh/f/Qdvn5pODvKPkdKzb1U8lQmz1vNV5LD4rko93Gt87hBHbiXI6"}
       alt="Progress tracker"
       className="w-full h-[500px] object-cover rounded-md"
       />
@@ -42,7 +41,7 @@ export const LensMirrorSimulator = () => {
         </li>
         <li>
           <div className="flex items-center gap-2">
-          <span>Editor:</span> {brandedItemBadge("sublime")}
+          <span>Editor of choice:</span> {brandedItemBadge("sublime")}
           </div>
         </li>
         </ul>
