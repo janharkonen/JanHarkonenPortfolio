@@ -14,6 +14,7 @@ import { Aalto1 } from "./WorkExperienceModals/Aalto1.tsx"
 import { Aalto2 } from "./WorkExperienceModals/Aalto2.tsx"
 import { SemantumModal } from "./WorkExperienceModals/SemantumModal.tsx"
 import { PolyconModal } from "./WorkExperienceModals/PolyconModal.tsx"
+import { PionBlancModal } from "./WorkExperienceModals/PionBlancModal.tsx"
 
 export interface Experience {
   title: string
@@ -30,11 +31,30 @@ export interface Experience {
 
 const experiences: Experience[] = [
   {
+    title: "Software Developer / CEO",
+    company: brandedItems.pionblanc,
+    period: "2024 - present",
+    description:
+      "Automatic offer generating solution as desktop application with self-hosted database",
+    tools: [
+      brandedItems.react,
+      brandedItems.python,
+      brandedItems.postgresql,
+      brandedItems.docker,
+      brandedItems.hetzner,
+    ],
+    pdfUrl: "",
+    pdfCaption: "",
+    pdfUrl2: "",
+    pdfCaption2: "",
+    modal: PionBlancModal,
+  },
+  {
     title: "Software Developer",
     company: brandedItems.polycon,
     period: "2021 - 2024",
     description:
-      "Developing and maintaining software and databases for handling mobility aid items for Finnish hospital districts.",
+      "Developing and maintaining software and databases for handling mobility aid items for Finnish hospital districts",
     tools: [
       brandedItems.delphi,
       brandedItems.MSSQLServer,
