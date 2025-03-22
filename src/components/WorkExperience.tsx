@@ -13,6 +13,7 @@ import {
 import { Aalto1 } from "./WorkExperienceModals/Aalto1.tsx"
 import { Aalto2 } from "./WorkExperienceModals/Aalto2.tsx"
 import { SemantumModal } from "./WorkExperienceModals/SemantumModal.tsx"
+import { PolyconModal } from "./WorkExperienceModals/PolyconModal.tsx"
 
 export interface Experience {
   title: string
@@ -31,23 +32,18 @@ const experiences: Experience[] = [
   {
     title: "Software Developer",
     company: brandedItems.polycon,
-    period: "2021 - Present",
+    period: "2021 - 2024",
     description:
       "Developing and maintaining software and databases for handling mobility aid items for Finnish hospital districts.",
     tools: [
       brandedItems.delphi,
       brandedItems.MSSQLServer,
-      brandedItems.sourcetree,
-      brandedItems.gitlab,
-      brandedItems.git,
-      brandedItems.radstudio,
-      brandedItems.vscode,
     ],
     pdfUrl: "",
     pdfCaption: "",
     pdfUrl2: "",
     pdfCaption2: "",
-    modal: Aalto1,
+    modal: PolyconModal,
   },
   {
     title: "Software Developer / Data Analyst",
