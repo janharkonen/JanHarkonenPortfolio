@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/dialog"
 import { Aalto1 } from "./WorkExperienceModals/Aalto1.tsx"
 import { Aalto2 } from "./WorkExperienceModals/Aalto2.tsx"
+import { SemantumModal } from "./WorkExperienceModals/SemantumModal.tsx"
 
 export interface Experience {
   title: string
@@ -55,16 +56,15 @@ const experiences: Experience[] = [
     description: "Developing LCA dashboard for assessing environmental impact of factory processes.",
     tools: [
       brandedItems.java,
-      brandedItems.haskell,
       brandedItems.influxdb,
       brandedItems.docker,
-      brandedItems.git,
+      brandedItems.haskell,
     ],
     pdfUrl: "",
     pdfCaption: "",
     pdfUrl2: "",
     pdfCaption2: "",
-    modal: Aalto1,
+    modal: SemantumModal,
   },
   {
     title: "Research Assistant",
@@ -77,12 +77,6 @@ const experiences: Experience[] = [
       brandedItems.quantumespresso,
       brandedItems.casino,
       brandedItems.cscmahti,
-      brandedItems.matlab,
-      brandedItems.github,
-      brandedItems.git,
-      brandedItems.emacs,
-      brandedItems.overleaf,
-      brandedItems.latex,
     ],
     pdfUrl: DippaPDF,
     pdfCaption: "Master's thesis",
