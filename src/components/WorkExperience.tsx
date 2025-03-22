@@ -69,7 +69,7 @@ const experiences: Experience[] = [
     title: "Software Developer / Data Analyst",
     company: brandedItems.semantum,
     period: "Feb 2020 - Sep 2020",
-    description: "Developing LCA dashboard for assessing environmental impact of factory processes.",
+    description: "Developing LCA dashboard for assessing environmental impact of factory processes",
     tools: [
       brandedItems.java,
       brandedItems.influxdb,
@@ -87,7 +87,7 @@ const experiences: Experience[] = [
     company: brandedItems.aaltosci,
     period: "Jun 2019 - Dec 2019",
     description:
-      "Simulating and calculating the annihilating electron-positron pair momentum density in a solid in the atomic scale using quantum Monte Carlo methods (Master's thesis).",
+      "Simulating and calculating the annihilating electron-positron pair momentum density in a solid in the atomic scale using quantum Monte Carlo methods (Master's thesis)",
     tools: [
       brandedItems.fortran,
       brandedItems.quantumespresso,
@@ -105,7 +105,7 @@ const experiences: Experience[] = [
     company: brandedItems.aaltosci,
     period: "Summer 2018",
     description:
-      "Simulating and calculating the enhancement factor in a semiconductor in the atomic scale using quantum Monte Carlo methods (Special assignment).",
+      "Simulating and calculating the enhancement factor in a semiconductor in the atomic scale using quantum Monte Carlo methods (Special assignment)",
     tools: [
       brandedItems.fortran,
       brandedItems.quantumespresso,
