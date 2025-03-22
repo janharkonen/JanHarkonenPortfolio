@@ -8,11 +8,11 @@ import {
   DialogDescription,
 } from "@/components/ui/dialog"
 import brandedItems from "../data/BrandedItems.tsx"
-//import { ProgressTracker } from "./FeaturedProjectDetails/ProgressTracker.tsx"
-import { InvoiceGenerator } from "./FeaturedProjectDetails/InvoiceGenerator.tsx"
-import { PortfolioSite } from "./FeaturedProjectDetails/PortfolioSite.tsx"
-import { ProgressTrackerOld } from "./FeaturedProjectDetails/ProgressTrackerOld.tsx"
-import { LensMirrorSimulator } from "./FeaturedProjectDetails/LensMirrorSimulator.tsx"
+//import { ProgressTracker } from "./FeaturedProjectModals/ProgressTracker.tsx"
+import { InvoiceGenerator } from "./FeaturedProjectModals/InvoiceGenerator.tsx"
+import { PortfolioSite } from "./FeaturedProjectModals/PortfolioSite.tsx"
+import { ProgressTrackerOld } from "./FeaturedProjectModals/ProgressTrackerOld.tsx"
+import { LensMirrorSimulator } from "./FeaturedProjectModals/LensMirrorSimulator.tsx"
 
 const projects = [
   //{
