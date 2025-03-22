@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/dialog"
 import brandedItems from "../data/BrandedItems.tsx"
 //import { ProgressTracker } from "./FeaturedProjectModals/ProgressTracker.tsx"
-import { InvoiceGenerator } from "./FeaturedProjectModals/InvoiceGenerator.tsx"
+import { OfferGenerator } from "./FeaturedProjectModals/OfferGenerator.tsx"
 import { PortfolioSite } from "./FeaturedProjectModals/PortfolioSite.tsx"
 import { ProgressTrackerOld } from "./FeaturedProjectModals/ProgressTrackerOld.tsx"
 import { LensMirrorSimulator } from "./FeaturedProjectModals/LensMirrorSimulator.tsx"
@@ -32,8 +32,8 @@ const projects = [
   //  component: ProgressTracker,
   //},
   {
-    title: "Invoice generator",
-    description: "Automatic invoice generating solution as desktop application with self-hosted database.",
+    title: "Offer generator",
+    description: "Automatic offer generating solution as desktop application with self-hosted database.",
     image: 'https://i4ndcxhbcg.ufs.sh/f/Qdvn5pODvKPktof3qLIQx7Uzq0RnSYy3cApovfTXwsGjLeON',
     period: "2024-2025",
     mainTechnologies: [
@@ -45,7 +45,7 @@ const projects = [
       brandedItems.docker,
       brandedItems.hetzner,
     ],
-    component: InvoiceGenerator,
+    component: OfferGenerator,
   },
   {
     title: "Portfolio site",

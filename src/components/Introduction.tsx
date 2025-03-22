@@ -6,6 +6,7 @@ const proficientTools = [
     brandedItems.react,
     brandedItems.python,
     brandedItems.postgresql,
+    brandedItems.docker,
     brandedItems.ubuntu,
     brandedItems.git,
 ]

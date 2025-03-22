@@ -264,6 +264,10 @@ const brandedItems: BrandedItemList = {
       name: "Overleaf",
       logoUrl: "https://cdn.simpleicons.org/overleaf",
     },
+    pionblanc:{ 
+      name: "Pion Blanc Oy",
+      logoUrl: "https://i4ndcxhbcg.ufs.sh/f/Qdvn5pODvKPkN7fPXbFGEpBmxOl6KwDtJFygMCcrsI1qA8TQ",
+    },
 };
 
 export default brandedItems

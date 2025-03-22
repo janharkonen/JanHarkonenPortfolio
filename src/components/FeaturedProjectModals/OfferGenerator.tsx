@@ -1,6 +1,6 @@
 import { brandedItemBadge } from "@/data/BrandedItemsComponents.tsx"
 
-export const InvoiceGenerator = () => {
+export const OfferGenerator = () => {
   return (
     <div className="max-w-4xl">
       <img
