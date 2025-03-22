@@ -239,7 +239,31 @@ const brandedItems: BrandedItemList = {
     quantumespresso:{ 
       name: "Quantum ESPRESSO",
       logoUrl: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.openscience.org%2Fblog%2Fwp-content%2Fuploads%2F2009%2F01%2Fquantum_espresso6_trasparentbg.png&f=1&nofb=1&ipt=b303839d6fc58b58a54f26025a3d2da3fec77c81e00caab2cba0cc06f75f650e&ipo=images" 
-    }
+    },
+    casino:{ 
+      name: "CASINO",
+      logoUrl: "https://i4ndcxhbcg.ufs.sh/f/Qdvn5pODvKPkRQrK3Xnn4Ow76XVfbLPNQyhWiUaACjdM9sF0" 
+    },
+    cscmahti:{ 
+      name: "CSC Mahti",
+      logoUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fregmedia.co.uk%2F2012%2F07%2F09%2Ffinland_csc_logo.jpg&f=1&nofb=1&ipt=5c1b8ca6fe262d409540e8e4ada27d4521b8e3c1269b1f146e48e0e93356dcb5&ipo=images" 
+    },
+    matlab:{ 
+      name: "Matlab",
+      logoUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdic.academic.ru%2Fpictures%2Fwiki%2Ffiles%2F77%2FMatlab_Logo.png&f=1&nofb=1&ipt=de8b9be6d426a4eeb2cfcff0b906bd53996e2b5a9945f3b004ab19acaabb3a9c&ipo=images",
+    },
+    github:{ 
+      name: "Github",
+      logoUrl: "https://cdn.simpleicons.org/github",
+    },
+    emacs:{ 
+      name: "Emacs",
+      logoUrl: "https://cdn.simpleicons.org/gnuemacs",
+    },
+    overleaf:{ 
+      name: "Overleaf",
+      logoUrl: "https://cdn.simpleicons.org/overleaf",
+    },
 };
 
 export default brandedItems
