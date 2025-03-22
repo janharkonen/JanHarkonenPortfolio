@@ -1,4 +1,4 @@
-type BrandedItem = {
+export type BrandedItem = {
   name: string;
   logoUrl: string;
 };

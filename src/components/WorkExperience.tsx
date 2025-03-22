@@ -5,7 +5,7 @@ import { BookOpenText, X } from "lucide-react"
 import CASINOLogo from "../assets/CASINO.png"
 import ErkkaPDF from "../../src/Jan_Harkonen_Special_Assignment.pdf"
 import DippaPDF from "../../src/Jan_Harkonen_Masters_thesis.pdf"
-import brandedItems from "../data/BrandedItems.tsx"
+import brandedItems, { BrandedItem } from "../data/BrandedItems.tsx"
 import {
   Dialog,
   DialogContent,
@@ -16,7 +16,19 @@ import {
 } from "@/components/ui/dialog"
 import { Aalto1 } from "./WorkExperienceModals/Aalto1.tsx"
 
-const experiences = [
+export interface Experience {
+  title: string
+  company: BrandedItem
+  period: string
+  description: string
+  tools: BrandedItem[]
+  pdfUrl: string
+  pdfCaption: string
+  pdfUrl2: string
+  pdfCaption2: string
+}
+
+const experiences: Experience[] = [
   {
     title: "Software Developer",
     company: brandedItems.polycon,
@@ -220,29 +232,8 @@ export default function WorkExperience() {
       <Dialog open={selectedExp !== null} onOpenChange={closeModal}>
         {selectedExp !== null && (
           <DialogContent className="sm:max-w-3xl">
-            <DialogHeader>
-              <DialogTitle className="text-2xl">{experiences[selectedExp].title}</DialogTitle>
-              <DialogDescription className="text-lg font-medium">
-                {experiences[selectedExp].company.name} | {experiences[selectedExp].period}
-              </DialogDescription>
-            </DialogHeader>
 
-            <div className="grid gap-6">
-
-              <div className="flex items-center justify-center">
-                <img
-                  src={experiences[selectedExp].company.logoUrl || "/placeholder.svg"}
-                  alt={`${experiences[selectedExp].company.name} logo`}
-                  className="w-32 h-32 object-contain"
-                  />
-              </div>
-
-              <div>
-                <h3 className="text-lg font-semibold mb-2">Description</h3>
-                <p className="text-base">{experiences[selectedExp].description}</p>
-              </div>
-              <Aalto1 experience={experiences[selectedExp]}/>
-            </div>
+            <Aalto1 experience={experiences[selectedExp]}/>
 
             <DialogClose className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
               <X className="h-4 w-4" />
