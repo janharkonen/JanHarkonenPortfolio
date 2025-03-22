@@ -11,6 +11,7 @@ import {
   DialogClose,
 } from "@/components/ui/dialog"
 import { Aalto1 } from "./WorkExperienceModals/Aalto1.tsx"
+import { Aalto2 } from "./WorkExperienceModals/Aalto2.tsx"
 
 export interface Experience {
   title: string
@@ -87,7 +88,7 @@ const experiences: Experience[] = [
     pdfCaption: "Master's thesis",
     pdfUrl2: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.108.045201",
     pdfCaption2: "Research paper as co-author",
-    modal: Aalto1,
+    modal: Aalto2,
   },
   {
     title: "Research Assistant",
