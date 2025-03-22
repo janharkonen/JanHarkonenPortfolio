@@ -99,13 +99,13 @@ export default function FeaturedProjects() {
     setTooltip({ show: false, text: "", x: 0, y: 0 })
   }
 
-  const handleMouseMove = (e: React.MouseEvent) => { // Update: Added type annotation
+  const handleMouseMove = (e: React.MouseEvent) => { 
     if (tooltip.show) {
       setTooltip(prev => ({ ...prev, x: e.clientX, y: e.clientY }))
     }
   }
 
-  const handleCardClick = (project: typeof projects[number]) => { // Update: Added type annotation
+  const handleCardClick = (project: typeof projects[number]) => { 
     setSelectedProject(project)
     setModalOpen(true)
   }
@@ -166,7 +166,7 @@ export default function FeaturedProjects() {
 
       <Dialog open={modalOpen} onOpenChange={setModalOpen}>
         {selectedProject && (
-            <DialogContent className="sm:max-w-3xl max-h-[calc(100vh-4rem)] overflow-y-auto">
+          <DialogContent className="sm:max-w-3xl max-h-[calc(100vh-4rem)] overflow-y-auto">
             <DialogHeader>
               <DialogTitle className="text-2xl">{selectedProject.title}</DialogTitle>
               <DialogDescription className="text-base font-medium text-primary">
