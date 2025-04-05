@@ -266,7 +266,11 @@ export const brandedItems: BrandedItemList = {
     },
     pionblanc:{ 
       name: "Pion Blanc Oy",
-      logoUrl: "https://i4ndcxhbcg.ufs.sh/f/Qdvn5pODvKPkN7fPXbFGEpBmxOl6KwDtJFygMCcrsI1qA8TQ",
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/20c610e3647d4e9582fd2bf469025a92.png",
+    },
+    debian:{ 
+      name: "Debian",
+      logoUrl: "https://imgs.search.brave.com/mV28jf-NBucxv2QwEP63spCo_03Aj-jK7LYy2LFCPZI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yYXcu/Z2l0aHVidXNlcmNv/bnRlbnQuY29tL2dp/bGJhcmJhcmEvbG9n/b3MvbWFpbi9sb2dv/cy9kZWJpYW4uc3Zn",
     },
 };
 
