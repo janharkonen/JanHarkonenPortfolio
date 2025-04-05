@@ -54,7 +54,14 @@ export default function RootLayout({
           <DarkModeToggle />
         </div>
         {children}
-      </body>
+      <footer className="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+        <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
+          <p className="text-center text-sm text-gray-500">
+            © {new Date().getFullYear()} Jan Härkönen.
+          </p>
+        </div>
+      </footer>
+    </body>
     </html>
   );
 }
