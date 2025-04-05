@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import brandedItems, { BrandedItem } from "@/lib/brandedItems"
 
-export function ProficientItem(brandKey: string) {
+export default function ProficientItem({brandKey} : {brandKey: string}) {
     const [tooltip, setTooltip] = useState({ show: false, text: '', x: 0, y: 0 })
 
     const handleMouseEnter = (e: React.MouseEvent, text: string) => {

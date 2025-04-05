@@ -1,5 +1,5 @@
 import { MapPin } from "lucide-react"
-import { ProficientItem } from "./BrandedItemComponents"
+import ProficientItem from "./BrandedItemComponents"
 
 export default function Introduction() {
     return(
