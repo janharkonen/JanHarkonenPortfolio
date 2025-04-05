@@ -17,12 +17,12 @@ export default function Introduction() {
           <div className="mt-8">
             <h3 className="text-xl font-semibold mb-4">I'm most proficient with</h3>
             <div className="flex flex-wrap gap-8 max-w-2xl mx-auto">
-              {ProficientItem("react")}
-              {ProficientItem("python")}
-              {ProficientItem("postgresql")}
-              {ProficientItem("docker")}
-              {ProficientItem("linux")}
-              {ProficientItem("git")}
+              <ProficientItem brandKey='react' />
+              <ProficientItem brandKey="python" />
+              <ProficientItem brandKey="postgresql" />
+              <ProficientItem brandKey="docker" />
+              <ProficientItem brandKey="linux" />
+              <ProficientItem brandKey="git" />
             </div>
           </div>
         </div>

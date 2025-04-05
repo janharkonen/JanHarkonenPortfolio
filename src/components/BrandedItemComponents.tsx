@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import brandedItems, { BrandedItem } from "@/lib/brandedItems"
 
-export function ProficientItem(key: string) {
+export function ProficientItem(brandKey: string) {
     const [tooltip, setTooltip] = useState({ show: false, text: '', x: 0, y: 0 })
 
     const handleMouseEnter = (e: React.MouseEvent, text: string) => {
@@ -23,13 +23,13 @@ export function ProficientItem(key: string) {
     return (
         <div>
             <div
-              key={key}
+              key={brandKey}
               className="flex flex-col items-center"
-              onMouseEnter={(e) => handleMouseEnter(e, brandedItems[key].name)}
+              onMouseEnter={(e) => handleMouseEnter(e, brandedItems[brandKey].name)}
               onMouseLeave={handleMouseLeave}
               onMouseMove={handleMouseMove}
             >
-                <img src={brandedItems[key].logoUrl} alt={`${brandedItems[key].name} logo`} className="w-12 h-12 object-contain" />
+                <img src={brandedItems[brandKey].logoUrl} alt={`${brandedItems[brandKey].name} logo`} className="w-12 h-12 object-contain" />
             </div>
             {tooltip.show && (
               <div 
