@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import DarkModeToggle from "@/components/DarkModeToggle";
+import ContactMe from "@/components/ContactButtons";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -48,10 +49,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} bg-orange-50/15 dark:bg-gray-950 text-gray-600 dark:text-gray-400 antialiased flex flex-col min-h-screen`}
+        className={`${geistSans.variable} ${geistMono.variable} bg-orange-50/25 dark:bg-gray-950 text-gray-600 dark:text-gray-400 antialiased flex flex-col min-h-screen`}
       >
         <div className="fixed top-4 right-4 z-50">
           <DarkModeToggle />
+        </div>
+        <div className="fixed top-4 left-4 sm:right-0 sm:left-0 z-49">
+          <ContactMe />
         </div>
         {children}
         <footer className="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
