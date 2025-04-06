@@ -3,8 +3,14 @@ export type BrandedItem = {
   logoUrl: string;
 };
 
+export type BrandedItemWithDark = {
+  name: string;
+  logoUrl: string;
+  logoUrlDark: string;
+};
+
 type BrandedItemList = {
-  [key: string]: BrandedItem;
+  [key: string]: BrandedItem | BrandedItemWithDark;
 };
 
 export const brandedItems: BrandedItemList = {
@@ -22,7 +28,7 @@ export const brandedItems: BrandedItemList = {
     },
     kaist: { 
       name: "Korea Advanced Institute of Science and Technology (KAIST)",
-      logoUrl: "https://i.pinimg.com/736x/fe/2a/d8/fe2ad805c565eefa62ffc3d50c80aa01.jpg" 
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/05c5e320726e4fbbad11c92f58586af7.png" 
     },
     delphi: { 
       name: "Delphi",
@@ -30,7 +36,7 @@ export const brandedItems: BrandedItemList = {
     },
     MSSQLServer: { 
       name: "Microsoft SQL Server",
-      logoUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.7TIOHIVieZJ564CaI1B8LQAAAA%26pid%3DApi&f=1&ipt=aed1fbd637221218c13f8b4fc98bf59ba08fb142938dfdc707d75acdffba2f78&ipo=images" 
+      logoUrl: "https://img.icons8.com/?size=100&id=laYYF3dV0Iew&format=png&color=000000" 
     },
     postgresql: { 
       name: "PostgreSQL",
@@ -82,7 +88,7 @@ export const brandedItems: BrandedItemList = {
     },
     vite: { 
       name: "Vite",
-      logoUrl: "https://seeklogo.com/images/V/vite-logo-BFD4283991-seeklogo.com.png" 
+      logoUrl: "https://img.icons8.com/?size=100&id=dJjTWMogzFzg&format=png&color=000000" 
     },
     nodejs: { 
       name: "Node.js",
@@ -110,7 +116,7 @@ export const brandedItems: BrandedItemList = {
     },
     pyqt4: { 
       name: "PyQT 4",
-      logoUrl: "https://w7.pngwing.com/pngs/736/205/png-transparent-the-qt-company-qt-creator-visual-designer-miscellaneous-text-rectangle.png" 
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/a3837d506db745bc8eb456632eedf589.png" 
     },
     tkinter: { 
       name: "Tkinter",
@@ -182,7 +188,8 @@ export const brandedItems: BrandedItemList = {
     },
     sqlalchemy: { 
       name: "SQLAlchemy",
-      logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/SQLAlchemy.svg/1920px-SQLAlchemy.svg.png" 
+      logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/SQLAlchemy.svg/1920px-SQLAlchemy.svg.png", 
+      logoUrlDark: "https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/logos/sqlalchemy-xqyioi6lnwqrrtewhic4ip.png/sqlalchemy-7d4f5ti4ysdgam0da2cctk.png?_a=DAJFJtWIZAAC",
     },
     nginx: { 
       name: "Nginx",
@@ -190,7 +197,7 @@ export const brandedItems: BrandedItemList = {
     },
     gunicorn: { 
       name: "Gunicorn",
-      logoUrl: "https://e7.pngegg.com/pngimages/633/5/png-clipart-green-unicorn-illustration-gunicorn-logo-icons-logos-emojis-tech-companies.png" 
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/6af22f05caad40debd353bd7f23a0511.png" 
     },
     lechat: { 
       name: "Le Chat",
@@ -214,7 +221,8 @@ export const brandedItems: BrandedItemList = {
     },
     aws: { 
       name: "AWS",
-      logoUrl: "https://cdn.freebiesupply.com/logos/large/2x/aws-logo-logo-png-transparent.png" 
+      logoUrl: "https://img.icons8.com/?size=100&id=33039&format=png&color=000000",
+      logoUrlDark: "https://img.icons8.com/?size=100&id=52257&format=png&color=000000" 
     },
     ec2: { 
       name: "EC2",
@@ -222,7 +230,7 @@ export const brandedItems: BrandedItemList = {
     },
     linux: { 
       name: "Linux",
-      logoUrl: "https://brandlogos.net/wp-content/uploads/2020/03/Linux-logo-512x512.png" 
+      logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/800px-Tux.svg.png" 
     },
     ubuntu: { 
       name: "Ubuntu",
@@ -246,7 +254,7 @@ export const brandedItems: BrandedItemList = {
     },
     cscmahti:{ 
       name: "CSC Mahti",
-      logoUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fregmedia.co.uk%2F2012%2F07%2F09%2Ffinland_csc_logo.jpg&f=1&nofb=1&ipt=5c1b8ca6fe262d409540e8e4ada27d4521b8e3c1269b1f146e48e0e93356dcb5&ipo=images" 
+      logoUrl: "https://upload.wikimedia.org/wikipedia/fi/thumb/7/76/CSC_logo.svg/583px-CSC_logo.svg.png?20080126105759" 
     },
     matlab:{ 
       name: "Matlab",
@@ -271,6 +279,14 @@ export const brandedItems: BrandedItemList = {
     debian:{ 
       name: "Debian",
       logoUrl: "https://imgs.search.brave.com/mV28jf-NBucxv2QwEP63spCo_03Aj-jK7LYy2LFCPZI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yYXcu/Z2l0aHVidXNlcmNv/bnRlbnQuY29tL2dp/bGJhcmJhcmEvbG9n/b3MvbWFpbi9sb2dv/cy9kZWJpYW4uc3Zn",
+    },
+    sqlite:{ 
+      name: "SQLite",
+      logoUrl: "https://images.icon-icons.com/2699/PNG/512/sqlite_logo_icon_169724.png",
+    },
+    vanillajs:{ 
+      name: "Vanilla Javascript",
+      logoUrl: "https://cdn.simpleicons.org/javascript" 
     },
 };
 

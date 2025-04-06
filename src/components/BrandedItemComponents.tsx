@@ -1,9 +1,41 @@
 "use client"
 
-import { useState } from 'react'
-import brandedItems, { BrandedItem } from "@/lib/brandedItems"
+import { useEffect, useState } from 'react'
+import brandedItems, { BrandedItemWithDark } from "@/lib/brandedItems"
 
 export default function ProficientItem({brandKey} : {brandKey: string}) {
+    const [isDarkMode, setIsDarkMode] = useState(false);
+
+    useEffect(() => {
+      // Check initial dark mode state
+      const checkDarkMode = () => {
+        const isDark = document.documentElement.classList.contains('dark');
+        setIsDarkMode(isDark);
+      };
+
+      // Check on initial load
+      checkDarkMode();
+
+      // Set up mutation observer to watch for class changes on <html>
+      const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+          if (
+            mutation.type === 'attributes' && 
+            mutation.attributeName === 'class'
+          ) {
+            checkDarkMode();
+          }
+        });
+      });
+
+      observer.observe(document.documentElement, { attributes: true });
+
+      // Clean up observer on component unmount
+      return () => {
+        observer.disconnect();
+      };
+    }, []);
+
     const [tooltip, setTooltip] = useState({ show: false, text: '', x: 0, y: 0 })
 
     const handleMouseEnter = (e: React.MouseEvent, text: string) => {
@@ -20,6 +52,9 @@ export default function ProficientItem({brandKey} : {brandKey: string}) {
         }
     }
 
+    const logoUrl = brandedItems[brandKey].logoUrl
+    const logoUrlDark = (brandedItems[brandKey] as BrandedItemWithDark).logoUrlDark
+    const logoSrc = isDarkMode && logoUrlDark ? logoUrlDark : logoUrl
     return (
         <div>
             <div
@@ -29,7 +64,23 @@ export default function ProficientItem({brandKey} : {brandKey: string}) {
               onMouseLeave={handleMouseLeave}
               onMouseMove={handleMouseMove}
             >
-                <img src={brandedItems[brandKey].logoUrl} alt={`${brandedItems[brandKey].name} logo`} className="w-12 h-12 object-contain" />
+                <img 
+                  src={logoSrc} 
+                  alt={`${brandedItems[brandKey].name} logo`} 
+                  className={`w-12 h-12 object-contain ${[
+                    'vercel', 
+                    'shadcn', 
+                    'latex', 
+                    'flask', 
+                    'github',
+                    'pionblanc', 
+                    'V0',
+                    'aaltosci',
+                    'tkinter',
+                    'aws',
+                    'sqlalchemy',
+                    ].includes(brandKey) ? 'dark:invert' : ''}`}
+                />
             </div>
             {tooltip.show && (
               <div 
