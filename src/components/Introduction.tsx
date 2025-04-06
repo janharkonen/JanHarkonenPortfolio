@@ -30,10 +30,10 @@ export default function Introduction() {
               </div>
               <h2 className="text-2xl font-semibold">Full Stack Developer</h2>
               <p className="text-lg">
-                Writing software that's pleasant to look at
+                Writing software that&apos;s pleasant to look at
               </p>
               <div className="mt-6 md:mt-8">
-                <h3 className="text-xl font-semibold mb-8">I'm most proficient with</h3>
+                <h3 className="text-xl font-semibold mb-8">I&apos;m most proficient with</h3>
                 <div className="flex flex-wrap justify-center md:justify-start gap-4 sm:gap-8">
                   {[
                     'react', 

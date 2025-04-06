@@ -31,7 +31,7 @@ export default function ProficientItem({brandKey} : {brandKey: string}) {
               onMouseMove={handleMouseMove}
             >
                 <img 
-                  src={getLogoUrl(brandKey)} 
+                  src={GetLogoUrl(brandKey)} 
                   alt={`${brandedItems[brandKey].name} logo`} 
                   className={`w-12 h-12 sm:w-12 sm:h-12 object-contain ${[
                     'vercel', 
@@ -58,7 +58,7 @@ export default function ProficientItem({brandKey} : {brandKey: string}) {
     )
 }
 
-export function getLogoUrl(brandKey: string){
+export function GetLogoUrl(brandKey: string){
     
     const [isDarkMode, setIsDarkMode] = useState(false);
 
