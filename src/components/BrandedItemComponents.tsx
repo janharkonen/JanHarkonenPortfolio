@@ -25,7 +25,7 @@ export default function ProficientItem({brandKey} : {brandKey: string}) {
         <div>
             <div
               key={brandKey}
-              className="flex flex-col items-center"
+              className="flex flex-col items-center max-w-2xl"
               onMouseEnter={(e) => handleMouseEnter(e, brandedItems[brandKey].name)}
               onMouseLeave={handleMouseLeave}
               onMouseMove={handleMouseMove}
@@ -33,7 +33,7 @@ export default function ProficientItem({brandKey} : {brandKey: string}) {
                 <img 
                   src={getLogoUrl(brandKey)} 
                   alt={`${brandedItems[brandKey].name} logo`} 
-                  className={`w-12 h-12 object-contain ${[
+                  className={`w-16 h-16 sm:w-12 sm:h-12 object-contain ${[
                     'vercel', 
                     'shadcn', 
                     'latex', 

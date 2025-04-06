@@ -15,8 +15,8 @@ export default function Introduction() {
             Writing software that's pleasant to look at
           </p>
           <div className="mt-8">
-            <h3 className="text-xl font-semibold mb-4">I'm most proficient with</h3>
-            <div className="flex flex-wrap gap-8">
+            <h3 className="text-xl font-semibold mb-8">I'm most proficient with</h3>
+            <div className="flex flex-wrap justify-center gap-8">
               {[
                 'react', 
                 'python', 
