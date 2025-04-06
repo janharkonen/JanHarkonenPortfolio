@@ -42,7 +42,6 @@ export default function ProficientItem({brandKey} : {brandKey: string}) {
                     'V0',
                     'aaltosci',
                     'tkinter',
-                    'aws',
                     'sqlalchemy',
                     ].includes(brandKey) ? 'dark:invert' : ''}`}
                 />

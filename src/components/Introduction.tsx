@@ -11,12 +11,12 @@ export default function Introduction() {
             <span className="ml-2">&#127467;&#127470;</span>
           </div>
           <h2 className="text-2xl font-semibold">Full Stack Developer</h2>
-          <p className="max-w-2xl text-lg">
+          <p className="text-lg">
             Writing software that's pleasant to look at
           </p>
           <div className="mt-8">
             <h3 className="text-xl font-semibold mb-4">I'm most proficient with</h3>
-            <div className="flex flex-wrap gap-8 max-w-2xl mx-auto">
+            <div className="flex flex-wrap gap-8">
               {[
                 'react', 
                 'python', 

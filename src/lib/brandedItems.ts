@@ -16,15 +16,15 @@ type BrandedItemList = {
 export const brandedItems: BrandedItemList = {
     polycon: { 
       name: "Polycon Oy",
-      logoUrl: "https://www.polycon.fi/wp-content/uploads/2020/03/polycon_turkoosi_500x49-300x29.png" 
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/fc39eaeb27044bec9290363ccc17e643.png" 
     },
     semantum: { 
       name: "Semantum Oy",
-      logoUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.licdn.com%2Fdms%2Fimage%2FC4D0BAQFAENbYsHiSYw%2Fcompany-logo_200_200%2F0%2F1519861441759%3Fe%3D2147483647%26v%3Dbeta%26t%3D-NRp0a94ITtT3Ao_29IuWCKZA7gJRuCS2-mVtqpm7ZY&f=1&nofb=1&ipt=77d42a74743b9d75795b2ba80326a16db7c7a045450ca4874e082ce8f78f2f8c&ipo=images" 
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/80ea9104d9a64803a5cc1f65d7aeff4d.png?BGb=69&BGl=49&BGr=40" 
     },
     aaltosci: { 
       name: "Aalto University School of Science",
-      logoUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.studyinfinland.fi%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fog_image%2Fpublic%2F2018-10%2FAalto%2520logo_0.png%3Fitok%3DBTbxbaXQ&f=1&nofb=1&ipt=03995a6c82b83b78a02c3bff036ae2161b5c9cd69e779ea2e0fb3332e85758eb&ipo=images" 
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/86946a2d15ff4442b3c0e4b6a8b8d8c9.png?BG=50" 
     },
     kaist: { 
       name: "Korea Advanced Institute of Science and Technology (KAIST)",
@@ -223,7 +223,7 @@ export const brandedItems: BrandedItemList = {
     aws: { 
       name: "AWS",
       logoUrl: "https://img.icons8.com/?size=100&id=33039&format=png&color=000000",
-      logoUrlDark: "https://img.icons8.com/?size=100&id=52257&format=png&color=000000" 
+      logoUrlDark: "https://picapi.janharkonen.fi/api/pics/ec053a28e10a44c9812788a8d4c2f9ef.png" 
     },
     ec2: { 
       name: "EC2",
