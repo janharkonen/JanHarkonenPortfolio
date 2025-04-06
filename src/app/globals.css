@@ -76,14 +76,6 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
-/* Keep this for system preference detection */
-@media (prefers-color-scheme: dark) {
-  :root:not(.light) {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
