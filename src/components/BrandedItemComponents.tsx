@@ -4,6 +4,63 @@ import { useEffect, useState } from 'react'
 import brandedItems, { BrandedItemWithDark } from "@/lib/brandedItems"
 
 export default function ProficientItem({brandKey} : {brandKey: string}) {
+
+    const [tooltip, setTooltip] = useState({ show: false, text: '', x: 0, y: 0 })
+
+    const handleMouseEnter = (e: React.MouseEvent, text: string) => {
+        setTooltip({ show: true, text, x: e.clientX, y: e.clientY })
+    }
+
+    const handleMouseLeave = () => {
+        setTooltip({ show: false, text: '', x: 0, y: 0 })
+    }
+
+    const handleMouseMove = (e: React.MouseEvent) => {
+        if (tooltip.show) {
+            setTooltip(prev => ({ ...prev, x: e.clientX, y: e.clientY }))
+        }
+    }
+    
+    return (
+        <div>
+            <div
+              key={brandKey}
+              className="flex flex-col items-center"
+              onMouseEnter={(e) => handleMouseEnter(e, brandedItems[brandKey].name)}
+              onMouseLeave={handleMouseLeave}
+              onMouseMove={handleMouseMove}
+            >
+                <img 
+                  src={getLogoUrl(brandKey)} 
+                  alt={`${brandedItems[brandKey].name} logo`} 
+                  className={`w-12 h-12 object-contain ${[
+                    'vercel', 
+                    'shadcn', 
+                    'latex', 
+                    'flask', 
+                    'github',
+                    'V0',
+                    'aaltosci',
+                    'tkinter',
+                    'aws',
+                    'sqlalchemy',
+                    ].includes(brandKey) ? 'dark:invert' : ''}`}
+                />
+            </div>
+            {tooltip.show && (
+              <div 
+                className="fixed pointer-events-none bg-black text-white px-2 py-1 rounded text-sm"
+                style={{ left: `${tooltip.x + 10}px`, top: `${tooltip.y + 10}px` }}
+              >
+                {tooltip.text}
+              </div>
+            )}
+        </div>
+    )
+}
+
+export function getLogoUrl(brandKey: string){
+    
     const [isDarkMode, setIsDarkMode] = useState(false);
 
     useEffect(() => {
@@ -35,61 +92,9 @@ export default function ProficientItem({brandKey} : {brandKey: string}) {
         observer.disconnect();
       };
     }, []);
-
-    const [tooltip, setTooltip] = useState({ show: false, text: '', x: 0, y: 0 })
-
-    const handleMouseEnter = (e: React.MouseEvent, text: string) => {
-        setTooltip({ show: true, text, x: e.clientX, y: e.clientY })
-    }
-
-    const handleMouseLeave = () => {
-        setTooltip({ show: false, text: '', x: 0, y: 0 })
-    }
-
-    const handleMouseMove = (e: React.MouseEvent) => {
-        if (tooltip.show) {
-            setTooltip(prev => ({ ...prev, x: e.clientX, y: e.clientY }))
-        }
-    }
-
+    
     const logoUrl = brandedItems[brandKey].logoUrl
     const logoUrlDark = (brandedItems[brandKey] as BrandedItemWithDark).logoUrlDark
     const logoSrc = isDarkMode && logoUrlDark ? logoUrlDark : logoUrl
-    return (
-        <div>
-            <div
-              key={brandKey}
-              className="flex flex-col items-center"
-              onMouseEnter={(e) => handleMouseEnter(e, brandedItems[brandKey].name)}
-              onMouseLeave={handleMouseLeave}
-              onMouseMove={handleMouseMove}
-            >
-                <img 
-                  src={logoSrc} 
-                  alt={`${brandedItems[brandKey].name} logo`} 
-                  className={`w-12 h-12 object-contain ${[
-                    'vercel', 
-                    'shadcn', 
-                    'latex', 
-                    'flask', 
-                    'github',
-                    'pionblanc', 
-                    'V0',
-                    'aaltosci',
-                    'tkinter',
-                    'aws',
-                    'sqlalchemy',
-                    ].includes(brandKey) ? 'dark:invert' : ''}`}
-                />
-            </div>
-            {tooltip.show && (
-              <div 
-                className="fixed pointer-events-none bg-black text-white px-2 py-1 rounded text-sm"
-                style={{ left: `${tooltip.x + 10}px`, top: `${tooltip.y + 10}px` }}
-              >
-                {tooltip.text}
-              </div>
-            )}
-        </div>
-    )
+    return logoSrc
 }

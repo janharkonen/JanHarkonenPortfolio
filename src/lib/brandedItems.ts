@@ -28,7 +28,7 @@ export const brandedItems: BrandedItemList = {
     },
     kaist: { 
       name: "Korea Advanced Institute of Science and Technology (KAIST)",
-      logoUrl: "https://picapi.janharkonen.fi/api/pics/05c5e320726e4fbbad11c92f58586af7.png" 
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/c1eb00569d58459ca9360a859bbec303.png?BG=60" 
     },
     delphi: { 
       name: "Delphi",
@@ -116,7 +116,7 @@ export const brandedItems: BrandedItemList = {
     },
     pyqt4: { 
       name: "PyQT 4",
-      logoUrl: "https://picapi.janharkonen.fi/api/pics/a3837d506db745bc8eb456632eedf589.png" 
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/a48383689ac44f1395c566eccd92c181.png" 
     },
     tkinter: { 
       name: "Tkinter",
@@ -124,7 +124,8 @@ export const brandedItems: BrandedItemList = {
     },
     pandas: { 
       name: "Pandas",
-      logoUrl: "https://pandas.pydata.org/static/img/pandas_mark.svg" 
+      logoUrl: "https://pandas.pydata.org/static/img/pandas_mark.svg",
+      logoUrlDark: "https://pandas.pydata.org/static/img/favicon_white.ico" 
     },
     vercel: { 
       name: "Vercel",
@@ -197,7 +198,7 @@ export const brandedItems: BrandedItemList = {
     },
     gunicorn: { 
       name: "Gunicorn",
-      logoUrl: "https://picapi.janharkonen.fi/api/pics/6af22f05caad40debd353bd7f23a0511.png" 
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/3418d4bd32aa468d82f1f79ddd550945.png" 
     },
     lechat: { 
       name: "Le Chat",
@@ -274,7 +275,7 @@ export const brandedItems: BrandedItemList = {
     },
     pionblanc:{ 
       name: "Pion Blanc Oy",
-      logoUrl: "https://picapi.janharkonen.fi/api/pics/20c610e3647d4e9582fd2bf469025a92.png",
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/2ca92b65bbcd4d40bb6c18803b084192.png",
     },
     debian:{ 
       name: "Debian",
