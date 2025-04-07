@@ -43,6 +43,7 @@ export default function ProficientItem({brandKey} : {brandKey: string}) {
                     'aaltosci',
                     'tkinter',
                     'sqlalchemy',
+                    'nextjs',
                     ].includes(brandKey) ? 'dark:invert' : ''}`}
                 />
             </div>

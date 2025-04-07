@@ -289,6 +289,10 @@ export const brandedItems: BrandedItemList = {
       name: "Vanilla Javascript",
       logoUrl: "https://cdn.simpleicons.org/javascript" 
     },
+    nextjs:{ 
+      name: "NextJS",
+      logoUrl: "https://www.svgrepo.com/show/354113/nextjs-icon.svg" 
+    },
 };
 
 export default brandedItems
