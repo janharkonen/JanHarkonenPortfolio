@@ -140,7 +140,7 @@ export default function WorkExperience() {
 
   return (
     <section onMouseMove={handleMouseMove}>
-      <div className="space-y-6">
+      <div>
         {experiences.map((exp, index) => (
           <Card
             key={index}

@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import brandedItems, { BrandedItemWithDark } from "@/lib/brandedItems"
 
-export default function ProficientItem({brandKey} : {brandKey: string}) {
+export default function BrandedItemLogo({brandKey} : {brandKey: string}) {
 
     const [tooltip, setTooltip] = useState({ show: false, text: '', x: 0, y: 0 })
 
@@ -25,27 +25,11 @@ export default function ProficientItem({brandKey} : {brandKey: string}) {
         <div>
             <div
               key={brandKey}
-              className="flex flex-col items-center max-w-2xl"
               onMouseEnter={(e) => handleMouseEnter(e, brandedItems[brandKey].name)}
               onMouseLeave={handleMouseLeave}
               onMouseMove={handleMouseMove}
             >
-                <img 
-                  src={GetLogoUrl(brandKey)} 
-                  alt={`${brandedItems[brandKey].name} logo`} 
-                  className={`w-12 h-12 sm:w-12 sm:h-12 object-contain ${[
-                    'vercel', 
-                    'shadcn', 
-                    'latex', 
-                    'flask', 
-                    'github',
-                    'V0',
-                    'aaltosci',
-                    'tkinter',
-                    'sqlalchemy',
-                    'nextjs',
-                    ].includes(brandKey) ? 'dark:invert' : ''}`}
-                />
+                {getIcon(brandKey)}
             </div>
             {tooltip.show && (
               <div 
@@ -59,7 +43,25 @@ export default function ProficientItem({brandKey} : {brandKey: string}) {
     )
 }
 
-export function GetLogoUrl(brandKey: string){
+function getIcon(brandKey: string) {
+  return <img
+    src={GetLogoUrl(brandKey)}
+    alt={`${brandedItems[brandKey].name} logo`}
+    className={`object-contain ${[
+      'vercel',
+      'shadcn',
+      'latex',
+      'flask',
+      'github',
+      'V0',
+      'aaltosci',
+      'tkinter',
+      'sqlalchemy',
+      'nextjs',
+    ].includes(brandKey) ? 'dark:invert' : ''}`} />
+}
+
+function GetLogoUrl(brandKey: string){
     
     const [isDarkMode, setIsDarkMode] = useState(false);
 

@@ -181,7 +181,7 @@ export const brandedItems: BrandedItemList = {
     },
     docker: { 
       name: "Docker",
-      logoUrl: "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png" 
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/6263092852e442a49eb3a84baef6632b.png?BG=95" 
     },
     sublime: { 
       name: "Sublime text",

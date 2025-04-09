@@ -1,6 +1,6 @@
 import { MapPin } from "lucide-react"
-import ProficientItem from "./BrandedItemComponents"
 import Image from "next/image"
+import BrandedItemLogo from "./BrandedItemComponents"
 
 export default function Introduction() {
     return(
@@ -43,8 +43,8 @@ export default function Introduction() {
                     'linux', 
                     'git',
                   ].map((brandKey) => (
-                    <div key={brandKey}>
-                      <ProficientItem brandKey={brandKey} />
+                    <div key={brandKey} className="w-12 h-12">
+                      <BrandedItemLogo brandKey={brandKey} />
                     </div>
                   ))}
                 </div>
