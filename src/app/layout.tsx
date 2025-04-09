@@ -48,14 +48,29 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} bg-orange-50/25 dark:bg-gray-950/97 text-gray-600 dark:text-gray-400 antialiased flex flex-col min-h-screen`}
+        className={`
+          ${geistSans.variable} 
+          ${geistMono.variable} 
+          bg-orange-50/25 
+          dark:bg-gray-950/97 
+          text-gray-600 
+          dark:text-gray-400 
+          antialiased 
+          flex 
+          flex-col
+          w-full
+          min-h-screen
+          `}
       >
         <Header />
-        <main className="flex-grow">
+        {/*
+        <main className="max-w-3xl mx-auto flex-grow px-4 sm:px-6 lg:px-8 py-8">
+        */}
+        <main>
           {children}
         </main>
-        <footer className="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
-          <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
+        <footer className="w-full bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+          <div className="mx-auto py-4 px-4 sm:px-6 lg:px-8">
             <p className="text-center text-sm text-gray-500 dark:text-gray-400">
               © {new Date().getFullYear()} Jan Härkönen
             </p>

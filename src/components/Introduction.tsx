@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function Introduction() {
     return(
-        <div className="max-w-2xl mx-auto w-full">
+        <div>
           <div className="flex flex-col md:flex-row-reverse md:items-start gap-8">
             {/* Photo Section - Fixed width on desktop, centered on mobile */}
             <div className="md:w-48 flex justify-center md:justify-end md:flex-shrink-0">

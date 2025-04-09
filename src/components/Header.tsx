@@ -5,12 +5,15 @@ import ContactMe from "@/components/ContactButtons";
 
 export default function Header() {
   return (
-    <header className="top-0 z-50 w-full bg-white/80 dark:bg-gray-950/80 backdrop-blur-sm shadow-md dark:shadow-gray-800 py-4 px-4 sm:px-6">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <div className="flex-1">
+    <header className="text-l sm:text-2xl sticky top-0 z-50 w-full bg-white/80 dark:bg-gray-950/80 backdrop-blur-sm shadow-md dark:shadow-gray-800">
+      <div className="flex flex-row items-center">
+        <div className="flex-1 flex justify-start text-wrap">
+          Jan Härkönen
+        </div>
+        <div className="flex justify-center">
           <ContactMe />
         </div>
-        <div>
+        <div className="flex-1 flex justify-end">
           <DarkModeToggle />
         </div>
       </div>
