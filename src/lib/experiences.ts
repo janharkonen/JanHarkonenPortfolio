@@ -14,11 +14,11 @@ export interface Experience {
 
 export const workExperiences: Experience[] = [
   {
-    title: "Software Developer / CEO",
+    title: "CEO / Software Developer",
     company: "pionblanc",
     period: "2024 - present",
     description:
-      "Automatic offer generating solution as desktop application with self-hosted database",
+      "Product data synchronization and automatic offer generating solution as a web app",
     tools: ["react","python","postgresql","docker","hetzner"],
     pdfUrl: "",
     pdfCaption: "",
