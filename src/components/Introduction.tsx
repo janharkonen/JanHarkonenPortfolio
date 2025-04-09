@@ -1,6 +1,6 @@
 import { MapPin } from "lucide-react"
 import Image from "next/image"
-import BrandedItemLogo from "./BrandedItemComponents"
+import BrandedItemLogoWithTooltip from "./BrandedItemComponents"
 
 export default function Introduction() {
     return(
@@ -44,7 +44,7 @@ export default function Introduction() {
                     'git',
                   ].map((brandKey) => (
                     <div key={brandKey} className="w-12 h-12">
-                      <BrandedItemLogo brandKey={brandKey} />
+                      <BrandedItemLogoWithTooltip brandKey={brandKey} />
                     </div>
                   ))}
                 </div>

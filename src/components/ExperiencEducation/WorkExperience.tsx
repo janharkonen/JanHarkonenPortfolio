@@ -7,13 +7,14 @@ import { BookOpenText, X } from 'lucide-react'
 //import ErkkaPDF from "../../src/Jan_Harkonen_Special_Assignment.pdf"
 //import DippaPDF from "../../src/Jan_Harkonen_Masters_thesis.pdf"
 import brandedItems, { BrandedItem } from "@/lib/brandedItems"
+import BrandedItemLogoWithTooltip, { BrandedItemLogo } from "../BrandedItemComponents"
 
 export interface Experience {
   title: string
-  company: BrandedItem
+  company: string
   period: string
   description: string
-  tools: BrandedItem[]
+  tools: string[]
   pdfUrl: string
   pdfCaption: string
   pdfUrl2: string
@@ -23,16 +24,16 @@ export interface Experience {
 const experiences: Experience[] = [
   {
     title: "Software Developer / CEO",
-    company: brandedItems.pionblanc,
+    company: "pionblanc",
     period: "2024 - present",
     description:
       "Automatic offer generating solution as desktop application with self-hosted database",
     tools: [
-      brandedItems.react,
-      brandedItems.python,
-      brandedItems.postgresql,
-      brandedItems.docker,
-      brandedItems.hetzner,
+      "react",
+      "python",
+      "postgresql",
+      "docker",
+      "hetzner",
     ],
     pdfUrl: "",
     pdfCaption: "",
@@ -41,13 +42,13 @@ const experiences: Experience[] = [
   },
   {
     title: "Software Developer",
-    company: brandedItems.polycon,
+    company: "polycon",
     period: "2021 - 2024",
     description:
       "Developing and maintaining software and databases for handling mobility aid items for Finnish hospital districts",
     tools: [
-      brandedItems.delphi,
-      brandedItems.MSSQLServer,
+      "delphi",
+      "MSSQLServer",
     ],
     pdfUrl: "",
     pdfCaption: "",
@@ -56,14 +57,14 @@ const experiences: Experience[] = [
   },
   {
     title: "Software Developer / Data Analyst",
-    company: brandedItems.semantum,
+    company: "semantum",
     period: "Feb 2020 - Sep 2020",
     description: "Developing LCA dashboard for assessing environmental impact of factory processes",
     tools: [
-      brandedItems.java,
-      brandedItems.influxdb,
-      brandedItems.docker,
-      brandedItems.haskell,
+      "java",
+      "influxdb",
+      "docker",
+      "haskell",
     ],
     pdfUrl: "",
     pdfCaption: "",
@@ -72,15 +73,15 @@ const experiences: Experience[] = [
   },
   {
     title: "Research Assistant",
-    company: brandedItems.aaltosci,
+    company: "aaltosci",
     period: "Jun 2019 - Dec 2019",
     description:
       "Simulating and calculating the annihilating electron-positron pair momentum density in a solid in the atomic scale using quantum Monte Carlo methods (Master's thesis)",
     tools: [
-      brandedItems.fortran,
-      brandedItems.quantumespresso,
-      brandedItems.casino,
-      brandedItems.cscmahti,
+      "fortran",
+      "quantumespresso",
+      "casino",
+      "cscmahti",
     ],
     pdfUrl: "",
     pdfCaption: "Master's thesis",
@@ -89,15 +90,15 @@ const experiences: Experience[] = [
   },
   {
     title: "Research Assistant",
-    company: brandedItems.aaltosci,
+    company: "aaltosci",
     period: "Summer 2018",
     description:
       "Simulating and calculating the enhancement factor in a semiconductor in the atomic scale using quantum Monte Carlo methods (Special assignment)",
     tools: [
-      brandedItems.fortran,
-      brandedItems.quantumespresso,
-      brandedItems.casino,
-      brandedItems.cscmahti,
+      "fortran",
+      "quantumespresso",
+      "casino",
+      "cscmahti",
     ],
     pdfUrl: "",
     pdfCaption: "Special assignment",
@@ -130,35 +131,23 @@ export default function WorkExperience() {
   }
 
 
-  const openModal = (index: number) => {
-    setSelectedExp(index)
-  }
-
-  const closeModal = () => {
-    setSelectedExp(null)
-  }
-
   return (
     <section onMouseMove={handleMouseMove}>
-      <div>
+      <div className="space-y-6">
         {experiences.map((exp, index) => (
           <Card
             key={index}
             className="relative cursor-pointer transition-all hover:shadow-md"
-            onClick={() => openModal(index)}
+            onClick={() => console.log('redirect')}
           >
-            <div className="absolute top-4 left-4 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24">
-              <img
-                src={exp.company.logoUrl || "/placeholder.svg"}
-                alt={`${exp.company.name} logo`}
-                className="w-full h-full object-contain"
-              />
+            <div className="absolute top-4 left-4 w-16 h-16">
+              <BrandedItemLogo brandKey={exp.company} />
             </div>
             <CardHeader className="pt-24 sm:pt-8 pb-4">
               <CardTitle>{exp.title}</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="font-semibold">{exp.company.name}</p>
+              <p className="font-semibold">{brandedItems[exp.company].name}</p>
               <p className="text-sm text-gray-600 mb-4">{exp.period}</p>
               <p className="mb-6">{exp.description}</p>
               <div className="flex justify-center">
@@ -166,11 +155,9 @@ export default function WorkExperience() {
                   {exp.tools.map((tool, toolIndex) => (
                     <div
                       key={toolIndex}
-                      className="flex flex-col items-center"
-                      onMouseEnter={(e) => handleMouseEnter(e, tool.name)}
-                      onMouseLeave={handleMouseLeave}
+                      className="flex flex-col items-center w-8 h-8"
                     >
-                      <img src={`${tool.logoUrl}`} alt={`${tool.name} logo`} className="w-6 h-6 object-contain" />
+                      <BrandedItemLogoWithTooltip brandKey={tool} />
                     </div>
                   ))}
                 </div>

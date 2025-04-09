@@ -4,12 +4,12 @@ import Education from "@/components/ExperiencEducation/Education"
 
 export default function ExperienceEducationTabs() {
   return (
-    <Tabs defaultValue="experience" className="w-full">
-      <TabsList className="grid w-full grid-cols-2 h-16 text-lg">
-        <TabsTrigger value="experience" className="py-4 px-6">
+    <Tabs defaultValue="experience" className="w-full mt-8">
+      <TabsList className="grid w-full grid-cols-2 h-12 text-lg">
+        <TabsTrigger value="experience">
           Work Experience
         </TabsTrigger>
-        <TabsTrigger value="education" className="py-4 px-6">
+        <TabsTrigger value="education">
           Education
         </TabsTrigger>
       </TabsList>

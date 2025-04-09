@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import brandedItems, { BrandedItemWithDark } from "@/lib/brandedItems"
 
-export default function BrandedItemLogo({brandKey} : {brandKey: string}) {
+export default function BrandedItemLogoWithTooltip({brandKey} : {brandKey: string}) {
 
     const [tooltip, setTooltip] = useState({ show: false, text: '', x: 0, y: 0 })
 
@@ -29,7 +29,7 @@ export default function BrandedItemLogo({brandKey} : {brandKey: string}) {
               onMouseLeave={handleMouseLeave}
               onMouseMove={handleMouseMove}
             >
-                {getIcon(brandKey)}
+                <BrandedItemLogo brandKey={brandKey} />
             </div>
             {tooltip.show && (
               <div 
@@ -43,7 +43,7 @@ export default function BrandedItemLogo({brandKey} : {brandKey: string}) {
     )
 }
 
-function getIcon(brandKey: string) {
+export function BrandedItemLogo({brandKey} : {brandKey: string}) {
   return <img
     src={GetLogoUrl(brandKey)}
     alt={`${brandedItems[brandKey].name} logo`}
