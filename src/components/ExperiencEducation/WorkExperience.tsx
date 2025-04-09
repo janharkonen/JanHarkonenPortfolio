@@ -1,20 +1,12 @@
+"use client"
+
 import { useState } from "react"
 import React from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { BookOpenText, X } from 'lucide-react'
-import ErkkaPDF from "../../src/Jan_Harkonen_Special_Assignment.pdf"
-import DippaPDF from "../../src/Jan_Harkonen_Masters_thesis.pdf"
-import brandedItems, { BrandedItem } from "../data/BrandedItems.tsx"
-import {
-  Dialog,
-  DialogContent,
-  DialogClose,
-} from "@/components/ui/dialog"
-import { Aalto1 } from "./WorkExperienceModals/Aalto1.tsx"
-import { Aalto2 } from "./WorkExperienceModals/Aalto2.tsx"
-import { SemantumModal } from "./WorkExperienceModals/SemantumModal.tsx"
-import { PolyconModal } from "./WorkExperienceModals/PolyconModal.tsx"
-import { PionBlancModal } from "./WorkExperienceModals/PionBlancModal.tsx"
+//import ErkkaPDF from "../../src/Jan_Harkonen_Special_Assignment.pdf"
+//import DippaPDF from "../../src/Jan_Harkonen_Masters_thesis.pdf"
+import brandedItems, { BrandedItem } from "@/lib/brandedItems"
 
 export interface Experience {
   title: string
@@ -26,7 +18,6 @@ export interface Experience {
   pdfCaption: string
   pdfUrl2: string
   pdfCaption2: string
-  modal: React.ComponentType<{ experience : Experience}>;
 }
 
 const experiences: Experience[] = [
@@ -47,7 +38,6 @@ const experiences: Experience[] = [
     pdfCaption: "",
     pdfUrl2: "",
     pdfCaption2: "",
-    modal: PionBlancModal,
   },
   {
     title: "Software Developer",
@@ -63,7 +53,6 @@ const experiences: Experience[] = [
     pdfCaption: "",
     pdfUrl2: "",
     pdfCaption2: "",
-    modal: PolyconModal,
   },
   {
     title: "Software Developer / Data Analyst",
@@ -80,7 +69,6 @@ const experiences: Experience[] = [
     pdfCaption: "",
     pdfUrl2: "",
     pdfCaption2: "",
-    modal: SemantumModal,
   },
   {
     title: "Research Assistant",
@@ -94,11 +82,10 @@ const experiences: Experience[] = [
       brandedItems.casino,
       brandedItems.cscmahti,
     ],
-    pdfUrl: DippaPDF,
+    pdfUrl: "",
     pdfCaption: "Master's thesis",
     pdfUrl2: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.108.045201",
     pdfCaption2: "Research paper as co-author",
-    modal: Aalto2,
   },
   {
     title: "Research Assistant",
@@ -112,11 +99,10 @@ const experiences: Experience[] = [
       brandedItems.casino,
       brandedItems.cscmahti,
     ],
-    pdfUrl: ErkkaPDF,
+    pdfUrl: "",
     pdfCaption: "Special assignment",
     pdfUrl2: "",
     pdfCaption2: "",
-    modal: Aalto1,
   },
 ]
 
@@ -213,23 +199,6 @@ export default function WorkExperience() {
           </Card>
         ))}
       </div>
-
-      {/* Modal Dialog */}
-      <Dialog open={selectedExp !== null} onOpenChange={closeModal}>
-        {selectedExp !== null && (
-          <DialogContent className="sm:max-w-3xl">
-            {/* Render the modal component with the experience as props */}
-            {React.createElement(experiences[selectedExp].modal, { 
-              experience: experiences[selectedExp] 
-            })}
-
-            <DialogClose className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
-              <X className="h-4 w-4" />
-              <span className="sr-only">Close</span>
-            </DialogClose>
-          </DialogContent>
-        )}
-      </Dialog>
 
       {tooltip.show && (
         <div
