@@ -1,6 +1,5 @@
 "use client"
 
-import { Experience } from "@/lib/experiences";
 import { BookOpenText } from "lucide-react";
 import { useState } from "react";
 
@@ -36,7 +35,7 @@ export default function BookIconLink({ url, label }: { url: string, label: strin
                 onMouseMove={handleMouseMove}
                 onClick={(e) => {
                   e.stopPropagation();
-                  window.open(`/${url}`, "_blank");
+                  window.open(url, "_blank");
                 }}
               />
             </div>

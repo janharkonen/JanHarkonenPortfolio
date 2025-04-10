@@ -1,5 +1,3 @@
-import brandedItems from "./brandedItems"
-
 export interface Experience {
   title: string
   company: string
@@ -81,7 +79,7 @@ export const educationExperiences: Experience[] = [
     period: "2018 - 2020",
     description: "Major: mathematics, minor: engineering physics",
     tools: [],
-    pdfUrl: 'asd',
+    pdfUrl:  "/Jan_Harkonen_Masters_thesis.pdf",
     pdfCaption: "Master's thesis",
     pdfUrl2: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.108.045201",
     pdfCaption2: "Research paper as co-author",
@@ -103,7 +101,7 @@ export const educationExperiences: Experience[] = [
     period: "2014 - 2018",
     description: "Major: engineering physics and mathematics, minor: electrical engineering",
     tools: [],
-    pdfUrl: 'asd',
+    pdfUrl: "/Jan_Harkonen_Bachelors_thesis.pdf",
     pdfCaption: "Bachelor's thesis",
     pdfUrl2: "",
     pdfCaption2: "",
