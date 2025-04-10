@@ -3,7 +3,7 @@
 import { BookOpenText } from "lucide-react";
 import { useState } from "react";
 
-export const handlePdfDownload = (e: React.MouseEvent, pdfUrl: string) => {
+const handlePdfDownload = (e: React.MouseEvent, pdfUrl: string, title?: string) => {
     e.stopPropagation()
     window.open(pdfUrl, "_blank")
 }
@@ -33,10 +33,7 @@ export default function BookIconLink({ url, label }: { url: string, label: strin
                 onMouseEnter={(e) => handleMouseEnter(e, label)}
                 onMouseLeave={handleMouseLeave}
                 onMouseMove={handleMouseMove}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  window.open(url, "_blank");
-                }}
+                onClick={(e) => {handlePdfDownload(e, url, label)}}
               />
             </div>
             {tooltip.show && (
