@@ -1,6 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card"
-import { Experience } from "./WorkExperience"
-
+import { Experience } from "@/lib/experiences"
 
 export default function ExperienceCard({ experience }: { experience: Experience }) {
     return (
