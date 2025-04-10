@@ -51,7 +51,7 @@ export default function RootLayout({
         className={`
           ${geistSans.variable} 
           ${geistMono.variable} 
-          bg-orange-50/25 
+          bg-orange-50 
           dark:bg-gray-950/97 
           text-gray-600 
           dark:text-gray-400 
