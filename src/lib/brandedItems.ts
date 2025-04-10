@@ -14,21 +14,25 @@ type BrandedItemList = {
 };
 
 export const brandedItems: BrandedItemList = {
-    polycon: { 
+  pionblanc:{ 
+    name: "Pion Blanc Oy",
+    logoUrl: "https://picapi.janharkonen.fi/api/pics/2ca92b65bbcd4d40bb6c18803b084192.png",
+  },
+  polycon: { 
       name: "Polycon Oy",
       logoUrl: "https://picapi.janharkonen.fi/api/pics/fc39eaeb27044bec9290363ccc17e643.png" 
     },
     semantum: { 
       name: "Semantum Oy",
-      logoUrl: "https://picapi.janharkonen.fi/api/pics/80ea9104d9a64803a5cc1f65d7aeff4d.png?BGb=69&BGl=49&BGr=40" 
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/16655070d3ad450a85959f8bc7b8db2d.png" 
     },
     aaltosci: { 
       name: "Aalto University School of Science",
-      logoUrl: "https://picapi.janharkonen.fi/api/pics/86946a2d15ff4442b3c0e4b6a8b8d8c9.png?BG=50" 
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/86946a2d15ff4442b3c0e4b6a8b8d8c9.png?BG=75" 
     },
     kaist: { 
       name: "Korea Advanced Institute of Science and Technology (KAIST)",
-      logoUrl: "https://picapi.janharkonen.fi/api/pics/c1eb00569d58459ca9360a859bbec303.png?BG=60" 
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/c1eb00569d58459ca9360a859bbec303.png?BG=80" 
     },
     delphi: { 
       name: "Delphi",
@@ -272,10 +276,6 @@ export const brandedItems: BrandedItemList = {
     overleaf:{ 
       name: "Overleaf",
       logoUrl: "https://cdn.simpleicons.org/overleaf",
-    },
-    pionblanc:{ 
-      name: "Pion Blanc Oy",
-      logoUrl: "https://picapi.janharkonen.fi/api/pics/2ca92b65bbcd4d40bb6c18803b084192.png",
     },
     debian:{ 
       name: "Debian",
