@@ -1,7 +1,7 @@
 'use client';
 
-import DarkModeToggle from "@/components/DarkModeToggle";
-import ContactMe from "@/components/ContactButtons";
+import DarkModeToggle from "@/components/header/DarkModeToggle";
+import ContactMe from "@/components/header/ContactButtons";
 
 export default function Header() {
   return (
