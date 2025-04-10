@@ -1,8 +1,3 @@
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Jan Härkönen - Resume",
-};
 
 export default function PdfLayout({
   children,
@@ -11,8 +6,7 @@ export default function PdfLayout({
 }) {
   return (
     <html lang="en">
-      <body className="h-screen w-screen overflow-hidden">
-      <header></header>
+      <body style={{ margin: 0, padding: 0, overflow: 'hidden', height: '100vh', width: '100vw' }}>
         {children}
       </body>
     </html>
