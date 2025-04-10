@@ -235,7 +235,7 @@ export const brandedItems: BrandedItemList = {
     },
     linux: { 
       name: "Linux",
-      logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/800px-Tux.svg.png" 
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/2008891e943c466a99328a3cc939c4b3.png?BG=110" 
     },
     ubuntu: { 
       name: "Ubuntu",

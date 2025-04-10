@@ -1,20 +1,12 @@
-import ExperienceCard from "@/components/ExperiencEducation/ExperienceCard";
+import ExperienceEducationTabs from "@/components/ExperiencEducation/ExperienceEducationTabs";
 import Introduction from "@/components/Introduction";
-import { workExperiences, educationExperiences } from "@/lib/experiences";
 
 export default function Home() {
   return (
     <>
-    <div className="flex flex-col">
+    <div className="flex flex-col space-y-8">
       <Introduction />
-      <ExperienceCard experience={workExperiences[0]} />
-      <ExperienceCard experience={workExperiences[1]} />
-      <ExperienceCard experience={workExperiences[2]} />
-      <ExperienceCard experience={workExperiences[3]} />
-      <ExperienceCard experience={workExperiences[4]} />
-      <ExperienceCard experience={educationExperiences[0]} />
-      <ExperienceCard experience={educationExperiences[1]} />
-      <ExperienceCard experience={educationExperiences[2]} />
+      <ExperienceEducationTabs />
     </div>
     </>
   );
