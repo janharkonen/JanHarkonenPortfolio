@@ -47,7 +47,7 @@ export function BrandedItemLogo({brandKey} : {brandKey: string}) {
   return <img
     src={GetLogoUrl(brandKey)}
     alt={`${brandedItems[brandKey].name} logo`}
-    className={`object-contain ${[
+    className={`w-full h-full object-contain ${[
       'vercel',
       'shadcn',
       'latex',
