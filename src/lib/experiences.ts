@@ -53,7 +53,7 @@ export const workExperiences: Experience[] = [
     description:
       "Simulating and calculating the annihilating electron-positron pair momentum density in a solid in the atomic scale using quantum Monte Carlo methods (Master's thesis)",
     tools: ["fortran", "quantumespresso", "casino", "cscmahti"],
-    pdfUrl: "",
+    pdfUrl:  "/Jan_Harkonen_Masters_thesis.pdf",
     pdfCaption: "Master's thesis",
     pdfUrl2: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.108.045201",
     pdfCaption2: "Research paper as co-author",
@@ -65,7 +65,7 @@ export const workExperiences: Experience[] = [
     description:
       "Simulating and calculating the enhancement factor in a semiconductor in the atomic scale using quantum Monte Carlo methods (Special assignment)",
     tools: ["fortran", "quantumespresso", "casino", "cscmahti"],
-    pdfUrl: "",
+    pdfUrl: "/Jan_Harkonen_Special_assignment.pdf",
     pdfCaption: "Special assignment",
     pdfUrl2: "",
     pdfCaption2: "",
