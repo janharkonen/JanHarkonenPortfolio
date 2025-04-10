@@ -1,12 +1,11 @@
 import { brandedItems } from "@/lib/brandedItems"
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card"
 import { Experience } from "@/lib/experiences"
-import { BrandedItemLogo } from "../BrandedItemComponents"
+import BrandedItemLogoWithTooltip, { BrandedItemLogo } from "../BrandedItemComponents"
 import BookIconLink from "./BookIconLink"
 
 export default function ExperienceCard({ experience }: { experience: Experience }) {
     const brandedItem = brandedItems[experience.company]  
-
     return (
     <Card className="flex flex-col">
       <div className="flex flex-row">
@@ -34,6 +33,15 @@ export default function ExperienceCard({ experience }: { experience: Experience 
         <p className="font-semibold">{brandedItem.name}</p>
         <p className="text-sm text-gray-600 mb-4">{experience.period}</p>
         <p className="mb-6">{experience.description}</p>
+        {experience.tools.length > 0 && (
+          <div className="flex flex-wrap justify-center gap-4">
+            {experience.tools.map((tool) => (
+              <div key={tool} className="w-6 h-6 flex flex-col items-center justify-center">
+                <BrandedItemLogoWithTooltip brandKey={tool} />
+              </div>
+            ))}
+          </div>
+        )}
       </CardContent>
     </Card>
   )
