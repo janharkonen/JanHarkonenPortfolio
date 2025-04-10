@@ -9,7 +9,7 @@ export const handlePdfDownload = (e: React.MouseEvent, pdfUrl: string) => {
     window.open(pdfUrl, "_blank")
 }
 
-export default function BookIconLink({ experience }: { experience: Experience }) {
+export default function BookIconLink({ url, label }: { url: string, label: string }) {
     const [tooltip, setTooltip] = useState({ show: false, text: "", x: 0, y: 0 })
   
     const handleMouseEnter = (e: React.MouseEvent, text: string) => {
@@ -31,12 +31,12 @@ export default function BookIconLink({ experience }: { experience: Experience })
             <div>
               <BookOpenText 
                 className="cursor-pointer text-gray-600 hover:text-gray-800" 
-                onMouseEnter={(e) => handleMouseEnter(e, `${experience.pdfCaption}`)}
+                onMouseEnter={(e) => handleMouseEnter(e, label)}
                 onMouseLeave={handleMouseLeave}
                 onMouseMove={handleMouseMove}
                 onClick={(e) => {
                   e.stopPropagation();
-                  window.open(`/${experience.pdfUrl}`, "_blank");
+                  window.open(`/${url}`, "_blank");
                 }}
               />
             </div>
