@@ -4,7 +4,7 @@ import Introduction from "@/components/Introduction";
 export default function Home() {
   return (
     <>
-    <div className="flex flex-col space-y-8">
+    <div className="flex flex-col space-y-8 w-full">
       <Introduction />
       <ExperienceEducationTabs />
     </div>

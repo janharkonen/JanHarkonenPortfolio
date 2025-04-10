@@ -63,10 +63,7 @@ export default function RootLayout({
           `}
       >
         <Header />
-        {/*
-        <main>
-        */}
-        <main className="max-w-3xl mx-auto flex-grow px-4 sm:px-6 lg:px-8 py-8">
+        <main className="max-w-3xl w-full mx-auto flex-grow px-4 sm:px-6 lg:px-8 py-8 overflow-x-hidden">
           {children}
         </main>
         <footer className="w-full bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
