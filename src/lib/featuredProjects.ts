@@ -24,7 +24,7 @@ export const featuredProjects: FeaturedProject[] = [
     imageUrl: "https://picapi.janharkonen.fi/api/pics/99c5a0b0dc4d4e9a9ce85413039a6916.png?BGc=gray&BG=120",
     period: "2025",
     tools: ["svelte", "nodejs", "redis", "docker", "aws"],
-    detailsUrl: "",
+    detailsUrl: "/featured_projects/progress_tracker",
     githubUrl: "",
   },
   {
