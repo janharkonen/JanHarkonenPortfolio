@@ -36,7 +36,7 @@ export const workExperiences: Experience[] = [
     pdfCaption: "",
     pdfUrl2: "",
     pdfCaption2: "",
-    detailsUrl: "",
+    detailsUrl: "/work_experience/polycon",
   },
   {
     title: "Software Developer / Data Analyst",
