@@ -1,10 +1,15 @@
 import { BrandedItemBadge } from "@/components/BrandedItemComponents";
+import { FeaturedProject, featuredProjects } from "@/lib/featuredProjects";
+const project: FeaturedProject = featuredProjects[2]
+
 
 export default function Home() {
   return (
-      <div className="max-w-4xl">
+    <div className="w-full">
+      <h1 className="text-3xl font-bold mb-4">{project.title}</h1>
+      <h2 className="text-xl mb-4">{project.period}</h2>
       <img
-      src={"https://i4ndcxhbcg.ufs.sh/f/Qdvn5pODvKPktof3qLIQx7Uzq0RnSYy3cApovfTXwsGjLeON"}
+      src={"https://picapi.janharkonen.fi/api/pics/3f7e838a1aad493ab7f7176bbb203620.png?BGc=white&BG=101"}
       alt="Portfolio site"
       className="w-full h-auto max-h-[500px] object-contain rounded-md"
       />
@@ -41,10 +46,10 @@ export default function Home() {
         <h3 className="text-lg font-semibold mb-2">Key Features</h3>
         <ul className="list-disc pl-5 space-y-1">
             <li>Up-to-date product catalogue with over 100 000 products</li>
-            <li>Web app interface accessible for offer generation</li>
+            <li>Web app interface for automated offer generation</li>
             <li>User authentication with Auth0</li>
             <li>Cloud database with PostgreSQL</li>
-            <li>API integration data retrieval</li>
+            <li>API integration for data retrieval</li>
         </ul>
       </div>
           
@@ -71,8 +76,8 @@ export default function Home() {
             <div className="flex items-center gap-2">
               <span>API:</span> 
               <BrandedItemBadge brandKey="python" />
-              <BrandedItemBadge brandKey="pandas" />
               <BrandedItemBadge brandKey="flask" />
+              <BrandedItemBadge brandKey="pandas" />
               <BrandedItemBadge brandKey="gunicorn" />
             </div>
           </li>
@@ -152,7 +157,7 @@ export default function Home() {
             <li>Cloud VPS deployment</li>
             <li>Containerization and Docker</li>
             <li>Authentication and JWT</li>
-            <li>Deploying relational databases</li>
+            <li>Deploying PostgreSQL server</li>
             <li>CRON jobs</li>
             <li>Bash scripts</li>
             <li>Multi-tenancy</li>
@@ -160,13 +165,14 @@ export default function Home() {
         </div>
       </div>
       <div className="mt-4">
-        <h3 className="text-lg font-semibold mb-2">Previous version (V2)</h3>
+        <h2 className="text-2xl font-bold mb-4">Older version</h2>
+        <h2 className="text-xl mb-4">2024</h2>
         <img
         src={"https://i4ndcxhbcg.ufs.sh/f/Qdvn5pODvKPkMw3r8kWvGnxFZoQ0yXh5u7Ow8mJea6lVbpY2"}
         alt="Portfolio site"
         className="w-full h-auto max-h-[500px] object-contain rounded-md"
         />
-        <h3 className="text-lg font-semibold mb-2">Overview</h3>
+        <h3 className="text-lg font-semibold my-2">Overview (V2)</h3>
         <p className="text-base mb-4">
           At this stage the app was still work-in-progress, but we made huge improvements
           compared to the previous version. For example we actually started using React 
@@ -276,20 +282,21 @@ export default function Home() {
         </div>
       </div>
       <div className="mt-4">
-        <h3 className="text-lg font-semibold mb-2">Previous version (V1)</h3>
+        <h2 className="text-2xl font-bold mb-4">MVP</h2>
         <img
         src={"https://i4ndcxhbcg.ufs.sh/f/Qdvn5pODvKPkp8xlCWLmK7jIaWX2v9gyeotRC4SMzb1D6QYx"}
         alt="Portfolio site"
         className="w-full h-auto max-h-[500px] object-contain rounded-md"
         />
-        <h3 className="text-lg font-semibold mb-2">Overview</h3>
+        <h3 className="text-lg font-semibold mb-2">Overview (V1)</h3>
         <p className="text-base mb-4">
-          Looking back I can clearly see how much I&apos;ve learned in such a 
-          short time. This version was done as a desktop application as our first MVP.
+          Looking back I can see how far we've gotten in such a short time. 
+          This version was done as a desktop application as our first MVP.
         </p>
         <p className="text-base mb-4">
-          Deployment was something we never considered. I think this is one of 
-          the inexperienced dev&apos;s classic blunder even though it is inevitable
+          Deployment was something we haven&apos;t considered initially. 
+          I think this is one of the inexperienced dev&apos;s classic 
+          blunder even though it is inevitable
           eventually. Surprise, surprise, when it was time for deployment, 
           it was a huge pain, since our first user used MacOS and installing 
           Python and the appropriate dependencies was next to impossible. 
@@ -358,6 +365,7 @@ export default function Home() {
           <ul className="list-disc pl-5 space-y-1">
             <li>Leading a small team of devs</li>
             <li>Database deployment (kinda)</li>
+            <li>TCP/IP configuration</li>
             <li>The fact that MSSQL Server sucks</li>
             <li>The fact that UI development in Python sucks</li>
           </ul>
