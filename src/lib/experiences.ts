@@ -8,6 +8,7 @@ export interface Experience {
   pdfCaption: string
   pdfUrl2: string
   pdfCaption2: string
+  detailsUrl: string
 }
 
 export const workExperiences: Experience[] = [
@@ -22,6 +23,7 @@ export const workExperiences: Experience[] = [
     pdfCaption: "",
     pdfUrl2: "",
     pdfCaption2: "",
+    detailsUrl: "",
   },
   {
     title: "Software Developer",
@@ -34,6 +36,7 @@ export const workExperiences: Experience[] = [
     pdfCaption: "",
     pdfUrl2: "",
     pdfCaption2: "",
+    detailsUrl: "",
   },
   {
     title: "Software Developer / Data Analyst",
@@ -45,6 +48,7 @@ export const workExperiences: Experience[] = [
     pdfCaption: "",
     pdfUrl2: "",
     pdfCaption2: "",
+    detailsUrl: "",
   },
   {
     title: "Research Assistant",
@@ -57,6 +61,7 @@ export const workExperiences: Experience[] = [
     pdfCaption: "Master's thesis",
     pdfUrl2: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.108.045201",
     pdfCaption2: "Research paper as co-author",
+    detailsUrl: "",
   },
   {
     title: "Research Assistant",
@@ -69,6 +74,7 @@ export const workExperiences: Experience[] = [
     pdfCaption: "Special assignment",
     pdfUrl2: "",
     pdfCaption2: "",
+    detailsUrl: "",
   },
 ]
 
@@ -83,6 +89,7 @@ export const educationExperiences: Experience[] = [
     pdfCaption: "Master's thesis",
     pdfUrl2: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.108.045201",
     pdfCaption2: "Research paper as co-author",
+    detailsUrl: "",
   },
   {
     title: "Exchange studies",
@@ -94,6 +101,7 @@ export const educationExperiences: Experience[] = [
     pdfCaption: "",
     pdfUrl2: "",
     pdfCaption2: "",
+    detailsUrl: "",
   },
   {
     title: "Bachelor's degree",
@@ -105,5 +113,6 @@ export const educationExperiences: Experience[] = [
     pdfCaption: "Bachelor's thesis",
     pdfUrl2: "",
     pdfCaption2: "",
+    detailsUrl: "",
   },
 ]

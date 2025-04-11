@@ -1,3 +1,5 @@
+"use client"
+
 import { brandedItems } from "@/lib/brandedItems"
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card"
 import { Experience } from "@/lib/experiences"
@@ -7,7 +9,17 @@ import BookIconLink from "./BookIconLink"
 export default function ExperienceCard({ experience }: { experience: Experience }) {
     const brandedItem = brandedItems[experience.company]  
     return (
-    <Card className="flex flex-col p-4">
+    <Card
+      className={
+        `flex flex-col p-4
+        ${(experience.detailsUrl !== '') ? 'cursor-pointer hover:shadow-lg' : '' }`
+      }
+      onClick={() => {
+        if (experience.detailsUrl !== '') {
+          window.open(experience.detailsUrl, '_self')
+        }
+      }}
+    >
       <div className="flex flex-row">
         <div className={`mb-4
           ${(experience.company === 'polycon') ? 'w-24 h-6' : 'w-12 h-12'}
