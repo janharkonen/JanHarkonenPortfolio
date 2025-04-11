@@ -61,7 +61,7 @@ export const workExperiences: Experience[] = [
     pdfCaption: "Master's thesis",
     pdfUrl2: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.108.045201",
     pdfCaption2: "Research paper as co-author",
-    detailsUrl: "",
+    detailsUrl: "/work_experience/aalto2",
   },
   {
     title: "Research Assistant",
