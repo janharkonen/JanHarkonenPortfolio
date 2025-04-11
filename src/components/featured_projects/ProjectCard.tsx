@@ -9,12 +9,7 @@ export default function ProjectCard({ project }: { project: FeaturedProject }) {
     <Card
       className={
         `overflow-hidden
-        ${(project.detailsUrl !== '') ? 
-            'cursor-pointer hover:shadow-lg'
-        : 
-            ''
-        }
-        `
+        ${(project.detailsUrl !== '') ? 'cursor-pointer hover:shadow-lg' : '' }`
       }
       onClick={() => {
         if (project.detailsUrl !== '') {
