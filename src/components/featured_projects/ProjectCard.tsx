@@ -28,8 +28,8 @@ export default function ProjectCard({ project }: { project: FeaturedProject }) {
       </CardHeader>
       <CardContent className="px-4 pb-4">
         <p className="text-sm text-gray-600 mb-4">{project.period}</p>
-        <p className="mb-4">{project.description}</p>
-        <div className="flex flex-wrap gap-4 justify-center" onClick={(e) => e.stopPropagation()}>
+        <p className="mb-4 h-18">{project.description}</p>
+        <div className="flex flex-wrap gap-4 justify-center mt-auto" onClick={(e) => e.stopPropagation()}>
           {project.tools.map((tool, toolIndex) => (
             <div
               key={toolIndex}
