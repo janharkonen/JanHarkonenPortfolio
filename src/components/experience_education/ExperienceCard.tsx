@@ -7,7 +7,7 @@ import BookIconLink from "./BookIconLink"
 export default function ExperienceCard({ experience }: { experience: Experience }) {
     const brandedItem = brandedItems[experience.company]  
     return (
-    <Card className="flex flex-col">
+    <Card className="flex flex-col p-4">
       <div className="flex flex-row">
         <div className={`mb-4
           ${(experience.company === 'polycon') ? 'w-24 h-6' : 'w-12 h-12'}

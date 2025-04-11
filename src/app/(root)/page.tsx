@@ -1,4 +1,4 @@
-import ExperienceEducationTabs from "@/components/ExperiencEducation/ExperienceEducationTabs";
+import ExperienceEducationTabs from "@/components/experience_education/ExperienceEducationTabs";
 import Introduction from "@/components/Introduction";
 
 export default function Home() {
