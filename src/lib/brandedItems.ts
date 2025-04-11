@@ -98,12 +98,12 @@ export const brandedItems: BrandedItemList = {
       name: "Node.js",
       logoUrl: "https://cdn.simpleicons.org/nodedotjs" 
     },
-    html5: { 
-      name: "HTML5",
+    html: { 
+      name: "HTML",
       logoUrl: "https://cdn.simpleicons.org/html5" 
     },
-    css3: { 
-      name: "CSS3",
+    css: { 
+      name: "CSS",
       logoUrl: "https://cdn.simpleicons.org/css3" 
     },
     tailwind: { 
