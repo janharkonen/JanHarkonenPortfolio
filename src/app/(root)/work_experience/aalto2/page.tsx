@@ -18,7 +18,7 @@ export default function Home() {
         <p className="text-base">
           Simulating and calculating the annihilating electron-positron 
           pair momentum density in a solid in the atomic scale using 
-          quantum Monte Carlo methods. I did it as my Master's thesis. 
+          quantum Monte Carlo methods. I did it as my Master&apos;s thesis. 
           My research also spawned another paper where I was inserted 
           as a co-author. Take a look (below).
         </p>
