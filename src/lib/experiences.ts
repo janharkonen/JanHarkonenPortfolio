@@ -74,7 +74,7 @@ export const workExperiences: Experience[] = [
     pdfCaption: "Special assignment",
     pdfUrl2: "",
     pdfCaption2: "",
-    detailsUrl: "",
+    detailsUrl: "/work_experience/aalto1",
   },
 ]
 
