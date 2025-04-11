@@ -30,7 +30,7 @@ export default function Home() {
       </div>
       <div className="overflow-x-auto">
         <h3 className="text-lg font-semibold mb-2">Technologies & Tools</h3>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap text-nowrap gap-4">
           <ul className="list-disc pl-5 space-y-1 ">
               <li>
                 <div className="flex items-center gap-2">
