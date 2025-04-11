@@ -57,16 +57,16 @@ export default function Home() {
         <p className="text-base mt-4"> 
           As a simple example, using the URL
         </p>
-        <div className="bg-gray-100 rounded p-2 my-2 font-mono text-sm break-all">
+        <div className="bg-gray-100 dark:bg-gray-800 rounded p-2 my-2 font-mono text-sm break-all">
             <a href="https://picapi.janharkonen.fi/api/pics/20c610e3647d4e9582fd2bf469025a92.png" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="text-blue-500 hover:underline">
+            className="text-blue-500 dark:text-blue-400 hover:underline">
               https://picapi.janharkonen.fi/api/pics/20c610e3647d4e9582fd2bf469025a92.png
             </a>
         </div>
         <p className="text-base mt-4"> 
-          we get this picture as is with no manipulation:
+          we get this picture as is, with no manipulation:
         </p>
         <div className="flex justify-center mt-4">
           <img src="https://picapi.janharkonen.fi/api/pics/20c610e3647d4e9582fd2bf469025a92.png" 
@@ -76,16 +76,16 @@ export default function Home() {
         </div>
         <p className="text-base mt-4"> 
           To manipulate this picture with PICAPI , we can add URL parameters, for example 
-          <code className="bg-gray-100 px-2 py-1 rounded font-mono text-sm">
+          <code className="bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded font-mono text-sm">
             ?BGc=gray&BG=120
           </code>.
           So the URL becomes
         </p>
-        <div className="bg-gray-100 rounded p-2 my-2 font-mono text-sm break-all">
+        <div className="bg-gray-100 dark:bg-gray-800 rounded p-2 my-2 font-mono text-sm break-all">
             <a href="https://picapi.janharkonen.fi/api/pics/20c610e3647d4e9582fd2bf469025a92.png?BGc=gray&BG=125" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="text-blue-500 hover:underline">
+            className="text-blue-500 dark:text-blue-400 hover:underline">
               https://picapi.janharkonen.fi/api/pics/20c610e3647d4e9582fd2bf469025a92.png?BGc=gray&BG=125
             </a>
         </div>
