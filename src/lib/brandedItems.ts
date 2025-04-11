@@ -293,6 +293,11 @@ export const brandedItems: BrandedItemList = {
       name: "NextJS",
       logoUrl: "https://www.svgrepo.com/show/354113/nextjs-icon.svg" 
     },
+    cursor:{ 
+      name: "Cursor",
+      logoUrl: "https://registry.npmmirror.com/@lobehub/icons-static-png/1.44.0/files/light/cursor.png",
+      logoUrlDark: "https://registry.npmmirror.com/@lobehub/icons-static-png/1.44.0/files/dark/cursor.png" 
+    },
 };
 
 export default brandedItems
