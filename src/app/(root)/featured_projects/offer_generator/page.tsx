@@ -12,20 +12,20 @@ export default function Home() {
         <h3 className="text-lg font-semibold mb-2">Overview (V3)</h3>
         <p className="text-base mb-4">
           Offer generator is a web app we build in our startup that 
-          me and a few friends have founded. It is aimed for small businesses to 
-          speed up their product offer process for their customers. The app 
-          offers an intuitive UI gathering product info and saves it into a database.
-          The app then generates a PDF file with the product info to be sent to 
+          me and my friends have founded. It is aimed for small businesses to 
+          have their product info up to data and speed up their product offer 
+          process for their customers. The app offers an intuitive UI for 
+          generating a PDF file with the product info to be sent to 
           their customers.
         </p>
         <p className="text-base mb-4">
           The main time-saving feature for our client is our over 100 000 product
           catalogue from different suppliers has been integrated within the software 
-          in an easily digestible format and fully accessible even if a supplier's 
+          in an easily filterable UI and fully accessible even if a supplier&apos;s 
           website crashes (which happens quite frequently).
         </p>
         <p className="text-base">
-          This was built by our startup Pion Blanc Oy. We are a small team of 3 
+          This was built within our startup Pion Blanc Oy. We are a small team of 3 
           software developers. More info in our website 
           {<a href="https://www.pionblanc.fi" 
               target="_blank" 
@@ -34,13 +34,14 @@ export default function Home() {
                 www.pionblanc.fi
           </a>}. This has been my biggest personal project yet that I have built from
           scratch, and what a journey it has been! This project has seen lots of iterations, 
-          and I've learned so much about software development throughout.
+          and I&apos;ve learned a lot about software development.
         </p>
       </div>
       <div className="mt-4">
         <h3 className="text-lg font-semibold mb-2">Key Features</h3>
         <ul className="list-disc pl-5 space-y-1">
-            <li>Web-based interface accessible from anywhere</li>
+            <li>Up-to-date product catalogue with over 100 000 products</li>
+            <li>Web app interface accessible for offer generation</li>
             <li>User authentication with Auth0</li>
             <li>Cloud database with PostgreSQL</li>
             <li>API integration data retrieval</li>
@@ -174,7 +175,7 @@ export default function Home() {
           complicated for <b>A)</b>. an inexperienced front-end dev and <b>B)</b> for our use case.
         </p>
         <p className="text-base mb-4">
-          MSSQL server was something that I've only heard shade being thrown towards, 
+          MSSQL server was something that I&apos;ve only heard shade being thrown towards, 
           and my experience with it kind of confirmed it. The biggest issues were 
           1) installing ODBC drivers, 2) not being open-source software and 
           3) being more designed for Windows environments. 
@@ -283,12 +284,12 @@ export default function Home() {
         />
         <h3 className="text-lg font-semibold mb-2">Overview</h3>
         <p className="text-base mb-4">
-          Looking back I can clearly see how much I've learned in such a 
+          Looking back I can clearly see how much I&apos;ve learned in such a 
           short time. This version was done as a desktop application as our first MVP.
         </p>
         <p className="text-base mb-4">
           Deployment was something we never considered. I think this is one of 
-          the inexperienced dev's classic blunder even though it is inevitable
+          the inexperienced dev&apos;s classic blunder even though it is inevitable
           eventually. Surprise, surprise, when it was time for deployment, 
           it was a huge pain, since our first user used MacOS and installing 
           Python and the appropriate dependencies was next to impossible. 
