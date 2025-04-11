@@ -15,7 +15,7 @@ export const featuredProjects: FeaturedProject[] = [
     imageUrl: "https://picapi.janharkonen.fi/api/pics/d40795b1bb8b4987b965e11d241bbf78.png?BGc=gray&BG=120",
     period: "2025",
     tools: ["vanillajs", "python", "sqlite", "hetzner"],
-    detailsUrl: "",
+    detailsUrl: "/featured_projects/picapi",
     githubUrl: "",
   },
   {
