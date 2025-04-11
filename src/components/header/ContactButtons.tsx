@@ -6,7 +6,7 @@ export default function ContactMe() {
     return (
     <div className="flex justify-center space-x-2">   
       <Button variant="outline" asChild>
-        <a href='{CVPDF}' target="_blank" rel="noopener noreferrer" className="flex items-center">
+        <a href="/pdf/resume" target="_blank" rel="noopener noreferrer" className="flex items-center">
           <FileText className="h-2 w-2 mr-1" />
           <span className="sm:hidden">CV</span>
           <span className="hidden sm:inline">Resume</span>
@@ -25,7 +25,7 @@ export default function ContactMe() {
         </a>
       </Button>
       <Button variant="outline" asChild>
-        <a href="mailto:jan.harkonen@gmail.com">
+        <a href="mailto:jan.harkonen@pionblanc.fi">
           <Mail className="h-4 w-4 sm:mr-2" />
           <span className="hidden sm:inline">Email</span>
         </a>
