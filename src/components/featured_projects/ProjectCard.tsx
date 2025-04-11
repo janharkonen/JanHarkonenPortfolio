@@ -7,7 +7,20 @@ import BrandedItemLogoWithTooltip from "../BrandedItemComponents";
 export default function ProjectCard({ project }: { project: FeaturedProject }) {
   return (
     <Card
-      className="overflow-hidden cursor-pointer hover:shadow-lg"
+      className={
+        `overflow-hidden
+        ${(project.detailsUrl !== '') ? 
+            'cursor-pointer hover:shadow-lg'
+        : 
+            ''
+        }
+        `
+      }
+      onClick={() => {
+        if (project.detailsUrl !== '') {
+          window.open(project.detailsUrl, '_self')
+        }
+      }}
     >
       <img src={project.imageUrl} alt={project.title} className="w-full h-60 object-cover" />
       <CardHeader className="px-4 pt-4">
