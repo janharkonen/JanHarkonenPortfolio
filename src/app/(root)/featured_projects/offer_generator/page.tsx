@@ -290,7 +290,7 @@ export default function Home() {
         />
         <h3 className="text-lg font-semibold mb-2">Overview (V1)</h3>
         <p className="text-base mb-4">
-          Looking back I can see how far we've gotten in such a short time. 
+          Looking back I can see how far we&apos;ve gotten in such a short time. 
           This version was done as a desktop application as our first MVP.
         </p>
         <p className="text-base mb-4">
