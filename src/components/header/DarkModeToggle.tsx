@@ -24,7 +24,9 @@ export default function DarkModeToggle() {
   return (
     <button
       onClick={() => setDarkMode(!darkMode)}
-      className="rounded-full p-2 bg-black/[.05] dark:bg-white/[.06] hover:bg-black/[.1] dark:hover:bg-white/[.1] transition-colors"
+      className="rounded-full p-2 bg-black/[.05] 
+      dark:bg-white/[.06] hover:bg-black/[.1] dark:hover:bg-white/[.1] 
+      cursor-pointer"
       aria-label={darkMode ? 'Switch to light mode' : 'Switch to dark mode'}
     >
       {darkMode ? (
