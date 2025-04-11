@@ -60,7 +60,7 @@ export const featuredProjects: FeaturedProject[] = [
     imageUrl: 'https://picapi.janharkonen.fi/api/pics/2dce025429824c5595654267c848d3de.png?BGc=gray&BG=140',
     period: "2015",
     tools: ["python"],
-    detailsUrl: "",
+    detailsUrl: "/featured_projects/lens_mirror_simulator",
     githubUrl: "",
   },
 ]
