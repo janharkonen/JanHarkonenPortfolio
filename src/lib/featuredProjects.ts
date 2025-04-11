@@ -51,7 +51,7 @@ export const featuredProjects: FeaturedProject[] = [
     imageUrl: "https://i4ndcxhbcg.ufs.sh/f/Qdvn5pODvKPkAChHK1BHjs78wOL1SkFumPK6AanBb9YiqWI0",
     period: "2021",
     tools: ["java"],
-    detailsUrl: "",
+    detailsUrl: "/featured_projects/progress_tracker_old",
     githubUrl: "",
   },
   {
