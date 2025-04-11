@@ -100,3 +100,15 @@ function GetLogoUrl(brandKey: string){
     const logoSrc = isDarkMode && logoUrlDark ? logoUrlDark : logoUrl
     return logoSrc
 }
+
+export function BrandedItemBadge({brandKey}: {brandKey: string}) {
+  console.log('brandKey: ', brandKey)
+  return (
+      <div className="bg-gray-200 dark:bg-gray-800 flex flex-row items-center gap-2 p-2 rounded-md">
+        <div className='w-5 h-5'>
+          <BrandedItemLogo brandKey={brandKey} />
+        </div>
+        <span className="text-sm text-nowrap">{brandedItems[brandKey].name as string}</span>
+      </div>
+  )
+}
