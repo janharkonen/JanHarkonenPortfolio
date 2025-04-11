@@ -42,7 +42,7 @@ export const featuredProjects: FeaturedProject[] = [
     imageUrl: "https://picapi.janharkonen.fi/api/pics/0cebe3a64ade44858fd946e58dd6b540.png?BGc=gray&BG=120",
     period: "2024-2025",
     tools: ["react","vercel",],
-    detailsUrl: "",
+    detailsUrl: "/featured_projects/portfolio_site",
     githubUrl: "",
   },
   {
