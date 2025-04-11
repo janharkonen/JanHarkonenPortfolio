@@ -10,7 +10,7 @@ export default function Home() {
       <h2 className="text-xl mb-4">{project.period}</h2>
       <img
       src={"https://picapi.janharkonen.fi/api/pics/3f7e838a1aad493ab7f7176bbb203620.png?BGc=white&BG=101"}
-      alt="Portfolio site"
+      alt={project.title}
       className="w-full h-auto max-h-[500px] object-contain rounded-md"
       />
       <div className="mt-4">
