@@ -48,7 +48,7 @@ export const workExperiences: Experience[] = [
     pdfCaption: "",
     pdfUrl2: "",
     pdfCaption2: "",
-    detailsUrl: "",
+    detailsUrl: "/work_experience/semantum",
   },
   {
     title: "Research Assistant",
