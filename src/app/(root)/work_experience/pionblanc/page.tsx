@@ -21,7 +21,7 @@ export default function Home() {
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-blue-500 hover:underline ml-1">
-                "Features projects / Offer generator"
+                &quot;Features projects / Offer generator&quot;
           </a>}
         </p>
       </div>
