@@ -16,7 +16,7 @@ export default function Home() {
       <div className="mt-4">
         <h3 className="text-lg font-semibold mb-2">Overview</h3>
         <p className="text-base">
-          The Progress Tracker is an Android mobile app designed for personal use. 
+          Progress Tracker is an Android mobile app designed for personal use. 
           As a dedicated musician, I created it to help me track my progress in 
           learning 40 songs by heart for our music ensemble. The app allows me 
           to easily monitor my progress by color-coding each item in a scrollable list.

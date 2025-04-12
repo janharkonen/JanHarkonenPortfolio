@@ -20,7 +20,7 @@ export const featuredProjects: FeaturedProject[] = [
   },
   {
     title: "Progress tracker",
-    description: "Mobile application to track the progress level listed items for each user",
+    description: "Web application to track the progress level listed items for each user",
     imageUrl: "https://picapi.janharkonen.fi/api/pics/99c5a0b0dc4d4e9a9ce85413039a6916.png?BGc=gray&BG=120",
     period: "2025",
     tools: ["svelte", "nodejs", "redis", "docker", "aws"],
@@ -29,7 +29,7 @@ export const featuredProjects: FeaturedProject[] = [
   },
   {
     title: "Offer generator",
-    description: "Product data synchronization and automatic offer generating solution as a web app",
+    description: "Product data synchronization and automatic offer generation solution as a web app",
     imageUrl: 'https://picapi.janharkonen.fi/api/pics/3f7e838a1aad493ab7f7176bbb203620.png?BGc=gray&BG=120',
     period: "2024-2025",
     tools: ["react","python","postgresql","docker","hetzner",],

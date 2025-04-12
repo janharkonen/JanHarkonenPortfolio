@@ -18,8 +18,8 @@ export default function Home() {
         <p className="text-base mb-4">
           Offer generator is a web app we build in our startup that 
           me and my friends have founded. It is aimed for small businesses to 
-          have their product info up to data and speed up their product offer 
-          process for their customers. The app offers an intuitive UI for 
+          have their product info up to date, and speed up their offer 
+          generation process for their customers. The app offers an intuitive UI for 
           generating a PDF file with the product info to be sent to 
           their customers.
         </p>

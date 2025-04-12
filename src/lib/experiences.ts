@@ -17,7 +17,7 @@ export const workExperiences: Experience[] = [
     company: "pionblanc",
     period: "2024 - present",
     description:
-      "Product data synchronization and automatic offer generating solution as a web app",
+      "Product data synchronization and automatic offer generation solution as a web app",
     tools: ["react","python","postgresql","docker","hetzner"],
     pdfUrl: "",
     pdfCaption: "",
