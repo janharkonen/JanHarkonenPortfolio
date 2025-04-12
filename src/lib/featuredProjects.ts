@@ -11,7 +11,7 @@ export interface FeaturedProject {
 export const featuredProjects: FeaturedProject[] = [
   {
     title: "PICAPI",
-    description: "API manipulating images directly from URL parameters + platform to save own pictures in the cloud",
+    description: "API for manipulating images directly from URL parameters + platform to save own pictures in the cloud",
     imageUrl: "https://picapi.janharkonen.fi/api/pics/d40795b1bb8b4987b965e11d241bbf78.png?BGc=gray&BG=120",
     period: "2025",
     tools: ["vanillajs", "python", "sqlite", "hetzner"],
