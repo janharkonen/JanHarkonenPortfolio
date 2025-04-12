@@ -42,8 +42,8 @@ export default function Home() {
             <li>
               <div className="flex items-center gap-2">
                 <span>Framework:</span> 
-                <BrandedItemBadge brandKey="nextjs" />
                 <BrandedItemBadge brandKey="react" />
+                <BrandedItemBadge brandKey="nextjs" />
                 <BrandedItemBadge brandKey="nodejs" />
               </div>
             </li>
