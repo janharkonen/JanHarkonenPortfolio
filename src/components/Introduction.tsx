@@ -1,6 +1,6 @@
 import { MapPin } from "lucide-react"
 import Image from "next/image"
-import BrandedItemLogoWithTooltip from "./BrandedItemComponents"
+import { BrandedItemLogoWithCaption } from "./BrandedItemComponents"
 
 export default function Introduction() {
     return(
@@ -20,7 +20,7 @@ export default function Introduction() {
               </div>
             </div>
             
-            {/* Content Section - Will remain centered in its space */}
+            {/* Content Section */}
             <div className="flex-grow space-y-4 md:space-y-6 text-left">
               <h1 className="text-4xl md:text-5xl font-bold">Jan Härkönen</h1>
               <div className="flex items-center justify-start">
@@ -34,22 +34,22 @@ export default function Introduction() {
               </p>
               <div className="mt-6 md:mt-8">
                 <h3 className="text-xl font-semibold mb-8">I&apos;m most proficient with</h3>
-                <div className="flex flex-wrap justify-center md:justify-start gap-4 sm:gap-8">
-                  {[
-                    'react', 
-                    'python', 
-                    'postgresql', 
-                    'docker', 
-                    'linux', 
-                    'git',
-                  ].map((brandKey) => (
-                    <div key={brandKey} className="w-12 h-12">
-                      <BrandedItemLogoWithTooltip brandKey={brandKey} />
-                    </div>
-                  ))}
-                </div>
               </div>
             </div>
+          </div>
+          <div className="flex flex-wrap justify-center md:justify-start gap-y-8 gap-x-4 sm:gap-12">
+            {[
+              'react', 
+              'python', 
+              'postgresql', 
+              'docker', 
+              'linux', 
+              'git',
+            ].map((brandKey) => (
+              <div key={brandKey} className="w-12 h-12">
+                <BrandedItemLogoWithCaption brandKey={brandKey} />
+              </div>
+            ))}
           </div>
         </div>
     )

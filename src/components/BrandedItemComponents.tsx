@@ -43,6 +43,18 @@ export default function BrandedItemLogoWithTooltip({brandKey} : {brandKey: strin
     )
 }
 
+export function BrandedItemLogoWithCaption({brandKey} : {brandKey: string}) {
+
+  return (
+      <div className="w-full h-full flex flex-col items-center justify-between">
+          <BrandedItemLogo brandKey={brandKey} />
+          <div className="text-xs font-medium rounded px-2 py-0.5">
+            {brandedItems[brandKey].name}
+          </div>
+      </div>
+  )
+}
+
 export function BrandedItemLogo({brandKey} : {brandKey: string}) {
   return <img
     src={GetLogoUrl(brandKey)}
