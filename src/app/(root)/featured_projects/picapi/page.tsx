@@ -22,7 +22,9 @@ export default function Home() {
           Placing and framing images in React is annoying. Whenever I need padding
           or cropping for my pictures or simply just adding a solid background, 
           I had to open MS paint, make changes, save it in my React project&apos;s 
-          public directory and then hope that the placement is adequate. It was 
+          public directory and then hope that the placement is adequate. Even worse 
+          was GIMP, with which it is pretty much impossible to quickly do the simplest 
+          image manipulation as an inexperienced user. All of this was 
           time consuming and I hated it.
         </p>
         <p className="text-base mt-4">
