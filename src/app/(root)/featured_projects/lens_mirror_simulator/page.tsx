@@ -31,7 +31,7 @@ export default function Home() {
         </ul>
       </div>
           
-      <div className="overflow-x-auto">
+      <div className="overflow-x-hidden ">
       <h3 className="mt-4 text-lg font-semibold mb-2">Tech stack</h3>
         <div className="flex flex-wrap gap-4">
         <ul className="list-disc pl-5 space-y-1 ">
