@@ -40,7 +40,7 @@ export default function Home() {
                 Theo
           </a>}
           ). It was an improvement compared to S3, since the uploading 
-          process was a simple as a drag and drop. But it was still 
+          process was as simple as a drag and drop. But it was still 
           annoying to first modify the picture and then reuploading and 
           re-copying the URL.
         </p>
