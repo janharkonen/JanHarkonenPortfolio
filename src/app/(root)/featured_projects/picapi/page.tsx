@@ -134,6 +134,14 @@ export default function Home() {
             </li>
             <li>
               <div className="flex items-center gap-2">
+                <span>Auth:</span> 
+                  <div className="bg-gray-200 dark:bg-gray-800 flex flex-row items-center gap-2 p-2 rounded-md">
+                    <span className="text-sm text-nowrap">My own RSA encryption implementation</span>
+                  </div>
+              </div>
+            </li>
+            <li>
+              <div className="flex items-center gap-2">
                 <span>Containerization:</span> 
                 <BrandedItemBadge brandKey="docker" />
               </div>
