@@ -23,7 +23,7 @@ export const workExperiences: Experience[] = [
     pdfCaption: "",
     pdfUrl2: "",
     pdfCaption2: "",
-    detailsUrl: "",
+    detailsUrl: "/work_experience/pionblanc",
   },
   {
     title: "Software Developer",
