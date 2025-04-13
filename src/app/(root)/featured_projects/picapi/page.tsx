@@ -19,12 +19,13 @@ export default function Home() {
           PICAPI was spawned out of frustration.
         </p>
         <p className="text-base mt-4">
-          Placing and framing images in React is annoying. Whenever I need padding
+          Placing and framing images in a React project is annoying. Whenever I need padding
           or cropping for my pictures or simply just adding a solid background, 
           I had to open MS paint, make changes, save it in my React project&apos;s 
-          public directory and then hope that the placement is adequate. Even worse 
-          was GIMP, with which it is pretty much impossible to quickly do the simplest 
-          image manipulation as an inexperienced user. All of this was 
+          public directory and then hope that the placement is even remotely adequate. 
+          Eventually I stopped using Windows entirely and switched to Linux. Relying only 
+          on GIMP was even worse, since it was pretty much impossible to quickly do the simplest 
+          image manipulation as an inexperienced GIMP user. All of this was 
           time consuming and I hated it.
         </p>
         <p className="text-base mt-4">
@@ -34,7 +35,7 @@ export default function Home() {
           to reupload the image into S3 and copypasting the new URL.
         </p>
         <p className="text-base mt-4">
-          Next I tried UploadThing (made by
+          Next I tried UploadThing (shoutout to 
           {<a href="https://www.youtube.com/@t3dotgg" 
               target="_blank" 
               rel="noopener noreferrer" 
@@ -43,13 +44,13 @@ export default function Home() {
           </a>}
           ). It was an improvement compared to S3, since the uploading 
           process was as simple as a drag and drop. But it was still 
-          annoying to first modify the picture and then reuploading and 
-          re-copying the URL.
+          annoying to first modify the picture and then reupload and 
+          re-copy the URL.
         </p>
         <p className="text-base mt-4">
-          That spawned a simple idea: why not use URL parameters to manipulate images?
-          I wasn&apos;t aware of any product like that. &ldquo;Dammit, I&apos;ll make it myself&ldquo;, I 
-          thought. And so PICAPI was born.
+          This led me to a simple idea: what if we could transform images simply by adding parameters to their URLs?
+          I wasn&apos;t aware of any product like that. <b>&ldquo;Dammit, I&apos;ll make it myself&ldquo;</b>, I 
+          thought. Thus PICAPI was born.
         </p>
         <p className="text-base mt-4"> 
           PICAPI also offers a simple front-end, where you can upload your pictures 
@@ -79,7 +80,7 @@ export default function Home() {
         <p className="text-base mt-4"> 
           To manipulate this picture with PICAPI , we can add URL parameters, for example 
           <code className="bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded font-mono text-sm">
-            ?BGc=gray&BG=120
+            ?BGc=gray&BG=125
           </code>.
           So the URL becomes
         </p>
@@ -183,6 +184,7 @@ export default function Home() {
               <div className="flex items-center gap-2">
                 <span>Version control</span>
                 <BrandedItemBadge brandKey="git" />
+                <BrandedItemBadge brandKey="gitkraken" />
               </div>
             </li>
           </ul>
