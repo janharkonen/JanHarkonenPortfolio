@@ -298,6 +298,14 @@ export const brandedItems: BrandedItemList = {
       logoUrl: "https://registry.npmmirror.com/@lobehub/icons-static-png/1.44.0/files/light/cursor.png",
       logoUrlDark: "https://registry.npmmirror.com/@lobehub/icons-static-png/1.44.0/files/dark/cursor.png" 
     },
+    go:{ 
+      name: "Go",
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/bcde08d74bd546d38455fcbe9b6733f3.png?BGl=90&BGr=90",
+    },
+    golang:{ 
+      name: "Golang",
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/b77b1e64aaaf4cacb9ea44a779a75454.png",
+    },
 };
 
 export default brandedItems

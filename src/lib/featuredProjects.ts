@@ -32,7 +32,7 @@ export const featuredProjects: FeaturedProject[] = [
     description: "Product data synchronization and automatic offer generation solution as a web app",
     imageUrl: 'https://picapi.janharkonen.fi/api/pics/3f7e838a1aad493ab7f7176bbb203620.png?BGc=gray&BG=120',
     period: "2024-2025",
-    tools: ["react","python","postgresql","docker","hetzner",],
+    tools: ["react","python","postgresql","golang","docker","hetzner",],
     detailsUrl: "/featured_projects/offer_generator",
     githubUrl: "",
   },
