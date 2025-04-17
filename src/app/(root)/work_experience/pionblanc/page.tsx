@@ -15,8 +15,10 @@ export default function Home() {
         <h3 className="text-lg mb-2">{company.name} | {experience.period}</h3>
         <h3 className="text-lg font-semibold mb-2">Description</h3>
         <p className="text-base">
-          Product data synchronization and automatic offer generation solution 
-          as a web app. For more details see 
+          The value we bring to the table for small businesses is helping them 
+          navigate their massive product data pipeline in more cost-effective 
+          ways as well as developing an offer generation solution for their customers 
+          as a web app to boost their sales processes. For more details see 
           {<a href="/featured_projects/offer_generator" 
               target="_blank" 
               rel="noopener noreferrer" 

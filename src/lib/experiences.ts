@@ -17,8 +17,8 @@ export const workExperiences: Experience[] = [
     company: "pionblanc",
     period: "2024 - present",
     description:
-      "Product data synchronization and automatic offer generation solution as a web app",
-    tools: ["react","python","postgresql","docker","hetzner"],
+      "Helping small businesses navigate their massive product data pipelines and automating their sales processes.",
+    tools: ["react","python","postgresql","golang","docker","hetzner"],
     pdfUrl: "",
     pdfCaption: "",
     pdfUrl2: "",
@@ -30,7 +30,7 @@ export const workExperiences: Experience[] = [
     company: "polycon",
     period: "2021 - 2024",
     description:
-      "Developing and maintaining software and databases for handling mobility aid items for Finnish hospital districts",
+      "Developing and maintaining software and databases for handling mobility aid items for Finnish hospital districts.",
     tools: ["delphi","MSSQLServer"],
     pdfUrl: "",
     pdfCaption: "",
@@ -42,7 +42,7 @@ export const workExperiences: Experience[] = [
     title: "Software Developer / Data Analyst",
     company: "semantum",
     period: "Feb 2020 - Sep 2020",
-    description: "Developing LCA dashboard for assessing environmental impact of factory processes",
+    description: "Developing LCA dashboard for assessing environmental impact of factory processes.",
     tools: ["java", "influxdb", "docker", "haskell"],
     pdfUrl: "",
     pdfCaption: "",
@@ -55,7 +55,7 @@ export const workExperiences: Experience[] = [
     company: "aaltosci",
     period: "Jun 2019 - Dec 2019",
     description:
-      "Simulating and calculating the annihilating electron-positron pair momentum density in a solid in the atomic scale using quantum Monte Carlo methods (Master's thesis)",
+      "Simulating and calculating the annihilating electron-positron pair momentum density in a solid in the atomic scale using quantum Monte Carlo methods (Master's thesis).",
     tools: ["fortran", "quantumespresso", "casino", "cscmahti"],
     pdfUrl:  "/pdf/masters_thesis",
     pdfCaption: "Master's thesis",
@@ -68,7 +68,7 @@ export const workExperiences: Experience[] = [
     company: "aaltosci",
     period: "Summer 2018",
     description:
-      "Simulating and calculating the enhancement factor in a semiconductor in the atomic scale using quantum Monte Carlo methods (Special assignment)",
+      "Simulating and calculating the enhancement factor in a semiconductor in the atomic scale using quantum Monte Carlo methods (Special assignment).",
     tools: ["fortran", "quantumespresso", "casino", "cscmahti"],
     pdfUrl: "/pdf/special_assignment",
     pdfCaption: "Special assignment",

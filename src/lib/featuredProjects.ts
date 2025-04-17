@@ -29,7 +29,7 @@ export const featuredProjects: FeaturedProject[] = [
   },
   {
     title: "Offer generator",
-    description: "Product data synchronization and automatic offer generation solution as a web app",
+    description: "Product data synchronization and sales processes automation tool as a web app aimed at small businesses.",
     imageUrl: 'https://picapi.janharkonen.fi/api/pics/3f7e838a1aad493ab7f7176bbb203620.png?BGc=gray&BG=120',
     period: "2024-2025",
     tools: ["react","python","postgresql","golang","docker","hetzner",],
