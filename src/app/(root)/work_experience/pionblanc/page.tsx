@@ -49,7 +49,8 @@ export default function Home() {
             </li>
             <li>
               <div className="flex items-center gap-2">
-                <span>API:</span> 
+                <span>APIs:</span> 
+                <BrandedItemBadge brandKey="golang" />
                 <BrandedItemBadge brandKey="python" />
                 <BrandedItemBadge brandKey="flask" />
                 <BrandedItemBadge brandKey="pandas" />
