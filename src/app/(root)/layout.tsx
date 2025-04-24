@@ -38,6 +38,14 @@ export const metadata: Metadata = {
     "Software Engineer",
     "Cloud Engineer",
   ], 
+  openGraph: {
+    title: "Jan Härkönen - Fullstack Developer",
+    description: "Writing software that's pleasant to look at",
+    url: "https://janharkonen.fi",
+    siteName: "Jan Härkönen",
+    locale: "fi_FI",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
