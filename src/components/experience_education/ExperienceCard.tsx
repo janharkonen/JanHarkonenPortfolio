@@ -48,7 +48,7 @@ export default function ExperienceCard({ experience }: { experience: Experience 
         {experience.tools.length > 0 && (
           <div className="flex flex-wrap justify-center gap-4">
             {experience.tools.map((tool) => (
-              <div key={tool} className="w-6 h-6 flex flex-col items-center justify-center">
+              <div key={tool} className="w-6 h-6 inline-block" style={{ position: 'relative' }}>
                 <BrandedItemLogoWithTooltip brandKey={tool} />
               </div>
             ))}
