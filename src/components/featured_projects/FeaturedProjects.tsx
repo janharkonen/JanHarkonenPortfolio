@@ -12,6 +12,7 @@ export default function FeaturedProjects() {
         <ProjectCard project={featuredProjects[3]} />
         <ProjectCard project={featuredProjects[4]} />
         <ProjectCard project={featuredProjects[5]} />
+        <ProjectCard project={featuredProjects[6]} />
       </div>
     </div>
   );

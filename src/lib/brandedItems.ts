@@ -306,6 +306,14 @@ export const brandedItems: BrandedItemList = {
       name: "Golang",
       logoUrl: "https://picapi.janharkonen.fi/api/pics/b77b1e64aaaf4cacb9ea44a779a75454.png",
     },
+    bash:{ 
+      name: "Bash",
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/9217dc92bb514915a95d95330cf9e520.png?BGw=56&BGh=85"
+    },
+    vim:{ 
+      name: "Vim",
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/eb790a83970547009e9a8e40cab17ef8.png?BG=90"
+    },
 };
 
 export default brandedItems

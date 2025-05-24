@@ -1,6 +1,6 @@
 import { BrandedItemBadge } from "@/components/BrandedItemComponents";
 import { FeaturedProject, featuredProjects } from "@/lib/featuredProjects";
-const project: FeaturedProject = featuredProjects[4]
+const project: FeaturedProject = featuredProjects[5]
 
 
 export default function Home() {

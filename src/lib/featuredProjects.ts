@@ -10,6 +10,15 @@ export interface FeaturedProject {
 
 export const featuredProjects: FeaturedProject[] = [
   {
+    title: "cdx",
+    description: "Bash CLI tool to cd into directories by folder name",
+    imageUrl: "https://picapi.janharkonen.fi/api/pics/e7d1b08fd20847abb202b427a8e8f2ba.png?BGc=gray&BG=125",
+    period: "2025",
+    tools: ["bash"],
+    detailsUrl: "/featured_projects/cdx",
+    githubUrl: "",
+  },
+  {
     title: "PICAPI",
     description: "API for manipulating images directly from URL parameters + platform to save own pictures in the cloud",
     imageUrl: "https://picapi.janharkonen.fi/api/pics/d40795b1bb8b4987b965e11d241bbf78.png?BGc=gray&BG=120",
