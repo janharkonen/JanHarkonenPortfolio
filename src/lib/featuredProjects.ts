@@ -11,7 +11,7 @@ export interface FeaturedProject {
 export const featuredProjects: FeaturedProject[] = [
   {
     title: "cdx",
-    description: "Bash CLI tool to cd into directories by folder name",
+    description: "Bash CLI tool to cd into directories 10x faster",
     imageUrl: "https://picapi.janharkonen.fi/api/pics/e7d1b08fd20847abb202b427a8e8f2ba.png?BGc=gray&BG=125",
     period: "2025",
     tools: ["bash"],
