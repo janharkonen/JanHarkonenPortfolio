@@ -33,7 +33,7 @@ export default function BrandedItemLogoWithTooltip({brandKey} : {brandKey: strin
             </div>
             {tooltip.show && (
               <div 
-                className="fixed pointer-events-none bg-black text-white px-2 py-1 rounded text-sm"
+                className="fixed pointer-events-none bg-black text-white px-2 py-1 rounded text-sm z-50"
                 style={{ left: `${tooltip.x + 10}px`, top: `${tooltip.y + 10}px` }}
               >
                 {tooltip.text}
