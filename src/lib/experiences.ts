@@ -18,7 +18,7 @@ export const workExperiences: Experience[] = [
     period: "2024 - present",
     description:
       "Helping small businesses navigate their massive product data pipelines and automating their sales processes.",
-    tools: ["react","python","postgresql","golang","docker","hetzner"],
+    tools: ["nextjs","react","python","golang","postgresql","redis","docker","hetzner"],
     pdfUrl: "",
     pdfCaption: "",
     pdfUrl2: "",
