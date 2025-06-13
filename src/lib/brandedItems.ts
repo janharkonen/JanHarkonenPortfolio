@@ -104,7 +104,7 @@ export const brandedItems: BrandedItemList = {
     },
     css: { 
       name: "CSS",
-      logoUrl: "https://cdn.simpleicons.org/css3" 
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/1e6a510d9b084d8c9b9e1e50d5ebc450.png?BGt=84&BGb=97" 
     },
     tailwind: { 
       name: "Tailwind CSS",
@@ -251,11 +251,11 @@ export const brandedItems: BrandedItemList = {
     },
     quantumespresso:{ 
       name: "Quantum ESPRESSO",
-      logoUrl: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.openscience.org%2Fblog%2Fwp-content%2Fuploads%2F2009%2F01%2Fquantum_espresso6_trasparentbg.png&f=1&nofb=1&ipt=b303839d6fc58b58a54f26025a3d2da3fec77c81e00caab2cba0cc06f75f650e&ipo=images" 
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/6fdcfadd8969466fb28b638f0e93dcea.png" 
     },
     casino:{ 
       name: "CASINO",
-      logoUrl: "https://i4ndcxhbcg.ufs.sh/f/Qdvn5pODvKPkRQrK3Xnn4Ow76XVfbLPNQyhWiUaACjdM9sF0" 
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/4f345e3cad804de5b8dd7cb204aa99ad.png" 
     },
     cscmahti:{ 
       name: "CSC Mahti",
