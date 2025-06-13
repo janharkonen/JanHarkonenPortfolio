@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button"
-import { FileText, Linkedin, Github, Mail } from "lucide-react"
+import { FileText, Linkedin, Github, Mail, GraduationCap } from "lucide-react"
 
 export default function ContactMe() {
     return (
@@ -28,6 +28,12 @@ export default function ContactMe() {
         <a href="mailto:jan.harkonen@pionblanc.fi">
           <Mail className="h-4 w-4 sm:mr-2" />
           <span className="hidden sm:inline">Email</span>
+        </a>
+      </Button>
+      <Button variant="outline" asChild>
+        <a href="https://scholar.google.com/citations?hl=en&user=a5q61ooAAAAJ">
+          <GraduationCap className="h-4 w-4 sm:mr-2" />
+          <span className="hidden sm:inline">Scholar</span>
         </a>
       </Button>
     </div>
