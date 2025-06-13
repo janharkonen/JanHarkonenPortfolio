@@ -1,6 +1,6 @@
 import { BrandedItemBadge } from "@/components/BrandedItemComponents";
 import { FeaturedProject, featuredProjects } from "@/lib/featuredProjects";
-const project: FeaturedProject = featuredProjects[5]
+const project: FeaturedProject = featuredProjects[1]
 
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
       <h1 className="text-3xl font-bold mb-4">{project.title}</h1>
       <h2 className="text-xl mb-4">2021</h2>
       <img
-      src="https://i4ndcxhbcg.ufs.sh/f/Qdvn5pODvKPkAChHK1BHjs78wOL1SkFumPK6AanBb9YiqWI0"
+      src="https://picapi.janharkonen.fi/api/pics/4f345e3cad804de5b8dd7cb204aa99ad.png"
       alt={project.title}
       className="w-full h-auto max-h-[500px] object-contain rounded-md"
       />
