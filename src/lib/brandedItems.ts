@@ -255,7 +255,7 @@ export const brandedItems: BrandedItemList = {
     },
     casino:{ 
       name: "CASINO",
-      logoUrl: "https://picapi.janharkonen.fi/api/pics/4f345e3cad804de5b8dd7cb204aa99ad.png" 
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/a0144212e48c4ed19ccafd451b3fc861.png" 
     },
     cscmahti:{ 
       name: "CSC Mahti",
