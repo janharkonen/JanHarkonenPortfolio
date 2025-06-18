@@ -23,7 +23,7 @@ export default function Home() {
           It is a fast and intuitive directory navigation tool for Linux that lets you quickly cd into directories using fuzzy search.
         </p>
         <p className="text-base mt-4">
-          Basically I ecountered countless times that I needed to 
+          Basically I encountered countless times that I needed to 
           <code className="bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded font-mono text-sm">cd</code> 
           into a directory, but I couldn&apos;t remember the exact name
           let alone the exact path. Usually I would just 

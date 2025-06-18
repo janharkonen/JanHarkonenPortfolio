@@ -187,7 +187,7 @@ export default function Home() {
           3) being more designed for Windows environments. 
         </p>
         <p className="text-base mb-4">
-          The whole tech stack was just kinda of weird. We used Flask for the API, 
+          The whole tech stack was just kind of weird. We used Flask for the API, 
           which was deployed on a Hetzner VPS, our React app was deployed on 
           Vercel and the MSSQL database ran on my home laptop.
         </p>
@@ -208,7 +208,7 @@ export default function Home() {
             </li>
             <li>
               <div className="flex items-center gap-2">
-                <span>State managment:</span> 
+                <span>State management:</span> 
                 <BrandedItemBadge brandKey="redux" />
               </div>
             </li>
