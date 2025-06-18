@@ -32,7 +32,7 @@ export default function Home() {
           I tried using AWS S3, which freed me from the shackles of saving 
           images in my React public directory, since I could get a URL for 
           each picture. But it was still annoying to modify the picture and 
-          to reupload the image into S3 and copypasting the new URL.
+          to reupload the image into S3 and copy-pasting the new URL.
         </p>
         <p className="text-base mt-4">
           Next I tried UploadThing (shoutout to 
