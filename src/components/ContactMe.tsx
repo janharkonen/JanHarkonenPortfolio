@@ -9,7 +9,7 @@ export default function ContactMe() {
             <Mail className="h-6 w-6 sm:mr-2" />
             <span>jan.harkonen@pionblanc.fi</span>
           </a>
-          <a href="tel:+358 50 4646 745" 
+          <a href="tel:+358504646745"
           className="flex items-center justify-center gap-3 p-3 rounded-md hover:bg-white/5 transition-colors">
             <Phone className="h-6 w-6 sm:mr-2" />
             <span>+358 50 4646 745</span>
