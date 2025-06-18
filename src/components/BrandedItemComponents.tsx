@@ -56,8 +56,9 @@ export function BrandedItemLogoWithCaption({brandKey} : {brandKey: string}) {
 }
 
 export function BrandedItemLogo({brandKey} : {brandKey: string}) {
+  const logoSrc = useLogoUrl(brandKey)
   return <img
-    src={GetLogoUrl(brandKey)}
+    src={logoSrc}
     alt={`${brandedItems[brandKey].name} logo`}
     className={`w-full h-full object-contain ${[
       'vercel',
@@ -73,7 +74,7 @@ export function BrandedItemLogo({brandKey} : {brandKey: string}) {
     ].includes(brandKey) ? 'dark:invert' : ''}`} />
 }
 
-function GetLogoUrl(brandKey: string){
+function useLogoUrl(brandKey: string){
     
     const [isDarkMode, setIsDarkMode] = useState(false);
 
