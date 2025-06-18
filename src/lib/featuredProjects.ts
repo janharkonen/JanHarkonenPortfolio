@@ -29,7 +29,7 @@ export const featuredProjects: FeaturedProject[] = [
   },
   {
     title: "Portfolio site",
-    description: "This very website. A personal full stack developer porfolio made with Next.js",
+    description: "This very website. A personal full stack developer portfolio made with Next.js",
     imageUrl: "https://picapi.janharkonen.fi/api/pics/0cebe3a64ade44858fd946e58dd6b540.png?BGc=gray&BG=120",
     period: "2024-2025",
     tools: ["react","nextjs","vercel",],
