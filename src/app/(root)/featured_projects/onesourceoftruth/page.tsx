@@ -41,13 +41,13 @@ export default function Home() {
           to store the products. I created a single inverted index for the products based on the supplier. 
           On the Redis side, I stored each item as a JSON using RedisJSON and then created a RedisSearch index 
           for all of the columns found in the entire database. Then I created some API routes to query the database 
-          using pagination and filtering. For RedisSearch, I used the Redis client to query the database, but 
-          for the hashmap version I brute forced it. I simply iterated over the hashmap and then filtered 
-          the products based on the search query. The only optimization I did was the inverted index for the hashmap 
-          based on the supplier name.
+          using pagination and filtering. For RedisSearch, I used the Redis' NodeJS client to query the database from 
+          NextJS AppRouter's API routes, but for the hashmap version I brute forced it. 
+          I simply iterated over the hashmap and then filtered the products based on the search query. The only 
+          optimization I did was the inverted index for the hashmap based on the supplier name.
         </p>
         <p className="text-base mt-4">
-          The results were quite interesting. Here is a breakdown of some of the observations I made:
+          The results were quite interesting. Here is a summary of some of the observations I made:
         </p>
         <div className="overflow-x-auto mt-6">
           <table className="min-w-full border-collapse border border-gray-300 dark:border-gray-700 rounded-lg shadow-md">
@@ -88,13 +88,42 @@ export default function Home() {
           </table>
         </div>
       </div>
+      <p className="text-base mt-4">
+        We have to keep in mind that the size of the whole corpus is only about 100MB large. First of all, for small lists 
+        of items the Go solution is faster. That might be because in Go a simple loop is very efficient and can even run concurrently, 
+        whereas in RedisSearch the index is tokenized for each column and then the results are then aggregated. For bigger lists I witnessed 
+        something odd. The Redis solution was performing very well in O(1) time, whereas to Go solution was performing sometimes just as well 
+        and sometime at 2x or 4x the time. I suspect that it might be because some of the hashmap elements might be a longer character string, in 
+        which case the Go slice doubles in size. For even bigger elemenets the slice size quadruples so the time to resolve the query apparently 
+        grows in O(n²) time unpredictably. For a more definitive answer I'd have to investigate this phenomenon more thoroughly.
+        The Docker image size is quite interesting. The Go solution is only 20MB large, whereas the Redis solution is 830MB large.
+        That's a 41.5x difference. The Go solution is also much easier to maintain and deploy. The Redis solution is more complex and 
+        requires a more robust infrastructure.
+      </p>
+      <p className="text-base mt-4">
+        The biggest issue with the Redis solution was the tokenization strategy. I wanted my front end to react to writing text in the 
+        filter from the very first character written. This wasn't doable with RedisSearch because the index tokenizes each word and 
+        whitespcae separately. The RedisCLI's query builder did support wildcard notation (e.g. "*thisstringshouldneintheresult*" ) 
+        but it didn't allow for a single-character wildcard (e.g. *t*) or a string with a whitespace (e.g. *thisstringisintheresult *). 
+        I probably could have used a simple regex to fix that issue, but it would make the code a mess.
+      </p>
+      <p className="text-base mt-4">
+        This brings me to my next point of maintainability. The Go solution is much easier and understand, whereas the 
+        Redis solution requires to use the Redis NodeJS client and knowledge on how to build a RedisSearch query. The 
+        Docker image size was over 40x larger for the Redis solution. The Go solution is also much easier to deploy and 
+        scale. The Redis solution requires a more robust infrastructure and a more complex deployment process.
+      </p>
+      <p className="text-base mt-4">
+        The way I built my Go solution was a bit outside the box, because it clearly breaks the rule of a stateless API, because it 
+        had a global variable to store the hashmap. I did this because I wanted to avoid the overhead of creating a new hashmap for 
+        each request and it does pay off performance-wise. 
+      </p>
       <div className="mt-4">
         <h3 className="text-lg font-semibold mb-2">Key Features</h3>
         <ul className="list-disc pl-5 space-y-1">
-          <li>Minimalist and intuitive user interface</li>
-          <li>Color-coded progress stages for easy tracking</li>
-          <li>Interactive item color change on click</li>
-          <li>Real-time data updates for all users</li>
+          <li>Search products with pagination</li>
+          <li>Filter products with by input text</li>
+          <li>Great UX with extremely fast search performance</li>
         </ul>
       </div>
           
@@ -105,21 +134,24 @@ export default function Home() {
             <li>
               <div className="flex items-center gap-2">
                 <span>Front-end:</span> 
-                <BrandedItemBadge brandKey="svelte" />
+                <BrandedItemBadge brandKey="nextjs" />
+                <BrandedItemBadge brandKey="react" />
                 <BrandedItemBadge brandKey="typescript" />
-                <BrandedItemBadge brandKey="vite" />
               </div>
             </li>
             <li>
               <div className="flex items-center gap-2">
-                <span>Websocket API:</span> 
-                <BrandedItemBadge brandKey="nodejs" />
+                <span>API:</span> 
+                <BrandedItemBadge brandKey="go" />
+                <BrandedItemBadge brandKey="gin" />
               </div>
             </li>
             <li>
               <div className="flex items-center gap-2">
                 <span>Database:</span> 
                 <BrandedItemBadge brandKey="redis" />
+                <BrandedItemBadge brandKey="redissearch" />
+                <BrandedItemBadge brandKey="redisjson" />
               </div>
             </li>
             <li>
@@ -131,9 +163,8 @@ export default function Home() {
             <li>
               <div className="flex items-center gap-2">
                 <span>Deployment:</span> 
-                <BrandedItemBadge brandKey="aws" />
-                <BrandedItemBadge brandKey="ec2" />
-                <BrandedItemBadge brandKey="ubuntu" />
+                <BrandedItemBadge brandKey="hetzner" />
+                <BrandedItemBadge brandKey="debian" />
               </div>
             </li>
             <li>
@@ -150,17 +181,8 @@ export default function Home() {
             </li>
             <li>
               <div className="flex items-center gap-2">
-                <span>AI tools:</span> 
-                <BrandedItemBadge brandKey="Claude" />
-                <BrandedItemBadge brandKey="ChatGPT" />
-                <BrandedItemBadge brandKey="lechat" />
-                <BrandedItemBadge brandKey="deepseek" />
-              </div>
-            </li>
-            <li>
-              <div className="flex items-center gap-2">
-                <span>IDE:</span> 
-                <BrandedItemBadge brandKey="vscode" />
+                <span>IDE / AI:</span> 
+                <BrandedItemBadge brandKey="cursor" />
               </div>
             </li>
             <li>
@@ -177,10 +199,8 @@ export default function Home() {
         <h3 className="mt-4 text-lg font-semibold mb-2">What I learned</h3>
         <div className="flex flex-wrap gap-4">
           <ul className="list-disc pl-5 space-y-1">
-            <li>Svelte</li>
-            <li>Redis</li>
-            <li>AWS EC2</li>
-            <li>Websocket technology</li>
+            <li>Redisstack / RedisSearch / RedisJSON</li>
+            <li>Search concepts: inverted index, tokenization, wildcard, pagination, filtering</li>
           </ul>
         </div>
       </div>

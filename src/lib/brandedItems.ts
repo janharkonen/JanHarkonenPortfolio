@@ -224,6 +224,14 @@ export const brandedItems: BrandedItemList = {
       name: "Redis",
       logoUrl: "https://picapi.janharkonen.fi/api/pics/c52dba9ecc2e42b1ac74597152b89e18.png" 
     },
+    redissearch: { 
+      name: "RedisSearch",
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/5d58ee9c16804d3aa79751c103538ad3.svg" 
+    },
+    redisjson: { 
+      name: "RedisJSON",
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/af0c169f9566447f9a2a594a45cb9659.svg" 
+    },
     aws: { 
       name: "AWS",
       logoUrl: "https://img.icons8.com/?size=100&id=33039&format=png&color=000000",
@@ -305,6 +313,10 @@ export const brandedItems: BrandedItemList = {
     golang:{ 
       name: "Golang",
       logoUrl: "https://picapi.janharkonen.fi/api/pics/b77b1e64aaaf4cacb9ea44a779a75454.png",
+    },
+    gin:{ 
+      name: "Gin",
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/a693b744847e41b2b17ffdc158ec1e3c.png",
     },
     bash:{ 
       name: "Bash",
