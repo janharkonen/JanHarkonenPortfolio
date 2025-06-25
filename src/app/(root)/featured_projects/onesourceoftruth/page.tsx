@@ -28,7 +28,7 @@ export default function Home() {
         <p className="text-base mt-4">
           I wanted to experiment with search performance and decided to use Go and Redis.
           I made 2 versions: one with RedisSearch and one with a simple hashmap in the Go API layer.
-          Let's make a comparison, shall we?
+          Let&apos;s make a comparison, shall we?
         </p>
         <p className="text-base mt-4">
           The base of the product database is a simple JSON file with over 100 000 products.
@@ -41,8 +41,8 @@ export default function Home() {
           to store the products. I created a single inverted index for the products based on the supplier. 
           On the Redis side, I stored each item as a JSON using RedisJSON and then created a RedisSearch index 
           for all of the columns found in the entire database. Then I created some API routes to query the database 
-          using pagination and filtering. For RedisSearch, I used the Redis' NodeJS client to query the database from 
-          NextJS AppRouter's API routes, but for the hashmap version I brute forced it. 
+          using pagination and filtering. For RedisSearch, I used the Redis&apos; NodeJS client to query the database from 
+          NextJS AppRouter&apos;s API routes, but for the hashmap version I brute forced it. 
           I simply iterated over the hashmap and then filtered the products based on the search query. The only 
           optimization I did was the inverted index for the hashmap based on the supplier name.
         </p>
@@ -95,16 +95,16 @@ export default function Home() {
         something odd. The Redis solution was performing very well in O(1) time, whereas to Go solution was performing sometimes just as well 
         and sometime at 2x or 4x the time. I suspect that it might be because some of the hashmap elements might be a longer character string, in 
         which case the Go slice doubles in size. For even bigger elemenets the slice size quadruples so the time to resolve the query apparently 
-        grows in O(n²) time unpredictably. For a more definitive answer I'd have to investigate this phenomenon more thoroughly.
+        grows in O(n²) time unpredictably. For a more definitive answer I&apos;d have to investigate this phenomenon more thoroughly.
         The Docker image size is quite interesting. The Go solution is only 20MB large, whereas the Redis solution is 830MB large.
-        That's a 41.5x difference. The Go solution is also much easier to maintain and deploy. The Redis solution is more complex and 
+        That&apos;s a 41.5x difference. The Go solution is also much easier to maintain and deploy. The Redis solution is more complex and 
         requires a more robust infrastructure.
       </p>
       <p className="text-base mt-4">
         The biggest issue with the Redis solution was the tokenization strategy. I wanted my front end to react to writing text in the 
-        filter from the very first character written. This wasn't doable with RedisSearch because the index tokenizes each word and 
-        whitespcae separately. The RedisCLI's query builder did support wildcard notation (e.g. "*thisstringshouldneintheresult*" ) 
-        but it didn't allow for a single-character wildcard (e.g. *t*) or a string with a whitespace (e.g. *thisstringisintheresult *). 
+        filter from the very first character written. This wasn&apos;t doable with RedisSearch because the index tokenizes each word and 
+        whitespcae separately. The RedisCLI&apos;s query builder did support wildcard notation (e.g. &quot;*thisstringshouldneintheresult*&quot; ) 
+        but it didn&apos;t allow for a single-character wildcard (e.g. *t*) or a string with a whitespace (e.g. *thisstringisintheresult *). 
         I probably could have used a simple regex to fix that issue, but it would make the code a mess.
       </p>
       <p className="text-base mt-4">
