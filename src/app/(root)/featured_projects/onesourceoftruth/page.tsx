@@ -50,39 +50,39 @@ export default function Home() {
           The results were quite interesting. Here is a breakdown of some of the observations I made:
         </p>
         <div className="overflow-x-auto mt-6">
-          <table className="min-w-full border-collapse border border-gray-300 dark:border-gray-700">
-            <thead>
+          <table className="min-w-full border-collapse border border-gray-300 dark:border-gray-700 rounded-lg shadow-md">
+            <thead className="bg-gray-100 dark:bg-gray-800">
               <tr>
-                <th className="border border-gray-300 dark:border-gray-700 px-4 py-2"></th>
-                <th className="border border-gray-300 dark:border-gray-700 px-4 py-2">Go</th>
-                <th className="border border-gray-300 dark:border-gray-700 px-4 py-2">Redis</th>
+                <th className="border border-gray-300 dark:border-gray-700 px-4 py-3 text-left font-semibold"></th>
+                <th className="border border-gray-300 dark:border-gray-700 px-4 py-3 text-left font-semibold text-blue-600 dark:text-blue-400">Go Solution</th>
+                <th className="border border-gray-300 dark:border-gray-700 px-4 py-3 text-left font-semibold text-red-600 dark:text-red-400">Redis Solution</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">Average query time for supplier with 4300 products</td>
-                <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">8ms</td>
-                <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">34ms</td>
+              <tr className="hover:bg-gray-50 dark:hover:bg-gray-900">
+                <td className="border border-gray-300 dark:border-gray-700 px-4 py-3 font-medium">Average query time<br/><span className="text-sm text-gray-500">(4,300 products)</span></td>
+                <td className="border border-gray-300 dark:border-gray-700 px-4 py-3 text-green-600 dark:text-green-400 font-medium">8ms</td>
+                <td className="border border-gray-300 dark:border-gray-700 px-4 py-3 text-yellow-600 dark:text-yellow-400">34ms</td>
               </tr>
-              <tr>
-                <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">Average query time for supplier with 60000 products</td>
-                <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">45ms / 100ms / 200ms</td>
-                <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">50ms</td>
+              <tr className="hover:bg-gray-50 dark:hover:bg-gray-900">
+                <td className="border border-gray-300 dark:border-gray-700 px-4 py-3 font-medium">Average query time<br/><span className="text-sm text-gray-500">(60,000 products)</span></td>
+                <td className="border border-gray-300 dark:border-gray-700 px-4 py-3 text-yellow-600 dark:text-yellow-400">45ms / 100ms / 200ms</td>
+                <td className="border border-gray-300 dark:border-gray-700 px-4 py-3 text-yellow-600 dark:text-yellow-400">50ms</td>
               </tr>
-              <tr>
-                <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">Docker image size</td>
-                <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">20MB</td>
-                <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">830MB</td>
+              <tr className="hover:bg-gray-50 dark:hover:bg-gray-900">
+                <td className="border border-gray-300 dark:border-gray-700 px-4 py-3 font-medium">Docker image size</td>
+                <td className="border border-gray-300 dark:border-gray-700 px-4 py-3 text-green-600 dark:text-green-400 font-medium">20MB</td>
+                <td className="border border-gray-300 dark:border-gray-700 px-4 py-3 text-red-600 dark:text-red-400">830MB</td>
               </tr>
-              <tr>
-                <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">Maintainability</td>
-                <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">Easy</td>
-                <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">Hard</td>
+              <tr className="hover:bg-gray-50 dark:hover:bg-gray-900">
+                <td className="border border-gray-300 dark:border-gray-700 px-4 py-3 font-medium">Maintainability</td>
+                <td className="border border-gray-300 dark:border-gray-700 px-4 py-3 text-green-600 dark:text-green-400 font-medium">Easy</td>
+                <td className="border border-gray-300 dark:border-gray-700 px-4 py-3 text-red-600 dark:text-red-400">Hard</td>
               </tr>
-              <tr>
-                <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">API</td>
-                <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">Not stateless</td>
-                <td className="border border-gray-300 dark:border-gray-700 px-4 py-2">Stateless</td>
+              <tr className="hover:bg-gray-50 dark:hover:bg-gray-900">
+                <td className="border border-gray-300 dark:border-gray-700 px-4 py-3 font-medium">API</td>
+                <td className="border border-gray-300 dark:border-gray-700 px-4 py-3 text-yellow-600 dark:text-yellow-400">Not stateless</td>
+                <td className="border border-gray-300 dark:border-gray-700 px-4 py-3 text-green-600 dark:text-green-400 font-medium">Stateless</td>
               </tr>
             </tbody>
           </table>
