@@ -39,12 +39,12 @@ export default function Introduction() {
           </div>
           <div className="flex flex-wrap justify-center md:justify-start gap-y-8 gap-x-4 sm:gap-12">
             {[
-              'react', 
+              'nextjs', 
               'python', 
+              'golang', 
               'postgresql', 
-              'docker', 
+              'redis', 
               'linux', 
-              'git',
             ].map((brandKey) => (
               <div key={brandKey} className="w-12 h-12">
                 <BrandedItemLogoWithCaption brandKey={brandKey} />
