@@ -222,7 +222,7 @@ export const brandedItems: BrandedItemList = {
     },
     redis: { 
       name: "Redis",
-      logoUrl: "https://cdn.worldvectorlogo.com/logos/redis.svg" 
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/c52dba9ecc2e42b1ac74597152b89e18.png" 
     },
     aws: { 
       name: "AWS",
