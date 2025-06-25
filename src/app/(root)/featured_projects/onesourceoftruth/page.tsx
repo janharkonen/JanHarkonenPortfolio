@@ -17,7 +17,7 @@ export default function Home() {
         <h3 className="text-lg font-semibold mb-2">Overview</h3>
         <p className="text-base mt-4">
           One source of truth is a tool to search and filter a vast array of products blazingly fast.
-          Initially the purpose was to create a separate API endpoint for my product databse in my other project
+          Initially the purpose was to create a separate API endpoint for my product database in my other project
           {<a href="/featured_projects/offer_generator" 
               target="_blank" 
               rel="noopener noreferrer" 
@@ -92,9 +92,9 @@ export default function Home() {
         We have to keep in mind that the size of the whole corpus is only about 100MB large. First of all, for small lists 
         of items the Go solution is faster. That might be because in Go a simple loop is very efficient and can even run concurrently, 
         whereas in RedisSearch the index is tokenized for each column and then the results are then aggregated. For bigger lists I witnessed 
-        something odd. The Redis solution was performing very well in O(1) time, whereas to Go solution was performing sometimes just as well 
-        and sometime at 2x or 4x the time. I suspect that it might be because some of the hashmap elements might be a longer character string, in 
-        which case the Go slice doubles in size. For even bigger elemenets the slice size quadruples so the time to resolve the query apparently 
+        something odd. The Redis solution was performing very well in O(1) time, whereas the Go solution was performing sometimes just as well
+        and sometimes at 2x or 4x the time. I suspect that it might be because some of the hashmap elements might be a longer character string, in
+        which case the Go slice doubles in size. For even bigger elements the slice size quadruples so the time to resolve the query apparently
         grows in O(n²) time unpredictably. For a more definitive answer I&apos;d have to investigate this phenomenon more thoroughly.
         The Docker image size is quite interesting. The Go solution is only 20MB large, whereas the Redis solution is 830MB large.
         That&apos;s a 41.5x difference. The Go solution is also much easier to maintain and deploy. The Redis solution is more complex and 
@@ -103,15 +103,15 @@ export default function Home() {
       <p className="text-base mt-4">
         The biggest issue with the Redis solution was the tokenization strategy. I wanted my front end to react to writing text in the 
         filter from the very first character written. This wasn&apos;t doable with RedisSearch because the index tokenizes each word and 
-        whitespcae separately. The RedisCLI&apos;s query builder did support wildcard notation (e.g. &quot;*thisstringshouldneintheresult*&quot; ) 
+        whitespace separately. The RedisCLI&apos;s query builder did support wildcard notation (e.g. &quot;*thisstringshouldneintheresult*&quot; )
         but it didn&apos;t allow for a single-character wildcard (e.g. *t*) or a string with a whitespace (e.g. *thisstringisintheresult *). 
         I probably could have used a simple regex to fix that issue, but it would make the code a mess. Perhaps I could experiment with just 
         loading the JSON entries into the database and then create a custom Lua script to search the database using EVAL or Redis Functions? 
         Considering Lua is a scripting language I suspect that it would still be slower than the Go solution.
       </p>
       <p className="text-base mt-4">
-        This brings me to my next point of maintainability. The Go solution is much easier and understand, whereas the 
-        Redis solution requires to use the Redis NodeJS client and knowledge on how to build a RedisSearch query. The 
+        This brings me to my next point of maintainability. The Go solution is much easier to understand, whereas the
+        Redis solution requires using the Redis NodeJS client and knowledge on how to build a RedisSearch query. The
         Docker image size was over 40x larger for the Redis solution. The Go solution is also much easier to deploy and 
         scale. The Redis solution requires a more robust infrastructure and a more complex deployment process.
       </p>
@@ -124,7 +124,7 @@ export default function Home() {
         <h3 className="text-lg font-semibold mb-2">Key Features</h3>
         <ul className="list-disc pl-5 space-y-1">
           <li>Search products with pagination</li>
-          <li>Filter products with by input text</li>
+          <li>Filter products by input text</li>
           <li>Great UX with extremely fast search performance</li>
         </ul>
       </div>
