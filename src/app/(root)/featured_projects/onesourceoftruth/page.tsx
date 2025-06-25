@@ -105,7 +105,9 @@ export default function Home() {
         filter from the very first character written. This wasn&apos;t doable with RedisSearch because the index tokenizes each word and 
         whitespcae separately. The RedisCLI&apos;s query builder did support wildcard notation (e.g. &quot;*thisstringshouldneintheresult*&quot; ) 
         but it didn&apos;t allow for a single-character wildcard (e.g. *t*) or a string with a whitespace (e.g. *thisstringisintheresult *). 
-        I probably could have used a simple regex to fix that issue, but it would make the code a mess.
+        I probably could have used a simple regex to fix that issue, but it would make the code a mess. Perhaps I could experiment with just 
+        loading the JSON entries into the database and then create a custom Lua script to search the database using EVAL or Redis Functions? 
+        Considering Lua is a scripting language I suspect that it would still be slower than the Go solution.
       </p>
       <p className="text-base mt-4">
         This brings me to my next point of maintainability. The Go solution is much easier and understand, whereas the 
