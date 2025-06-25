@@ -78,7 +78,7 @@ export const featuredProjects: FeaturedProject[] = [
     imageUrl: "https://picapi.janharkonen.fi/api/pics/3a055a19c26743a2a2fc18bf41b41cbf.png?BGc=gray&BG=125",
     period: "2025",
     tools: ["nextjs", "golang", "redis", "docker", "hetzner"],
-    detailsUrl: "",
+    detailsUrl: "/featured_projects/onesourceoftruth",
     githubUrl: "",
   },
 ]
