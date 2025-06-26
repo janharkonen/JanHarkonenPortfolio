@@ -28,7 +28,7 @@ export default function Introduction() {
                 <span>Helsinki, Finland</span>
                 <span className="ml-2">&#127467;&#127470;</span>
               </div>
-              <h2 className="text-2xl font-semibold">Full Stack Developer</h2>
+              <h2 className="text-2xl font-semibold">Senior Full Stack Developer</h2>
               <p className="text-lg">
                 Writing software that&apos;s pleasant to look at
               </p>
