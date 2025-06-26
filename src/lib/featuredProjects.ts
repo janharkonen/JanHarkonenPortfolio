@@ -47,7 +47,7 @@ export const featuredProjects: FeaturedProject[] = [
   },
   {
     title: "Progress tracker",
-    description: "Web application to track the progress level listed items for each user",
+    description: "Web application to track the progress level listed items for each user in real time using websockets",
     imageUrl: "https://picapi.janharkonen.fi/api/pics/99c5a0b0dc4d4e9a9ce85413039a6916.png?BGc=gray&BG=120",
     period: "2025",
     tools: ["svelte", "nodejs", "redis", "docker", "aws"],
