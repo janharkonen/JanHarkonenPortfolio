@@ -77,7 +77,7 @@ export const featuredProjects: FeaturedProject[] = [
     description: "A tool to search and filter a vast array of products blazingly fast",
     imageUrl: "https://picapi.janharkonen.fi/api/pics/3a055a19c26743a2a2fc18bf41b41cbf.png?BGc=gray&BG=125",
     period: "2025",
-    tools: ["nextjs", "golang", "redis", "docker", "hetzner"],
+    tools: ["nextjs", "golang", "redis", "lua", "docker", "hetzner"],
     detailsUrl: "/featured_projects/onesourceoftruth",
     githubUrl: "",
   },

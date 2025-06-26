@@ -154,6 +154,7 @@ export default function Home() {
                 <BrandedItemBadge brandKey="redis" />
                 <BrandedItemBadge brandKey="redissearch" />
                 <BrandedItemBadge brandKey="redisjson" />
+                <BrandedItemBadge brandKey="lua" />
               </div>
             </li>
             <li>

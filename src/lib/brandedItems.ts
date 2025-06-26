@@ -220,6 +220,10 @@ export const brandedItems: BrandedItemList = {
       name: "Svelte",
       logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/800px-Svelte_Logo.svg.png" 
     },
+    lua: { 
+      name: "Lua",
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/94515531ee08445dbc794d5477b27b99.png" 
+    },
     redis: { 
       name: "Redis",
       logoUrl: "https://picapi.janharkonen.fi/api/pics/c52dba9ecc2e42b1ac74597152b89e18.png" 
