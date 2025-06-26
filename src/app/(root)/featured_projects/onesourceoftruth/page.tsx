@@ -143,8 +143,15 @@ export default function Home() {
             </li>
             <li>
               <div className="flex items-center gap-2">
+                <span>UI:</span> 
+                <BrandedItemBadge brandKey="shadcn" />
+                <BrandedItemBadge brandKey="tailwind" />
+              </div>
+            </li>
+            <li>
+              <div className="flex items-center gap-2">
                 <span>API:</span> 
-                <BrandedItemBadge brandKey="go" />
+                <BrandedItemBadge brandKey="golang" />
                 <BrandedItemBadge brandKey="gin" />
               </div>
             </li>
@@ -204,6 +211,7 @@ export default function Home() {
           <ul className="list-disc pl-5 space-y-1">
             <li>Redisstack / RedisSearch / RedisJSON</li>
             <li>Search concepts: inverted index, tokenization, wildcard, pagination, filtering</li>
+            <li>Lua scripting</li>
           </ul>
         </div>
       </div>

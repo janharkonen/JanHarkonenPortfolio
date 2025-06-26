@@ -60,6 +60,7 @@ export function BrandedItemLogo({brandKey} : {brandKey: string}) {
   return <img
     src={logoSrc}
     alt={`${brandedItems[brandKey].name} logo`}
+    loading="lazy"
     className={`w-full h-full object-contain ${[
       'vercel',
       'shadcn',
