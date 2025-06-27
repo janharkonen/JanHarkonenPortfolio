@@ -212,6 +212,7 @@ export default function Home() {
             <li>Redisstack / RediSearch / RedisJSON</li>
             <li>Search concepts: inverted index, tokenization, wildcard, pagination, filtering</li>
             <li>Lua scripting</li>
+            <li>Redis&apos;s Lua runtime environment has a maximum size of input arguments of 64kb</li>
           </ul>
         </div>
       </div>
