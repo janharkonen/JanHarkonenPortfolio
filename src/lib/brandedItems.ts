@@ -48,7 +48,7 @@ export const brandedItems: BrandedItemList = {
     },
     java: { 
       name: "Java",
-      logoUrl: "https://picapi.janharkonen.fi/api/pics/1a5ae0360483421a881f7a506c6f99b6.png?BG=92" 
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/4cc4900b56dd44fb93e3f72c71c5fc36.png" 
     },
     vscode: { 
       name: "Visual Studio Code",
