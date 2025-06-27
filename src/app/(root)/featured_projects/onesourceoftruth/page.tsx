@@ -27,7 +27,7 @@ export default function Home() {
         </p>
         <p className="text-base mt-4">
           I wanted to experiment with search performance and decided to use Go and Redis.
-          I made 2 versions: one with RedisSearch and one with a simple hashmap in the Go API layer.
+          I made 2 versions: one with RediSearch and one with a simple hashmap in the Go API layer.
           Let&apos;s make a comparison, shall we?
         </p>
         <p className="text-base mt-4">
@@ -39,9 +39,9 @@ export default function Home() {
         <p className="text-base mt-4">
           In the Go hashmap version, I used the Gin framework for the REST API and I used a simple hashmap 
           to store the products. I created a single inverted index for the products based on the supplier. 
-          On the Redis side, I stored each item as a JSON using RedisJSON and then created a RedisSearch index 
+          On the Redis side, I stored each item as a JSON using RedisJSON and then created a RediSearch index 
           for all of the columns found in the entire database. Then I created some API routes to query the database 
-          using pagination and filtering. For RedisSearch, I used the Redis&apos; NodeJS client to query the database from 
+          using pagination and filtering. For RediSearch, I used the Redis&apos; NodeJS client to query the database from 
           NextJS AppRouter&apos;s API routes, but for the hashmap version I brute forced it. 
           I simply iterated over the hashmap and then filtered the products based on the search query. The only 
           optimization I did was the inverted index for the hashmap based on the supplier name.
@@ -91,7 +91,7 @@ export default function Home() {
       <p className="text-base mt-4">
         We have to keep in mind that the size of the whole corpus is only about 100MB large. First of all, for small lists 
         of items the Go solution is faster. That might be because in Go a simple loop is very efficient and can even run concurrently, 
-        whereas in RedisSearch the index is tokenized for each column and then the results are then aggregated. For bigger lists I witnessed 
+        whereas in RediSearch the index is tokenized for each column and then the results are then aggregated. For bigger lists I witnessed 
         something odd. The Redis solution was performing very well in O(1) time, whereas the Go solution was performing sometimes just as well
         and sometimes at 2x or 4x the time. I suspect that it might be because some of the hashmap elements might be a longer character string, in
         which case the Go slice doubles in size. For even bigger elements the slice size quadruples so the time to resolve the query apparently
@@ -102,7 +102,7 @@ export default function Home() {
       </p>
       <p className="text-base mt-4">
         The biggest issue with the Redis solution was the tokenization strategy. I wanted my front end to react to writing text in the 
-        filter from the very first character written. This wasn&apos;t doable with RedisSearch because the index tokenizes each word and 
+        filter from the very first character written. This wasn&apos;t doable with RediSearch because the index tokenizes each word and 
         whitespace separately. The RedisCLI&apos;s query builder did support wildcard notation (e.g. &quot;*thisstringshouldneintheresult*&quot; )
         but it didn&apos;t allow for a single-character wildcard (e.g. *t*) or a string with a whitespace (e.g. *thisstringisintheresult *). 
         I probably could have used a simple regex to fix that issue, but it would make the code a mess. Perhaps I could experiment with just 
@@ -111,7 +111,7 @@ export default function Home() {
       </p>
       <p className="text-base mt-4">
         This brings me to my next point of maintainability. The Go solution is much easier to understand, whereas the
-        Redis solution requires using the Redis NodeJS client and knowledge on how to build a RedisSearch query. The
+        Redis solution requires using the Redis NodeJS client and knowledge on how to build a RediSearch query. The
         Docker image size was over 40x larger for the Redis solution. The Go solution is also much easier to deploy and 
         scale. The Redis solution requires a more robust infrastructure and a more complex deployment process.
       </p>
@@ -159,7 +159,7 @@ export default function Home() {
               <div className="flex items-center gap-2">
                 <span>Database:</span> 
                 <BrandedItemBadge brandKey="redis" />
-                <BrandedItemBadge brandKey="redissearch" />
+                <BrandedItemBadge brandKey="redisearch" />
                 <BrandedItemBadge brandKey="redisjson" />
                 <BrandedItemBadge brandKey="lua" />
               </div>
@@ -209,7 +209,7 @@ export default function Home() {
         <h3 className="mt-4 text-lg font-semibold mb-2">What I learned</h3>
         <div className="flex flex-wrap gap-4">
           <ul className="list-disc pl-5 space-y-1">
-            <li>Redisstack / RedisSearch / RedisJSON</li>
+            <li>Redisstack / RediSearch / RedisJSON</li>
             <li>Search concepts: inverted index, tokenization, wildcard, pagination, filtering</li>
             <li>Lua scripting</li>
           </ul>

@@ -228,8 +228,8 @@ export const brandedItems: BrandedItemList = {
       name: "Redis",
       logoUrl: "https://picapi.janharkonen.fi/api/pics/c52dba9ecc2e42b1ac74597152b89e18.png" 
     },
-    redissearch: { 
-      name: "RedisSearch",
+    redisearch: { 
+      name: "RediSearch",
       logoUrl: "https://picapi.janharkonen.fi/api/pics/5d58ee9c16804d3aa79751c103538ad3.svg" 
     },
     redisjson: { 
