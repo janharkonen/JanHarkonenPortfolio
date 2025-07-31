@@ -338,6 +338,18 @@ export const brandedItems: BrandedItemList = {
       name: "Github Actions",
       logoUrl: "https://picapi.janharkonen.fi/api/pics/370b9fb8d56e42a9a4f72492fbcfc704.png?BG=110"
     },
+    ecr:{ 
+      name: "ECR",
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/9031b33d52594215927e9c58a466d1a1.svg"
+    },
+    apprunner:{ 
+      name: "App Runner",
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/83aace0360c5473eaa54dfcd9f9951bf.svg"
+    },
+    dockerhub:{ 
+      name: "DockerHub",
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/2fc354a1812b4381a63781de7c10cdf2.png"
+    },
 };
 
 export default brandedItems
