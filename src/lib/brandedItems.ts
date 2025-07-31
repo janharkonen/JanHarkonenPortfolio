@@ -330,6 +330,14 @@ export const brandedItems: BrandedItemList = {
       name: "Vim",
       logoUrl: "https://picapi.janharkonen.fi/api/pics/eb790a83970547009e9a8e40cab17ef8.png?BG=90"
     },
+    vue:{ 
+      name: "Vue",
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/b8563c4c00044ecab81f88505d492846.png"
+    },
+    githubactions:{ 
+      name: "Github Actions",
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/370b9fb8d56e42a9a4f72492fbcfc704.png?BG=110"
+    },
 };
 
 export default brandedItems
