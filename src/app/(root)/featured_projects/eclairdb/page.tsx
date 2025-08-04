@@ -22,28 +22,28 @@ export default function Home() {
       </p>
       <p className="text-base mt-4">
         What I mean by that is twofold. First of all, the UI to find a table is too time-consuming. 
-        This is the case especially in pgAdmin, where just to find the list of tables for a schema, 
+        This is the case especially in pgAdmin, where finding the list of tables for a schema, 
         you have to navigate through 7 layers of the treeview. I don&apos;t know about you, but table selection 
         is where I spend most of my time when exploring a database. Most of the time I don&apos;t even care 
         at all about login/group Roles, event triggers, foreign tables, indexes and heck, even the keys 
         or foreign keys or even the types. I just want to find the table I&apos;m looking for and maybe do 
         some basic filtering and sorting and that&apos;s it.
 
-        The second issue is exactly that: filtering and sorting. Many database exploring clients are 
+        The second issue is exactly that: filtering and sorting. Many database exploring clients 
         make it difficult to filter and sort the data. The main reason for this is that in a SQL database, 
         the types of data matter and the way to filter each type have their own quirks. Sure, you can filter 
         however your heart desires using the SQL query, but that&apos;s not what I want. Usually, when I just want 
         a quick overview of the data, I would just want to filter strings, and that&apos;s it.
       </p>
       <p className="text-base mt-4">
-        I went on to do just that. I build a simple Vue app that allows me to find a table from a 
-        PostgreSQL database, then for any column on said table you can <b> sort the table and filter 
+        I went on to do just that. I built a simple Vue app that allows me to find a table from a 
+        PostgreSQL database, then for any column in that table you can <b> sort the table and filter 
           using only strings with lightning speed</b>.
         The choice to use strings was indeed opinionated but deliberate. At the end of the day, anything you write 
         on a computer is a string, and since the purpose of ÉclairDB is to be simple and fast to use, using 
         strings was the way to go. Sure, the functionalities are very limited, but that&apos;s the point. 
         It is by design a read-only database viewer with lightning fast table filtering thanks to a 
-        concurrent backend Go code.
+        concurrent backend Go backend.
       </p>
       <div className="mt-4">
         <h3 className="text-lg font-semibold mb-2">Key Features</h3>
