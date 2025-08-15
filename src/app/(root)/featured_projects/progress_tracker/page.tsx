@@ -14,7 +14,7 @@ export default function Home() {
       className="w-full h-auto max-h-[500px] object-contain rounded-md"
       />
       <div className="mt-4">
-        <h3 className="text-lg font-semibold mb-2">Overview</h3>
+        <h3 className="text-lg font-semibold mb-2">Overview (V2)</h3>
         <p className="text-base">
           Progress Tracker is a continuation of my 2021 mobile app. 
           As a dedicated musician, I created it to help me track my progress in 
@@ -45,8 +45,123 @@ export default function Home() {
               <div className="flex items-center gap-2">
                 <span>Front-end:</span> 
                 <BrandedItemBadge brandKey="svelte" />
+                <BrandedItemBadge brandKey="sveltekit" />
                 <BrandedItemBadge brandKey="typescript" />
                 <BrandedItemBadge brandKey="vite" />
+              </div>
+            </li>
+            <li>
+              <div className="flex items-center gap-2">
+                <span>UI:</span> 
+                <BrandedItemBadge brandKey="tailwind" />
+              </div>
+            </li>
+            <li>
+              <div className="flex items-center gap-2">
+                <span>Websocket API:</span> 
+                <BrandedItemBadge brandKey="bun" />
+              </div>
+            </li>
+            <li>
+              <div className="flex items-center gap-2">
+                <span>Database:</span> 
+                <BrandedItemBadge brandKey="redis" />
+              </div>
+            </li>
+            <li>
+              <div className="flex items-center gap-2">
+                <span>Containerization:</span> 
+                <BrandedItemBadge brandKey="docker" />
+              </div>
+            </li>
+            <li>
+              <div className="flex items-center gap-2">
+                <span>Deployment:</span> 
+                <BrandedItemBadge brandKey="azure" />
+                <BrandedItemBadge brandKey="azurevm" />
+                <BrandedItemBadge brandKey="debian" />
+              </div>
+            </li>
+            <li>
+              <div className="flex items-center gap-2">
+                <span>Reverse proxy:</span> 
+                <BrandedItemBadge brandKey="caddy" />
+              </div>
+            </li>
+            <li>
+              <div className="flex items-center gap-2">
+                <span>CI/CD:</span> 
+                <BrandedItemBadge brandKey="githubactions" />
+                <BrandedItemBadge brandKey="dockerhub" />
+                <BrandedItemBadge brandKey="watchtower" />
+              </div>
+            </li>
+            <li>
+              <div className="flex items-center gap-2">
+                <span>DNS:</span> 
+                <BrandedItemBadge brandKey="cloudflare" />
+              </div>
+            </li>
+            <li>
+              <div className="flex items-center gap-2">
+                <span>IDE/AI:</span> 
+                <BrandedItemBadge brandKey="cursor" />
+              </div>
+            </li>
+            <li>
+              <div className="flex items-center gap-2">
+                <span>Version control</span>
+                <BrandedItemBadge brandKey="git" />
+                <BrandedItemBadge brandKey="github" />
+                <BrandedItemBadge brandKey="gitkraken" />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+          
+      <div>
+        <h3 className="mt-4 text-lg font-semibold mb-2">What I learned</h3>
+        <div className="flex flex-wrap gap-4">
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Bun</li>
+            <li>Azure VM</li>
+            <li>Caddy</li>
+            <li>Watchtower</li>
+          </ul>
+        </div>
+      </div>
+      <h2 className="text-2xl font-bold mb-4 mt-4">Older version</h2>
+      <h2 className="text-xl mb-4">2025</h2>
+      <img
+      src="https://picapi.janharkonen.fi/api/pics/99c5a0b0dc4d4e9a9ce85413039a6916.png?BGc=white&BG=101"
+      alt={project.title}
+      className="w-full h-auto max-h-[500px] object-contain rounded-md"
+      />
+      <div className="mt-4">
+        <h3 className="text-lg font-semibold mb-2">Overview (V1)</h3>
+        <p className="text-base">
+          This was an older version of the app. It was built much simpler and 
+          without a proper CI/CD pipeline.
+        </p>
+      </div>
+          
+      <div className="overflow-x-auto">
+      <h3 className="mt-4 text-lg font-semibold mb-2">Tech stack</h3>
+        <div className="flex flex-wrap gap-4">
+        <ul className="list-disc pl-5 space-y-1 ">
+            <li>
+              <div className="flex items-center gap-2">
+                <span>Front-end:</span> 
+                <BrandedItemBadge brandKey="svelte" />
+                <BrandedItemBadge brandKey="typescript" />
+                <BrandedItemBadge brandKey="vite" />
+              </div>
+            </li>
+            <li>
+              <div className="flex items-center gap-2">
+                <span>UI:</span> 
+                <BrandedItemBadge brandKey="tailwind" />
               </div>
             </li>
             <li>
@@ -106,6 +221,8 @@ export default function Home() {
               <div className="flex items-center gap-2">
                 <span>Version control</span>
                 <BrandedItemBadge brandKey="git" />
+                <BrandedItemBadge brandKey="github" />
+                <BrandedItemBadge brandKey="gitkraken" />
               </div>
             </li>
           </ul>
