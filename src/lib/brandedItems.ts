@@ -220,6 +220,10 @@ export const brandedItems: BrandedItemList = {
       name: "Svelte",
       logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/800px-Svelte_Logo.svg.png" 
     },
+    sveltekit: { 
+      name: "SvelteKit",
+      logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/800px-Svelte_Logo.svg.png" 
+    },
     lua: { 
       name: "Lua",
       logoUrl: "https://picapi.janharkonen.fi/api/pics/94515531ee08445dbc794d5477b27b99.png" 
@@ -349,6 +353,26 @@ export const brandedItems: BrandedItemList = {
     dockerhub:{ 
       name: "DockerHub",
       logoUrl: "https://picapi.janharkonen.fi/api/pics/2fc354a1812b4381a63781de7c10cdf2.png"
+    },
+    azure:{ 
+      name: "Azure",
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/9db8a57590ba4db8b207a245a27e8fee.svg"
+    },
+    azurevm:{ 
+      name: "Azure VM",
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/0dca5e734fc2450496f547de7c832252.png"
+    },
+    bun:{ 
+      name: "Bun",
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/7a8e6adcca034e8586c781331466126e.svg"
+    },
+    caddy:{ 
+      name: "Caddy",
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/da62e98a682d41a6a30792b23832a827.png"
+    },
+    watchtower:{ 
+      name: "Watchtower",
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/985e8889aea14e9ca10b9d8e43b1f238.png"
     },
 };
 
