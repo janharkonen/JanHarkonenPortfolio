@@ -9,7 +9,7 @@ export default function Home() {
       <h1 className="text-3xl font-bold mb-4">{project.title}</h1>
       <h2 className="text-xl mb-4">2025</h2>
       <img
-      src="https://picapi.janharkonen.fi/api/pics/99c5a0b0dc4d4e9a9ce85413039a6916.png?BGc=white&BG=101"
+      src="https://picapi.janharkonen.fi/api/pics/6cbf8b836d0c4d3c89c2c4d23dba1281.png?BGc=white&BG=101"
       alt={project.title}
       className="w-full h-auto max-h-[500px] object-contain rounded-md"
       />
