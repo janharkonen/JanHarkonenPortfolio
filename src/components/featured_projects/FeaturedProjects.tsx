@@ -6,6 +6,7 @@ export default function FeaturedProjects() {
     <div>
       <h2 className="text-3xl font-semibold mb-6">Featured Projects</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+        <ProjectCard project={featuredProjects[9]} />
         <ProjectCard project={featuredProjects[8]} />
         <ProjectCard project={featuredProjects[7]} />
         <ProjectCard project={featuredProjects[6]} />

@@ -374,6 +374,24 @@ export const brandedItems: BrandedItemList = {
       name: "Watchtower",
       logoUrl: "https://picapi.janharkonen.fi/api/pics/985e8889aea14e9ca10b9d8e43b1f238.png"
     },
+    convex:{ 
+      name: "Convex",
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/523266ee17f5483f9349b04957f19927.svg"
+    },
+    clerk:{ 
+      name: "Clerk",
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/281ba03de22044d9badbe8f81b105bcf.svg"
+    },
+    neon:{ 
+      name: "Neon",
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/92abe4a3d3044ceeada95e723841f24a.svg",
+      logoUrlDark: "https://picapi.janharkonen.fi/api/pics/79a6ed8cdf584378b3765417d16e121c.svg"
+    },
+    neonpaska:{ 
+      name: "Neon",
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/92abe4a3d3044ceeada95e723841f24a.svg",
+    },
+    
 };
 
 export default brandedItems

@@ -90,4 +90,13 @@ export const featuredProjects: FeaturedProject[] = [
     detailsUrl: "/featured_projects/eclairdb",
     githubUrl: "",
   },
+  {
+    title: "Piggybank",
+    description: "Personal finance tracker",
+    imageUrl: "https://picapi.janharkonen.fi/api/pics/1d4685d428ef40e88362bf6fff5e2883.png?BGc=grey&BG=140",
+    period: "2025",
+    tools: ["nextjs", "convex", "golang", "neon", "postgresql"],
+    detailsUrl: "",
+    githubUrl: "",
+  },
 ]
