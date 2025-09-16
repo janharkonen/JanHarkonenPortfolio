@@ -99,4 +99,13 @@ export const featuredProjects: FeaturedProject[] = [
     detailsUrl: "",
     githubUrl: "",
   },
+  {
+    title: "SyncSpace",
+    description: "Simple list+checkbox based tool for collaborative task management with real-time synchronization.",
+    imageUrl: "https://picapi.janharkonen.fi/api/pics/743aaa9e749842d589d26abf4cfef026.png?BGc=grey&BG=130",
+    period: "2025",
+    tools: ["nextjs", "convex", "clerk", "docker", "hetzner"],
+    detailsUrl: "",
+    githubUrl: "",
+  },
 ]
