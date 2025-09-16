@@ -40,10 +40,10 @@ export default function Introduction() {
           <div className="flex flex-wrap justify-center md:justify-start gap-y-8 gap-x-4 sm:gap-12">
             {[
               'nextjs', 
-              'python', 
               'golang', 
+              'python', 
+              'convex', 
               'postgresql', 
-              'redis', 
               'linux', 
             ].map((brandKey) => (
               <div key={brandKey} className="w-12 h-12">
