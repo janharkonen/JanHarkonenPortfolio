@@ -14,6 +14,10 @@ type BrandedItemList = {
 };
 
 export const brandedItems: BrandedItemList = {
+  taitounited:{ 
+    name: "Taito United Oy",
+    logoUrl: "https://picapi.janharkonen.fi/api/pics/c8a8bd4f3311454881d99f0f095d192a.svg",
+  },
   pionblanc:{ 
     name: "Pion Blanc Oy",
     logoUrl: "https://picapi.janharkonen.fi/api/pics/2ca92b65bbcd4d40bb6c18803b084192.png",
@@ -390,6 +394,18 @@ export const brandedItems: BrandedItemList = {
     neonpaska:{ 
       name: "Neon",
       logoUrl: "https://picapi.janharkonen.fi/api/pics/92abe4a3d3044ceeada95e723841f24a.svg",
+    },
+    springboot:{ 
+      name: "Spring Boot",
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/3a7eff2c116746669a6f4bdd4f385c9b.png",
+    },
+    gcp:{ 
+      name: "Google Cloud",
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/5249aadfc3e54424bc30ad3e4cc6312c.svg",
+    },
+    graphql:{ 
+      name: "GraphQL",
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/14a173fd5eeb4943a5d041bed780abbc.svg",
     },
     
 };

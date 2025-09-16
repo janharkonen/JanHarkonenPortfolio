@@ -13,9 +13,22 @@ export interface Experience {
 
 export const workExperiences: Experience[] = [
   {
+    title: "Software Developer",
+    company: "taitounited",
+    period: "2025 - present",
+    description:
+      "Software consultancy for small/midsize businesses.",
+    tools: ["react", "graphql", "nodejs", "postgresql","docker","gcp"],
+    pdfUrl: "",
+    pdfCaption: "",
+    pdfUrl2: "",
+    pdfCaption2: "",
+    detailsUrl: "",
+  },
+  {
     title: "CEO / Software Developer",
     company: "pionblanc",
-    period: "2024 - present",
+    period: "2024 - 2025",
     description:
       "Helping small businesses navigate their massive product data pipelines and automating their sales processes.",
     tools: ["nextjs","react","python","golang","postgresql","redis","docker","hetzner"],

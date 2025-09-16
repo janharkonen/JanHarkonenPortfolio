@@ -20,6 +20,7 @@ export default function ExperienceEducationTabs() {
         <ExperienceCard experience={workExperiences[2]} />
         <ExperienceCard experience={workExperiences[3]} />
         <ExperienceCard experience={workExperiences[4]} />
+        <ExperienceCard experience={workExperiences[5]} />
       </TabsContent>
       <TabsContent value="education">
         <ExperienceCard experience={educationExperiences[0]} />

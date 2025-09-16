@@ -22,7 +22,7 @@ export default function ExperienceCard({ experience }: { experience: Experience 
     >
       <div className="flex flex-row">
         <div className={`mb-4
-          ${(experience.company === 'polycon') ? 'w-24 h-6' : 'w-12 h-12'}
+          ${(experience.company === 'polycon') || (experience.company === 'taitounited') ? 'w-30 h-6' : 'w-12 h-12'}
           `}
           >
           <BrandedItemLogo brandKey={experience.company} />
