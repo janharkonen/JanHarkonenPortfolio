@@ -17,7 +17,7 @@ export const workExperiences: Experience[] = [
     company: "taitounited",
     period: "2025 - present",
     description:
-      "Software consultancy for small/midsize businesses.",
+      "Developing product data management software",
     tools: ["react", "graphql", "nodejs", "postgresql","docker","gcp"],
     pdfUrl: "",
     pdfCaption: "",
