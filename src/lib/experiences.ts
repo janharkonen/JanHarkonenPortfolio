@@ -17,13 +17,13 @@ export const workExperiences: Experience[] = [
     company: "taitounited",
     period: "2025 - present",
     description:
-      "Developing product data management software",
+      "Developing product data management software.",
     tools: ["react", "graphql", "nodejs", "postgresql","docker","gcp"],
     pdfUrl: "",
     pdfCaption: "",
     pdfUrl2: "",
     pdfCaption2: "",
-    detailsUrl: "",
+    detailsUrl: "/work_experience/taitounited",
   },
   {
     title: "CEO / Software Developer",

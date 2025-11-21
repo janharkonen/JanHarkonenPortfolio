@@ -1,7 +1,7 @@
 import { BrandedItemBadge, BrandedItemLogo } from "@/components/BrandedItemComponents";
 import brandedItems from "@/lib/brandedItems";
 import { Experience, workExperiences } from "@/lib/experiences";
-const experience: Experience = workExperiences[3]
+const experience: Experience = workExperiences[workExperiences.length - 2]
 const company = brandedItems[experience.company]
 import DocumentButton from "../DocumentButton";
 

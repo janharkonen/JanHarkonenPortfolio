@@ -407,6 +407,38 @@ export const brandedItems: BrandedItemList = {
       name: "GraphQL",
       logoUrl: "https://picapi.janharkonen.fi/api/pics/14a173fd5eeb4943a5d041bed780abbc.svg",
     },
+    drizzle:{ 
+      name: "Drizzle",
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/4fe49ff6405541e7b5b2390df4fa8db1.png",
+    },
+    pandaCSS:{ 
+      name: "Panda CSS",
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/8521fa58d3564909b80b6e8bab3a5ba7.png",
+    },
+    uikit:{ 
+      name: "UIKit",
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/45d32c065c5145caa524d5c7313282ea.svg",
+    },
+    keycloak:{ 
+      name: "Keycloak",
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/83e4ebc212d6490fbd16603c6a31054e.png",
+    },
+    kubernetes:{ 
+      name: "Kubernetes",
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/ba2ad48424a8452ea52c504dd19b66f3.png",
+    },
+    playwright:{ 
+      name: "Playwright",
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/0157135f48564e8f959640bd4b44d009.png",
+    },
+    t3chat:{ 
+      name: "T3 Chat",
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/933ff9a2872c4015b3e3c749d9ccea48.png",
+    },
+    mcp:{ 
+      name: "MCP",
+      logoUrl: "https://picapi.janharkonen.fi/api/pics/d659304038da4889975eecdb7a0aa31a.png",
+    },
     
 };
 

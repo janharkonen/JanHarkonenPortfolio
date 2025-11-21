@@ -1,7 +1,7 @@
 import { BrandedItemBadge, BrandedItemLogo } from "@/components/BrandedItemComponents";
 import brandedItems from "@/lib/brandedItems";
 import { Experience, workExperiences } from "@/lib/experiences";
-const experience: Experience = workExperiences[1]
+const experience: Experience = workExperiences[workExperiences.length - 4]
 const company = brandedItems[experience.company]
 
 export default function Home() {

@@ -72,6 +72,7 @@ export function BrandedItemLogo({brandKey} : {brandKey: string}) {
       'tkinter',
       'sqlalchemy',
       'nextjs',
+      'mcp',
     ].includes(brandKey) ? 'dark:invert' : ''}`} />
 }
 
