@@ -447,14 +447,12 @@ export const brandedItems: BrandedItemList = {
   clerk: {
     name: "Clerk",
     logoUrl:
-      "https://picapi.janharkonen.fi/api/pics/281ba03de22044d9badbe8f81b105bcf.svg",
+      "https://images.seeklogo.com/logo-png/65/1/clerk-icon-logo-png_seeklogo-653484.png",
   },
   neon: {
     name: "Neon",
     logoUrl:
-      "https://picapi.janharkonen.fi/api/pics/92abe4a3d3044ceeada95e723841f24a.svg",
-    logoUrlDark:
-      "https://picapi.janharkonen.fi/api/pics/79a6ed8cdf584378b3765417d16e121c.svg",
+      "https://s.yimg.com/ny/api/res/1.2/Z99z2SpmSybWhq5lYn81pQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTQyMDtoPTQyMDtjZj13ZWJw/https://media.zenfs.com/en/globenewswire.com/6464841194bd568ac51257418c476b66",
   },
   neonpaska: {
     name: "Neon",
