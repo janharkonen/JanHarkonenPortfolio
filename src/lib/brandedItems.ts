@@ -442,7 +442,7 @@ export const brandedItems: BrandedItemList = {
   convex: {
     name: "Convex",
     logoUrl:
-      "https://picapi.janharkonen.fi/api/pics/523266ee17f5483f9349b04957f19927.svg",
+      "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/convex.png",
   },
   clerk: {
     name: "Clerk",
@@ -469,12 +469,12 @@ export const brandedItems: BrandedItemList = {
   gcp: {
     name: "Google Cloud",
     logoUrl:
-      "https://picapi.janharkonen.fi/api/pics/5249aadfc3e54424bc30ad3e4cc6312c.svg",
+      "https://images.icon-icons.com/2699/PNG/512/google_cloud_logo_icon_171058.png",
   },
   graphql: {
     name: "GraphQL",
     logoUrl:
-      "https://picapi.janharkonen.fi/api/pics/14a173fd5eeb4943a5d041bed780abbc.svg",
+      "https://cdn.iconscout.com/icon/free/png-512/free-graphql-logo-icon-svg-download-png-2944912.png?f=webp&w=256",
   },
   drizzle: {
     name: "Drizzle",
