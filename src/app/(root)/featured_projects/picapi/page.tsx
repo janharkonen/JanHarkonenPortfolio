@@ -61,18 +61,18 @@ export default function Home() {
           As a simple example, using the URL
         </p>
         <div className="bg-gray-100 dark:bg-gray-800 rounded p-2 my-2 font-mono text-sm break-all">
-            <a href="https://picapi.janharkonen.fi/api/pics/20c610e3647d4e9582fd2bf469025a92.png" 
+            <a href="https://picapi.janharkonen.fi/api/pics/ee072b53409343398af588342e4c3088.png" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="text-blue-500 dark:text-blue-400 hover:underline">
-              https://picapi.janharkonen.fi/api/pics/20c610e3647d4e9582fd2bf469025a92.png
+              https://picapi.janharkonen.fi/api/pics/ee072b53409343398af588342e4c3088.png
             </a>
         </div>
         <p className="text-base mt-4"> 
           we get this picture as is, with no manipulation:
         </p>
         <div className="flex justify-center mt-4">
-          <img src="https://picapi.janharkonen.fi/api/pics/20c610e3647d4e9582fd2bf469025a92.png" 
+          <img src="https://picapi.janharkonen.fi/api/pics/ee072b53409343398af588342e4c3088.png" 
           alt="Example" 
           className="w-32 h-32 object-contain rounded-md"
           />
@@ -85,18 +85,18 @@ export default function Home() {
           So the URL becomes
         </p>
         <div className="bg-gray-100 dark:bg-gray-800 rounded p-2 my-2 font-mono text-sm break-all">
-            <a href="https://picapi.janharkonen.fi/api/pics/20c610e3647d4e9582fd2bf469025a92.png?BGc=gray&BG=125" 
+            <a href="https://picapi.janharkonen.fi/api/pics/ee072b53409343398af588342e4c3088.png?BGc=gray&BG=125" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="text-blue-500 dark:text-blue-400 hover:underline">
-              https://picapi.janharkonen.fi/api/pics/20c610e3647d4e9582fd2bf469025a92.png?BGc=gray&BG=125
+              https://picapi.janharkonen.fi/api/pics/ee072b53409343398af588342e4c3088.png?BGc=gray&BG=125
             </a>
         </div>
         <p className="text-base mt-4"> 
           and the picture is manipulated to have a gray background with a 125% padding:
         </p>
         <div className="flex justify-center mt-4">
-          <img src="https://picapi.janharkonen.fi/api/pics/20c610e3647d4e9582fd2bf469025a92.png?BGc=gray&BG=125" 
+          <img src="https://picapi.janharkonen.fi/api/pics/ee072b53409343398af588342e4c3088.png?BGc=gray&BG=125" 
           alt="Example" 
           className="w-48 h-48 object-contain rounded-md"
           />
