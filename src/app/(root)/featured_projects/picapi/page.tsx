@@ -80,23 +80,23 @@ export default function Home() {
         <p className="text-base mt-4"> 
           To manipulate this picture with PICAPI , we can add URL parameters, for example 
           <code className="bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded font-mono text-sm">
-            ?BGc=gray&BG=125
+            ?BGc=black&BG=125
           </code>.
           So the URL becomes
         </p>
         <div className="bg-gray-100 dark:bg-gray-800 rounded p-2 my-2 font-mono text-sm break-all">
-            <a href="https://picapi.janharkonen.fi/api/pics/ee072b53409343398af588342e4c3088.png?BGc=gray&BG=125" 
+            <a href="https://picapi.janharkonen.fi/api/pics/ee072b53409343398af588342e4c3088.png?BGc=black&BG=125" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="text-blue-500 dark:text-blue-400 hover:underline">
-              https://picapi.janharkonen.fi/api/pics/ee072b53409343398af588342e4c3088.png?BGc=gray&BG=125
+              https://picapi.janharkonen.fi/api/pics/ee072b53409343398af588342e4c3088.png?BGc=black&BG=125
             </a>
         </div>
         <p className="text-base mt-4"> 
           and the picture is manipulated to have a gray background with a 125% padding:
         </p>
         <div className="flex justify-center mt-4">
-          <img src="https://picapi.janharkonen.fi/api/pics/ee072b53409343398af588342e4c3088.png?BGc=gray&BG=125" 
+          <img src="https://picapi.janharkonen.fi/api/pics/ee072b53409343398af588342e4c3088.png?BGc=black&BG=125" 
           alt="Example" 
           className="w-48 h-48 object-contain rounded-md"
           />
